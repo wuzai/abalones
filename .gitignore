@@ -1,0 +1,6 @@
+Abalone.xcodeproj/xcuserdata/*
+*.DS_store
+Abalone.xcodeproj/project.xcworkspace/xcuserdata/*
+*.xcuserstate
+Abalone.xcodeproj/project.xcworkspace/xcuserdata/caohao.xcuserdatad/UserInterfaceState.xcuserstate
+Abalone/abalone.storyboard.orig
