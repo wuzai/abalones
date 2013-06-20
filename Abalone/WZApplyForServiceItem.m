@@ -46,7 +46,7 @@ NSString *const ApplyServiceItemFail = @"applyServiceItemFail";
 {
     
     if (loader.response.statusCode == 203) {
-         [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemFail object:@"会员积分不足！"];
+         [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemFail object:@"申领请求已发出，等待商户审核."];
     }else{
         [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemSuccess object:results];
     }
@@ -55,7 +55,7 @@ NSString *const ApplyServiceItemFail = @"applyServiceItemFail";
 
 +(void)failedIn:(RKObjectLoader *)loader withError:(NSError *)error
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemFail object:@"申请失败！"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemFail object:error.localizedDescription];
 }
 
 @end

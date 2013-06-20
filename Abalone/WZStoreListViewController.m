@@ -198,15 +198,15 @@ static NSString *const noCellIdentifier = @"noStoreCell";
         [self.storesArray removeAllObjects];
     }
     NSMutableArray *stores = [NSMutableArray arrayWithArray:[WZStore  allObjects]];
-    if ([WZUser me]) {
-        WZUser *me = [WZUser me];
-        NSMutableArray *deletes = [NSMutableArray array];
-        [me.members enumerateObjectsUsingBlock:^(id obj,BOOL *finish){
-            WZMember *member = (WZMember *)obj;
-            [deletes addObjectsFromArray:[member.merchant.stores allObjects]];
-        }];
-        [stores removeObjectsInArray:deletes];
-    }
+//    if ([WZUser me]) {
+//        WZUser *me = [WZUser me];
+//        NSMutableArray *deletes = [NSMutableArray array];
+//        [me.members enumerateObjectsUsingBlock:^(id obj,BOOL *finish){
+//            WZMember *member = (WZMember *)obj;
+//            [deletes addObjectsFromArray:[member.merchant.stores allObjects]];
+//        }];
+//        [stores removeObjectsInArray:deletes];
+//    }
     if (stores.count) {
         [self.storesArray addObjectsFromArray:stores];
         [self checkType];
