@@ -49,6 +49,8 @@
     [super viewDidLoad];
     self.title = @"门店详情";
     self.segmentedControl.selectedSegmentIndex = 1;
+    self.segmentedControl.interItemSpace = 30.0f;
+   
     if (!self.contentTableViews) {
         self.contentTableViews = [NSMutableArray arrayWithCapacity:3];
     }
