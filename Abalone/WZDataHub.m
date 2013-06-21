@@ -58,4 +58,5 @@
 {
     [[WZUser me] downloadMessages];
 }
+
 @end
