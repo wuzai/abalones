@@ -245,6 +245,14 @@
 		5FA999C61777E084004A8B48 /* WZAdForStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999C51777E084004A8B48 /* WZAdForStore.m */; };
 		5FA999CD1777ED68004A8B48 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999CC1777ED68004A8B48 /* AdCell.xib */; };
 		5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999CF1777ED84004A8B48 /* WZADCell.m */; };
+		5FA999D917781D4D004A8B48 /* 占位图1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D117781D49004A8B48 /* 占位图1.png */; };
+		5FA999DA17781D4D004A8B48 /* 占位图1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D217781D49004A8B48 /* 占位图1@2x.png */; };
+		5FA999DB17781D4D004A8B48 /* 占位图2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D317781D4A004A8B48 /* 占位图2.png */; };
+		5FA999DC17781D4D004A8B48 /* 占位图2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D417781D4B004A8B48 /* 占位图2@2x.png */; };
+		5FA999DD17781D4D004A8B48 /* 占位图3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D517781D4B004A8B48 /* 占位图3.png */; };
+		5FA999DE17781D4D004A8B48 /* 占位图3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D617781D4B004A8B48 /* 占位图3@2x.png */; };
+		5FA999DF17781D4D004A8B48 /* 占位图4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D717781D4C004A8B48 /* 占位图4.png */; };
+		5FA999E017781D4D004A8B48 /* 占位图4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D817781D4D004A8B48 /* 占位图4@2x.png */; };
 		5FB340FA17266265003B58FB /* WZServiceItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB340F917266264003B58FB /* WZServiceItemListViewController.m */; };
 		5FB341241726665C003B58FB /* WZServiceItem+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB341231726665C003B58FB /* WZServiceItem+Mapping.m */; };
 		5FB3414717266AE6003B58FB /* WZStore+serviceItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB3414617266AE6003B58FB /* WZStore+serviceItems.m */; };
@@ -744,6 +752,14 @@
 		5FA999CC1777ED68004A8B48 /* AdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		5FA999CE1777ED84004A8B48 /* WZADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZADCell.h; sourceTree = "<group>"; };
 		5FA999CF1777ED84004A8B48 /* WZADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZADCell.m; sourceTree = "<group>"; };
+		5FA999D117781D49004A8B48 /* 占位图1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图1.png"; sourceTree = "<group>"; };
+		5FA999D217781D49004A8B48 /* 占位图1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图1@2x.png"; sourceTree = "<group>"; };
+		5FA999D317781D4A004A8B48 /* 占位图2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图2.png"; sourceTree = "<group>"; };
+		5FA999D417781D4B004A8B48 /* 占位图2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图2@2x.png"; sourceTree = "<group>"; };
+		5FA999D517781D4B004A8B48 /* 占位图3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3.png"; sourceTree = "<group>"; };
+		5FA999D617781D4B004A8B48 /* 占位图3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3@2x.png"; sourceTree = "<group>"; };
+		5FA999D717781D4C004A8B48 /* 占位图4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图4.png"; sourceTree = "<group>"; };
+		5FA999D817781D4D004A8B48 /* 占位图4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图4@2x.png"; sourceTree = "<group>"; };
 		5FB340F817266264003B58FB /* WZServiceItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItemListViewController.h; sourceTree = "<group>"; };
 		5FB340F917266264003B58FB /* WZServiceItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItemListViewController.m; sourceTree = "<group>"; };
 		5FB341221726665C003B58FB /* WZServiceItem+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZServiceItem+Mapping.h"; sourceTree = "<group>"; };
@@ -1161,6 +1177,14 @@
 			isa = PBXGroup;
 			children = (
 				5F7F2BED17574B930028B13D /* Menu.png */,
+				5FA999D117781D49004A8B48 /* 占位图1.png */,
+				5FA999D217781D49004A8B48 /* 占位图1@2x.png */,
+				5FA999D317781D4A004A8B48 /* 占位图2.png */,
+				5FA999D417781D4B004A8B48 /* 占位图2@2x.png */,
+				5FA999D517781D4B004A8B48 /* 占位图3.png */,
+				5FA999D617781D4B004A8B48 /* 占位图3@2x.png */,
+				5FA999D717781D4C004A8B48 /* 占位图4.png */,
+				5FA999D817781D4D004A8B48 /* 占位图4@2x.png */,
 				5F7F2BEE17574B930028B13D /* Menu@2x.png */,
 				5F7F2BEF17574B930028B13D /* MenuSelected.png */,
 				5F7F2BF017574B930028B13D /* MenuSelected@2x.png */,
@@ -2244,6 +2268,14 @@
 				5FA4B0D41772BF00008B58E3 /* Default@2x.png in Resources */,
 				5FA4B0D61772BF06008B58E3 /* Default-568h@2x.png in Resources */,
 				5FA999CD1777ED68004A8B48 /* AdCell.xib in Resources */,
+				5FA999D917781D4D004A8B48 /* 占位图1.png in Resources */,
+				5FA999DA17781D4D004A8B48 /* 占位图1@2x.png in Resources */,
+				5FA999DB17781D4D004A8B48 /* 占位图2.png in Resources */,
+				5FA999DC17781D4D004A8B48 /* 占位图2@2x.png in Resources */,
+				5FA999DD17781D4D004A8B48 /* 占位图3.png in Resources */,
+				5FA999DE17781D4D004A8B48 /* 占位图3@2x.png in Resources */,
+				5FA999DF17781D4D004A8B48 /* 占位图4.png in Resources */,
+				5FA999E017781D4D004A8B48 /* 占位图4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
