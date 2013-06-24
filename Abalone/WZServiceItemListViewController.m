@@ -19,9 +19,6 @@
 static NSString *const cellIdentifier = @"serviceItemCell";
 @implementation WZServiceItemListViewController
 
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

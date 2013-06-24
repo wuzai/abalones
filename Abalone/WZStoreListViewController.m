@@ -156,8 +156,8 @@ static NSString *const noCellIdentifier = @"noStoreCell";
         if ([cell isKindOfClass:[WZStoreCell class]]) {
             WZStoreCell *storeCell = (WZStoreCell *)cell;
             storeCell.storeNameLabel.text = store.storeName;
-            storeCell.storeImage.placeholderImage = [UIImage imageNamed:@"小南国"];
-            storeCell.merchantLogoImage.placeholderImage = [UIImage imageNamed:@"小南国"];
+            storeCell.storeImage.placeholderImage = [UIImage imageNamed:@"占位图3"];
+            storeCell.merchantLogoImage.placeholderImage = [UIImage imageNamed:@"占位图1"];
             storeCell.storeImage.imageURL = [NSURL URLWithString:store.rectangleImage];
             storeCell.merchantLogoImage.imageURL = [NSURL URLWithString:store.merchant.logo];
             storeCell.storeTypeLabel.text = store.slogan;
