@@ -99,6 +99,14 @@ static NSString *const noCellIdentifier = @"noStoreCell";
                              return [s2.createTime compare:s1.createTime];
                          },
                          ^(WZStore *s1, WZStore *s2){
+                             if (s1.merchant.score == nil) {
+                                 NSLog(@"null i find :%@",s1.merchant);
+                                 s1.merchant.score = @0;
+                             }
+                             if (s2.merchant.score == nil) {
+                                  NSLog(@"null i find :%@",s2.merchant);
+                                 s2.merchant.score = @0;
+                             }
                              return [s2.merchant.score compare:s1.merchant.score];
                          }
                          ];
@@ -256,10 +264,14 @@ static NSString *const noCellIdentifier = @"noStoreCell";
         [self sortWithLocation];
         [self.tableView reloadData];
     }else{
+//        for (WZStore *store in self.storesArray) {
+//            NSLog(@"(%i,%@,%@)",store.merchant.memberNumber.intValue,store.createTime,store.merchant);
+//            if (!store.merchant) {
+//                
+//            }
+//        }
         [self.storesArray sortUsingComparator:self.comparator[self.selectedIndex]];
-        for (WZStore *store in self.storesArray) {
-             NSLog(@"(%i,%@,%i)",store.merchant.memberNumber.intValue,store.createTime,store.merchant.score.intValue);
-        }
+      
        
         [self.tableView reloadData];
     }

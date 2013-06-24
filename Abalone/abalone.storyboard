@@ -109,7 +109,7 @@
         <!--Advertisement View Controller - 详情-->
         <scene sceneID="zJw-N8-YAZ">
             <objects>
-                <viewController id="L1n-Oi-U6m" customClass="WZAdvertisementViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="adInfomation" id="L1n-Oi-U6m" customClass="WZAdvertisementViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qnp-kd-qIy">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3349,11 +3349,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CZw-Sp-Jx4"/>
         <segue reference="JA8-6Q-pQS"/>
         <segue reference="sJ9-j8-2f6"/>
+        <segue reference="CZw-Sp-Jx4"/>
         <segue reference="8lx-Iu-Lhm"/>
-        <segue reference="wjw-Kt-TRa"/>
         <segue reference="cWP-ka-XaA"/>
+        <segue reference="6Z4-FC-BTN"/>
     </inferredMetricsTieBreakers>
 </document>

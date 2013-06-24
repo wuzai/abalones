@@ -39,6 +39,9 @@
     self.storeDetailInfoViewController.store = self.store;
     self.serviceItemListViewController.store = self.store;
     self.commentListViewController.merchant = self.store.merchant;
+    self.storeAdListViewController.store = self.store;
+    
+    [self.storeAdListViewController viewWillAppear:animated];
     
     [self.store.merchant fetchMerchant];
     [self updateViews];
@@ -89,15 +92,26 @@
     [self.contentView addSubview:self.commentListViewController.tableView];
     [self.commentListViewController didMoveToParentViewController:self];
     
+    if (!self.storeAdListViewController) {
+        self.storeAdListViewController = [WZStoreAdListViewController new];
+    }
+    [self addChildViewController:self.storeAdListViewController];
+    frame = self.storeAdListViewController.tableView.frame;
+    frame.origin.y = 0;
+    frame.size = self.contentView.frame.size;
+    self.storeAdListViewController.tableView.frame = frame;
+    [self.contentView addSubview:self.storeAdListViewController.tableView];
+    [self.storeAdListViewController didMoveToParentViewController:self];
     
     [self.contentTableViews insertObject:self.storeDetailInfoViewController atIndex:0];
     [self.contentTableViews insertObject:self.serviceItemListViewController atIndex:1];
     [self.contentTableViews insertObject:self.commentListViewController atIndex:2];
-    
+    [self.contentTableViews insertObject:self.storeAdListViewController atIndex:3];
     
     self.serviceItemListViewController.tableView.hidden = NO;
     self.storeDetailInfoViewController.tableView.hidden = YES;
     self.commentListViewController.tableView.hidden = YES;
+    self.storeAdListViewController.tableView.hidden = YES;
   
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchMerchantSuccess:) name:FetchMerchantSuccess object:nil];
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchMerchantFail:) name:FetchMerchantFail object:nil];
@@ -150,6 +164,11 @@
         [self.commentListViewController removeFromParentViewController];
         self.commentListViewController.tableView = nil;
         
+        [self.storeAdListViewController didMoveToParentViewController:nil];
+        [self.storeAdListViewController.tableView removeFromSuperview];
+        [self.storeAdListViewController removeFromParentViewController];
+        self.storeAdListViewController.tableView = nil;
+        
         [[NSNotificationCenter defaultCenter] removeObserver:self name:FetchMerchantSuccess object:nil];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:FetchMerchantFail object:nil];
     }
@@ -164,10 +183,12 @@
         self.storeDetailInfoViewController.tableView.scrollEnabled = YES;
         self.serviceItemListViewController.tableView.scrollEnabled = YES;
         self.commentListViewController.tableView.scrollEnabled = YES;
+        self.storeAdListViewController.tableView.scrollEnabled = YES;
     }else{
          self.storeDetailInfoViewController.tableView.scrollEnabled = NO;
          self.serviceItemListViewController.tableView.scrollEnabled = NO;
          self.commentListViewController.tableView.scrollEnabled = NO;
+         self.storeAdListViewController.tableView.scrollEnabled = NO;
     }
    
 }

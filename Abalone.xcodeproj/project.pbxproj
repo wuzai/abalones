@@ -244,6 +244,9 @@
 		5FA8BAAD173CDBE2003851D0 /* 评论记录@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8BAAB173CDBE2003851D0 /* 评论记录@2x.png */; };
 		5FA8E65D173674EA00D4F7D0 /* MyStoreDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E65C173674EA00D4F7D0 /* MyStoreDetailHeader.xib */; };
 		5FA8E660173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E65F173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m */; };
+		5FA999C61777E084004A8B48 /* WZAd+ForStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999C51777E084004A8B48 /* WZAd+ForStore.m */; };
+		5FA999CD1777ED68004A8B48 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999CC1777ED68004A8B48 /* AdCell.xib */; };
+		5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999CF1777ED84004A8B48 /* WZADCell.m */; };
 		5FB340FA17266265003B58FB /* WZServiceItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB340F917266264003B58FB /* WZServiceItemListViewController.m */; };
 		5FB341241726665C003B58FB /* WZServiceItem+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB341231726665C003B58FB /* WZServiceItem+Mapping.m */; };
 		5FB3414717266AE6003B58FB /* WZStore+serviceItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB3414617266AE6003B58FB /* WZStore+serviceItems.m */; };
@@ -256,6 +259,7 @@
 		5FD4F1B9171CE9BF0053A384 /* 积分兑换@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD4F1B7171CE9BF0053A384 /* 积分兑换@2x.png */; };
 		5FD4F1BC171CEBC70053A384 /* WZMerchantCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4F1BB171CEBC70053A384 /* WZMerchantCardCell.m */; };
 		5FD4F1BF171CEDE70053A384 /* WZMerchantServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4F1BE171CEDE70053A384 /* WZMerchantServiceCell.m */; };
+		5FF1A31717744E0B005A7F04 /* WZStoreAdListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1A31617744E0B005A7F04 /* WZStoreAdListViewController.m */; };
 		5FF548D1173C909D003BAB85 /* MyMerchantPointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF548D0173C909D003BAB85 /* MyMerchantPointCell.xib */; };
 		5FF548D9173C9148003BAB85 /* WZMyMerchantPointCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF548D8173C9148003BAB85 /* WZMyMerchantPointCell.m */; };
 		5FF86F761734AB1100F92B36 /* WZStore+Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF86F751734AB1100F92B36 /* WZStore+Mine.m */; };
@@ -737,6 +741,11 @@
 		5FA8E65C173674EA00D4F7D0 /* MyStoreDetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyStoreDetailHeader.xib; sourceTree = "<group>"; };
 		5FA8E65E173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMyStoreDetailHeaderCell.h; sourceTree = "<group>"; };
 		5FA8E65F173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMyStoreDetailHeaderCell.m; sourceTree = "<group>"; };
+		5FA999C41777E084004A8B48 /* WZAd+ForStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZAd+ForStore.h"; sourceTree = "<group>"; };
+		5FA999C51777E084004A8B48 /* WZAd+ForStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZAd+ForStore.m"; sourceTree = "<group>"; };
+		5FA999CC1777ED68004A8B48 /* AdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
+		5FA999CE1777ED84004A8B48 /* WZADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZADCell.h; sourceTree = "<group>"; };
+		5FA999CF1777ED84004A8B48 /* WZADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZADCell.m; sourceTree = "<group>"; };
 		5FB340F817266264003B58FB /* WZServiceItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItemListViewController.h; sourceTree = "<group>"; };
 		5FB340F917266264003B58FB /* WZServiceItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItemListViewController.m; sourceTree = "<group>"; };
 		5FB341221726665C003B58FB /* WZServiceItem+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZServiceItem+Mapping.h"; sourceTree = "<group>"; };
@@ -756,6 +765,8 @@
 		5FD4F1BB171CEBC70053A384 /* WZMerchantCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMerchantCardCell.m; sourceTree = "<group>"; };
 		5FD4F1BD171CEDE70053A384 /* WZMerchantServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMerchantServiceCell.h; sourceTree = "<group>"; };
 		5FD4F1BE171CEDE70053A384 /* WZMerchantServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMerchantServiceCell.m; sourceTree = "<group>"; };
+		5FF1A31517744E0B005A7F04 /* WZStoreAdListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStoreAdListViewController.h; sourceTree = "<group>"; };
+		5FF1A31617744E0B005A7F04 /* WZStoreAdListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZStoreAdListViewController.m; sourceTree = "<group>"; };
 		5FF548D0173C909D003BAB85 /* MyMerchantPointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMerchantPointCell.xib; sourceTree = "<group>"; };
 		5FF548D7173C9148003BAB85 /* WZMyMerchantPointCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMyMerchantPointCell.h; sourceTree = "<group>"; };
 		5FF548D8173C9148003BAB85 /* WZMyMerchantPointCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMyMerchantPointCell.m; sourceTree = "<group>"; };
@@ -1022,6 +1033,11 @@
 				5FB3414E17267338003B58FB /* WZServiceItemCell.m */,
 				5FA0F3FD172787CB00AC67DC /* WZOtherStoresViewController.h */,
 				5FA0F3FE172787CB00AC67DC /* WZOtherStoresViewController.m */,
+				5FF1A31517744E0B005A7F04 /* WZStoreAdListViewController.h */,
+				5FF1A31617744E0B005A7F04 /* WZStoreAdListViewController.m */,
+				5FA999CC1777ED68004A8B48 /* AdCell.xib */,
+				5FA999CE1777ED84004A8B48 /* WZADCell.h */,
+				5FA999CF1777ED84004A8B48 /* WZADCell.m */,
 			);
 			name = StoreDetail;
 			sourceTree = "<group>";
@@ -1083,6 +1099,8 @@
 				A58DE68A173B8FB60017E107 /* WZResetPassword.m */,
 				A500D97C173CD08600037AD8 /* WZRecommendUser.h */,
 				A500D97D173CD08600037AD8 /* WZRecommendUser.m */,
+				5FA999C41777E084004A8B48 /* WZAd+ForStore.h */,
+				5FA999C51777E084004A8B48 /* WZAd+ForStore.m */,
 			);
 			name = Networks;
 			sourceTree = "<group>";
@@ -2229,6 +2247,7 @@
 				5FA4B0CD1772BEF9008B58E3 /* Default.png in Resources */,
 				5FA4B0D41772BF00008B58E3 /* Default@2x.png in Resources */,
 				5FA4B0D61772BF06008B58E3 /* Default-568h@2x.png in Resources */,
+				5FA999CD1777ED68004A8B48 /* AdCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2374,6 +2393,9 @@
 				5F1CCCDE1755E59800F9803E /* WZStore+AllTypes.m in Sources */,
 				5F7F2BFC17574BB30028B13D /* WZMenuCell.m in Sources */,
 				5F54C0EF175DB73C002680D9 /* MyAnnotation.m in Sources */,
+				5FF1A31717744E0B005A7F04 /* WZStoreAdListViewController.m in Sources */,
+				5FA999C61777E084004A8B48 /* WZAd+ForStore.m in Sources */,
+				5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

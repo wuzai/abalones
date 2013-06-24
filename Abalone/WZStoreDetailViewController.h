@@ -13,6 +13,7 @@
 #import "WZServiceItemListViewController.h"
 #import "SDSegmentedControl.h"
 #import "WZCommentListViewController.h"
+#import "WZStoreAdListViewController.h"
 
 
 @interface WZStoreDetailViewController : UITableViewController
@@ -27,4 +28,5 @@
 @property (nonatomic,strong) WZStoreDetailInfoViewController *storeDetailInfoViewController;
 @property (nonatomic,strong) WZServiceItemListViewController *serviceItemListViewController;
 @property (nonatomic,strong) WZCommentListViewController *commentListViewController;
+@property (nonatomic,strong) WZStoreAdListViewController *storeAdListViewController;
 @end
