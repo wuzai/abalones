@@ -22,8 +22,6 @@
 		42CFA2B91744D67B0009D767 /* 边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2B71744D67A0009D767 /* 边框@2x.png */; };
 		42CFA2C31744DB940009D767 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C11744DB930009D767 /* logo.png */; };
 		42CFA2C41744DB940009D767 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C21744DB940009D767 /* logo@2x.png */; };
-		42CFA2C61744DBB40009D767 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C51744DBB40009D767 /* logo.png */; };
-		42CFA2C81744DBB80009D767 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C71744DBB80009D767 /* logo@2x.png */; };
 		5F1CCCA81755CE3700F9803E /* WZStoreTypeSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */; };
 		5F1CCCDB1755DDFB00F9803E /* WZStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDA1755DDFB00F9803E /* WZStore.m */; };
 		5F1CCCDE1755E59800F9803E /* WZStore+AllTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDD1755E59800F9803E /* WZStore+AllTypes.m */; };
@@ -244,7 +242,7 @@
 		5FA8BAAD173CDBE2003851D0 /* 评论记录@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8BAAB173CDBE2003851D0 /* 评论记录@2x.png */; };
 		5FA8E65D173674EA00D4F7D0 /* MyStoreDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8E65C173674EA00D4F7D0 /* MyStoreDetailHeader.xib */; };
 		5FA8E660173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8E65F173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m */; };
-		5FA999C61777E084004A8B48 /* WZAd+ForStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999C51777E084004A8B48 /* WZAd+ForStore.m */; };
+		5FA999C61777E084004A8B48 /* WZAdForStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999C51777E084004A8B48 /* WZAdForStore.m */; };
 		5FA999CD1777ED68004A8B48 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999CC1777ED68004A8B48 /* AdCell.xib */; };
 		5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA999CF1777ED84004A8B48 /* WZADCell.m */; };
 		5FB340FA17266265003B58FB /* WZServiceItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB340F917266264003B58FB /* WZServiceItemListViewController.m */; };
@@ -741,8 +739,8 @@
 		5FA8E65C173674EA00D4F7D0 /* MyStoreDetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyStoreDetailHeader.xib; sourceTree = "<group>"; };
 		5FA8E65E173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMyStoreDetailHeaderCell.h; sourceTree = "<group>"; };
 		5FA8E65F173676F800D4F7D0 /* WZMyStoreDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMyStoreDetailHeaderCell.m; sourceTree = "<group>"; };
-		5FA999C41777E084004A8B48 /* WZAd+ForStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZAd+ForStore.h"; sourceTree = "<group>"; };
-		5FA999C51777E084004A8B48 /* WZAd+ForStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZAd+ForStore.m"; sourceTree = "<group>"; };
+		5FA999C41777E084004A8B48 /* WZAdForStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAdForStore.h; sourceTree = "<group>"; };
+		5FA999C51777E084004A8B48 /* WZAdForStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAdForStore.m; sourceTree = "<group>"; };
 		5FA999CC1777ED68004A8B48 /* AdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		5FA999CE1777ED84004A8B48 /* WZADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZADCell.h; sourceTree = "<group>"; };
 		5FA999CF1777ED84004A8B48 /* WZADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZADCell.m; sourceTree = "<group>"; };
@@ -1099,8 +1097,8 @@
 				A58DE68A173B8FB60017E107 /* WZResetPassword.m */,
 				A500D97C173CD08600037AD8 /* WZRecommendUser.h */,
 				A500D97D173CD08600037AD8 /* WZRecommendUser.m */,
-				5FA999C41777E084004A8B48 /* WZAd+ForStore.h */,
-				5FA999C51777E084004A8B48 /* WZAd+ForStore.m */,
+				5FA999C41777E084004A8B48 /* WZAdForStore.h */,
+				5FA999C51777E084004A8B48 /* WZAdForStore.m */,
 			);
 			name = Networks;
 			sourceTree = "<group>";
@@ -2230,8 +2228,6 @@
 				42CFA2B91744D67B0009D767 /* 边框@2x.png in Resources */,
 				42CFA2C31744DB940009D767 /* logo.png in Resources */,
 				42CFA2C41744DB940009D767 /* logo@2x.png in Resources */,
-				42CFA2C61744DBB40009D767 /* logo.png in Resources */,
-				42CFA2C81744DBB80009D767 /* logo@2x.png in Resources */,
 				5FA276A0174EF9C1003AA9B7 /* InstapaperResource.bundle in Resources */,
 				5FA276B1174EF9C1003AA9B7 /* ShareSDKLocalizable.strings in Resources */,
 				5FA276B2174EF9C1003AA9B7 /* Resource.bundle in Resources */,
@@ -2394,7 +2390,7 @@
 				5F7F2BFC17574BB30028B13D /* WZMenuCell.m in Sources */,
 				5F54C0EF175DB73C002680D9 /* MyAnnotation.m in Sources */,
 				5FF1A31717744E0B005A7F04 /* WZStoreAdListViewController.m in Sources */,
-				5FA999C61777E084004A8B48 /* WZAd+ForStore.m in Sources */,
+				5FA999C61777E084004A8B48 /* WZAdForStore.m in Sources */,
 				5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

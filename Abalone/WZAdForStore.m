@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
-#import "WZAd+ForStore.h"
+#import "WZAdForStore.h"
 #import "WZAd+Mapping.h"
 #import "WZStore.h"
 #import "WZmerchant.h"
@@ -14,7 +14,7 @@
 NSString *const kFetchAdsForStoreSuccessNotification = @"fetchAdsForStoreSuccessNotification";
 NSString *const kFetchAdsForStoreFailNotification = @"fetchAdsForStoreFailNotification";
 
-@implementation WZAd (ForStore)
+@implementation WZAdForStore
 
 #pragma mark - Protocol
 + (RKObjectManager *)manager

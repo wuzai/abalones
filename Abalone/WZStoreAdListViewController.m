@@ -8,7 +8,7 @@
 
 #import "WZStoreAdListViewController.h"
 #import "WZAd.h"
-#import "WZAd+ForStore.h"
+#import "WZAdForStore.h"
 #import "WZADCell.h"
 #import "WZmerchant.h"
 #import "WZAdvertisementViewController.h"
@@ -65,7 +65,7 @@ static NSString *const adCellIdentifier = @"adCell";
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [WZAd fetchAdsForStore:self.store];
+    [WZAdForStore fetchAdsForStore:self.store];
     
     [self loadData];
 }

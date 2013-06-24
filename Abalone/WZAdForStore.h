@@ -13,7 +13,7 @@
 extern  NSString *const kFetchAdsForStoreSuccessNotification;
 extern  NSString *const kFetchAdsForStoreFailNotification;
 
-@interface WZAd (ForStore) <WZNetworkBeggar>
+@interface WZAdForStore :NSObject <WZNetworkBeggar>
 
 + (void) fetchAdsForStore:(WZStore *)store;
 @end
