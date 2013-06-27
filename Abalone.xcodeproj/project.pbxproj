@@ -211,6 +211,25 @@
 		5FA3FBCA172A750400D5869B /* 计次卡@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3FBC4172A750400D5869B /* 计次卡@2x.png */; };
 		5FA3FBCB172A750400D5869B /* 优惠券.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3FBC5172A750400D5869B /* 优惠券.png */; };
 		5FA3FBCC172A750400D5869B /* 优惠券@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3FBC6172A750400D5869B /* 优惠券@2x.png */; };
+		5FA4347D177A786E001BBCB3 /* WZMyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4347C177A786E001BBCB3 /* WZMyTabBarViewController.m */; };
+		5FA434A4177ACE23001BBCB3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43494177ACE23001BBCB3 /* 1.png */; };
+		5FA434A5177ACE23001BBCB3 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43495177ACE23001BBCB3 /* 1@2x.png */; };
+		5FA434A6177ACE23001BBCB3 /* 1s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43496177ACE23001BBCB3 /* 1s.png */; };
+		5FA434A7177ACE23001BBCB3 /* 1s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43497177ACE23001BBCB3 /* 1s@2x.png */; };
+		5FA434A8177ACE23001BBCB3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43498177ACE23001BBCB3 /* 2.png */; };
+		5FA434A9177ACE23001BBCB3 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA43499177ACE23001BBCB3 /* 2@2x.png */; };
+		5FA434AA177ACE23001BBCB3 /* 2s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349A177ACE23001BBCB3 /* 2s.png */; };
+		5FA434AB177ACE23001BBCB3 /* 2s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349B177ACE23001BBCB3 /* 2s@2x.png */; };
+		5FA434AC177ACE23001BBCB3 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349C177ACE23001BBCB3 /* 3.png */; };
+		5FA434AD177ACE23001BBCB3 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349D177ACE23001BBCB3 /* 3@2x.png */; };
+		5FA434AE177ACE23001BBCB3 /* 3s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349E177ACE23001BBCB3 /* 3s.png */; };
+		5FA434AF177ACE23001BBCB3 /* 3s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4349F177ACE23001BBCB3 /* 3s@2x.png */; };
+		5FA434B0177ACE23001BBCB3 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434A0177ACE23001BBCB3 /* 4.png */; };
+		5FA434B1177ACE23001BBCB3 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434A1177ACE23001BBCB3 /* 4@2x.png */; };
+		5FA434B2177ACE23001BBCB3 /* 4s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434A2177ACE23001BBCB3 /* 4s.png */; };
+		5FA434B3177ACE23001BBCB3 /* 4s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434A3177ACE23001BBCB3 /* 4s@2x.png */; };
+		5FA434B6177ACFAC001BBCB3 /* selectedbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434B4177ACFAC001BBCB3 /* selectedbg.png */; };
+		5FA434B7177ACFAC001BBCB3 /* selectedbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA434B5177ACFAC001BBCB3 /* selectedbg@2x.png */; };
 		5FA4B0CD1772BEF9008B58E3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4B0CC1772BEF9008B58E3 /* Default.png */; };
 		5FA4B0D41772BF00008B58E3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4B0D31772BF00008B58E3 /* Default@2x.png */; };
 		5FA4B0D61772BF06008B58E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4B0D51772BF06008B58E3 /* Default-568h@2x.png */; };
@@ -705,6 +724,26 @@
 		5FA3FBC4172A750400D5869B /* 计次卡@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "计次卡@2x.png"; sourceTree = "<group>"; };
 		5FA3FBC5172A750400D5869B /* 优惠券.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠券.png"; sourceTree = "<group>"; };
 		5FA3FBC6172A750400D5869B /* 优惠券@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠券@2x.png"; sourceTree = "<group>"; };
+		5FA4347B177A786E001BBCB3 /* WZMyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMyTabBarViewController.h; sourceTree = "<group>"; };
+		5FA4347C177A786E001BBCB3 /* WZMyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMyTabBarViewController.m; sourceTree = "<group>"; };
+		5FA43494177ACE23001BBCB3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5FA43495177ACE23001BBCB3 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		5FA43496177ACE23001BBCB3 /* 1s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1s.png; sourceTree = "<group>"; };
+		5FA43497177ACE23001BBCB3 /* 1s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1s@2x.png"; sourceTree = "<group>"; };
+		5FA43498177ACE23001BBCB3 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		5FA43499177ACE23001BBCB3 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		5FA4349A177ACE23001BBCB3 /* 2s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2s.png; sourceTree = "<group>"; };
+		5FA4349B177ACE23001BBCB3 /* 2s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2s@2x.png"; sourceTree = "<group>"; };
+		5FA4349C177ACE23001BBCB3 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		5FA4349D177ACE23001BBCB3 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		5FA4349E177ACE23001BBCB3 /* 3s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3s.png; sourceTree = "<group>"; };
+		5FA4349F177ACE23001BBCB3 /* 3s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3s@2x.png"; sourceTree = "<group>"; };
+		5FA434A0177ACE23001BBCB3 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		5FA434A1177ACE23001BBCB3 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
+		5FA434A2177ACE23001BBCB3 /* 4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4s.png; sourceTree = "<group>"; };
+		5FA434A3177ACE23001BBCB3 /* 4s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4s@2x.png"; sourceTree = "<group>"; };
+		5FA434B4177ACFAC001BBCB3 /* selectedbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedbg.png; sourceTree = "<group>"; };
+		5FA434B5177ACFAC001BBCB3 /* selectedbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectedbg@2x.png"; sourceTree = "<group>"; };
 		5FA4B0CC1772BEF9008B58E3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5FA4B0D31772BF00008B58E3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5FA4B0D51772BF06008B58E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -1176,6 +1215,7 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5FA43483177A9344001BBCB3 /* custom tabbar */,
 				5F7F2BED17574B930028B13D /* Menu.png */,
 				5FA999D117781D49004A8B48 /* 占位图1.png */,
 				5FA999D217781D49004A8B48 /* 占位图1@2x.png */,
@@ -1490,6 +1530,31 @@
 				5FA2769C174EF9C1003AA9B7 /* ShareSDKiPhoneSimpleShareViewUI.framework */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5FA43483177A9344001BBCB3 /* custom tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5FA434B4177ACFAC001BBCB3 /* selectedbg.png */,
+				5FA434B5177ACFAC001BBCB3 /* selectedbg@2x.png */,
+				5FA43494177ACE23001BBCB3 /* 1.png */,
+				5FA43495177ACE23001BBCB3 /* 1@2x.png */,
+				5FA43496177ACE23001BBCB3 /* 1s.png */,
+				5FA43497177ACE23001BBCB3 /* 1s@2x.png */,
+				5FA43498177ACE23001BBCB3 /* 2.png */,
+				5FA43499177ACE23001BBCB3 /* 2@2x.png */,
+				5FA4349A177ACE23001BBCB3 /* 2s.png */,
+				5FA4349B177ACE23001BBCB3 /* 2s@2x.png */,
+				5FA4349C177ACE23001BBCB3 /* 3.png */,
+				5FA4349D177ACE23001BBCB3 /* 3@2x.png */,
+				5FA4349E177ACE23001BBCB3 /* 3s.png */,
+				5FA4349F177ACE23001BBCB3 /* 3s@2x.png */,
+				5FA434A0177ACE23001BBCB3 /* 4.png */,
+				5FA434A1177ACE23001BBCB3 /* 4@2x.png */,
+				5FA434A2177ACE23001BBCB3 /* 4s.png */,
+				5FA434A3177ACE23001BBCB3 /* 4s@2x.png */,
+			);
+			name = "custom tabbar";
 			sourceTree = "<group>";
 		};
 		5FA895E0173A32A3008BB974 /* PointRecord */ = {
@@ -1941,6 +2006,8 @@
 				5F27686217168EF70032E69F /* defines.h */,
 				5FA3358117549A5B00D1EE8B /* WZLocationContrl.h */,
 				5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */,
+				5FA4347B177A786E001BBCB3 /* WZMyTabBarViewController.h */,
+				5FA4347C177A786E001BBCB3 /* WZMyTabBarViewController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -2276,6 +2343,24 @@
 				5FA999DE17781D4D004A8B48 /* 占位图3@2x.png in Resources */,
 				5FA999DF17781D4D004A8B48 /* 占位图4.png in Resources */,
 				5FA999E017781D4D004A8B48 /* 占位图4@2x.png in Resources */,
+				5FA434A4177ACE23001BBCB3 /* 1.png in Resources */,
+				5FA434A5177ACE23001BBCB3 /* 1@2x.png in Resources */,
+				5FA434A6177ACE23001BBCB3 /* 1s.png in Resources */,
+				5FA434A7177ACE23001BBCB3 /* 1s@2x.png in Resources */,
+				5FA434A8177ACE23001BBCB3 /* 2.png in Resources */,
+				5FA434A9177ACE23001BBCB3 /* 2@2x.png in Resources */,
+				5FA434AA177ACE23001BBCB3 /* 2s.png in Resources */,
+				5FA434AB177ACE23001BBCB3 /* 2s@2x.png in Resources */,
+				5FA434AC177ACE23001BBCB3 /* 3.png in Resources */,
+				5FA434AD177ACE23001BBCB3 /* 3@2x.png in Resources */,
+				5FA434AE177ACE23001BBCB3 /* 3s.png in Resources */,
+				5FA434AF177ACE23001BBCB3 /* 3s@2x.png in Resources */,
+				5FA434B0177ACE23001BBCB3 /* 4.png in Resources */,
+				5FA434B1177ACE23001BBCB3 /* 4@2x.png in Resources */,
+				5FA434B2177ACE23001BBCB3 /* 4s.png in Resources */,
+				5FA434B3177ACE23001BBCB3 /* 4s@2x.png in Resources */,
+				5FA434B6177ACFAC001BBCB3 /* selectedbg.png in Resources */,
+				5FA434B7177ACFAC001BBCB3 /* selectedbg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2424,6 +2509,7 @@
 				5FF1A31717744E0B005A7F04 /* WZStoreAdListViewController.m in Sources */,
 				5FA999C61777E084004A8B48 /* WZAdForStore.m in Sources */,
 				5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */,
+				5FA4347D177A786E001BBCB3 /* WZMyTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

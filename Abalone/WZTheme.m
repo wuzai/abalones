@@ -34,18 +34,18 @@
 
 + (void)customize
 {
-    WZAppDelegate *delegate = [UIApplication sharedApplication].delegate;
-    UITabBarController *tarBarController = (UITabBarController *)delegate.window.rootViewController;
-    for (UITabBarItem *item in tarBarController.tabBar.items) {
-        NSString *title = item.title;
-        UIImage *selected = [UIImage imageNamed:[NSString stringWithFormat:@"%@302.png",title]];
-        UIImage *unselected = [UIImage imageNamed:[NSString stringWithFormat:@"%@301.png",title]];
-        [item setFinishedSelectedImage:selected withFinishedUnselectedImage:unselected];
-    }
+//    WZAppDelegate *delegate = [UIApplication sharedApplication].delegate;
+//    UITabBarController *tarBarController = (UITabBarController *)delegate.window.rootViewController;
+//    for (UITabBarItem *item in tarBarController.tabBar.items) {
+//        NSString *title = item.title;
+//        UIImage *selected = [UIImage imageNamed:[NSString stringWithFormat:@"%@302.png",title]];
+//        UIImage *unselected = [UIImage imageNamed:[NSString stringWithFormat:@"%@301.png",title]];
+//        [item setFinishedSelectedImage:selected withFinishedUnselectedImage:unselected];
+//    }
     [[UINavigationBar appearance] setTintColor:[[self class] themeColor]];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"导航栏.png"] forBarMetrics:UIBarMetricsDefault];
-    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"TabBar.png"]];
-    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"TabBarIndicator.png"]];
+//    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"TabBar.png"]];
+//    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"TabBarIndicator.png"]];
     [[UITableView appearance] setBackgroundColor:[[self class] backColor]];
     [[UITableView appearance] setSeparatorColor:[UIColor lightGrayColor]];
 }

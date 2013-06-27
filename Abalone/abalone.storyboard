@@ -2844,10 +2844,10 @@
             </objects>
             <point key="canvasLocation" x="3633" y="-1316"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar View Controller-->
         <scene sceneID="5F6-g7-0hN">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="L13-WU-s4h" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="L13-WU-s4h" customClass="WZMyTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ePS-il-9am">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -3186,6 +3186,9 @@
                 <relationship kind="outlet" name="segmentControl" candidateClass="SDSegmentedControl"/>
             </relationships>
         </class>
+        <class className="WZMyTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyTabBarViewController.h"/>
+        </class>
         <class className="WZOtherStoresViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZOtherStoresViewController.h"/>
         </class>
@@ -3349,11 +3352,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="8lx-Iu-Lhm"/>
+        <segue reference="CZw-Sp-Jx4"/>
         <segue reference="JA8-6Q-pQS"/>
         <segue reference="sJ9-j8-2f6"/>
-        <segue reference="CZw-Sp-Jx4"/>
-        <segue reference="8lx-Iu-Lhm"/>
+        <segue reference="wjw-Kt-TRa"/>
         <segue reference="cWP-ka-XaA"/>
-        <segue reference="6Z4-FC-BTN"/>
     </inferredMetricsTieBreakers>
 </document>

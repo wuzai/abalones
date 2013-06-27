@@ -2,7 +2,7 @@
 //  WZStoreAdListViewController.m
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-6-21.
+//  Created by wz on 13-6-21.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
