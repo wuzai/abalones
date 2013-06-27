@@ -1031,7 +1031,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpa-lg-ny4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="-2751"/>
+            <point key="canvasLocation" x="1579" y="-2935"/>
         </scene>
         <!--Captcha View Controller - 找回密码-->
         <scene sceneID="48w-gh-aca">
@@ -1920,7 +1920,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyD-qv-DIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1579" y="-2178"/>
+            <point key="canvasLocation" x="851" y="-2066"/>
         </scene>
         <!--Send Largess View Controller - 转赠-->
         <scene sceneID="DB8-9F-z7A">
@@ -2043,7 +2043,7 @@
                         <sections>
                             <tableViewSection id="EgI-T1-JjF">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="77" id="jVT-Mf-x9u">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="77" id="jVT-Mf-x9u">
                                         <rect key="frame" x="0.0" y="10" width="320" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2061,7 +2061,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="3qK-P4-iHx">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="3qK-P4-iHx">
                                         <rect key="frame" x="0.0" y="88" width="320" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2076,7 +2076,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KzK-NY-aeo">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KzK-NY-aeo">
                                         <rect key="frame" x="0.0" y="238" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2094,7 +2094,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="ij3-WS-Srf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="ij3-WS-Srf">
                                         <rect key="frame" x="0.0" y="282" width="320" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2146,7 +2146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaH-i2-9Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538" y="-2898"/>
+            <point key="canvasLocation" x="890" y="-2886"/>
         </scene>
         <!--My Service Detail View Controller - 服务详情-->
         <scene sceneID="hzE-aM-no5">
@@ -2159,7 +2159,7 @@
                         <sections>
                             <tableViewSection id="vJV-zA-TQD">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="176" id="K1g-2y-z80">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="176" id="K1g-2y-z80">
                                         <rect key="frame" x="0.0" y="10" width="320" height="178"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2694,7 +2694,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i90-ft-wCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3161" y="-1248"/>
+            <point key="canvasLocation" x="3127" y="-1249"/>
         </scene>
         <!--Store Detail Info View Controller-->
         <scene sceneID="OaA-ED-y7z">
@@ -3352,11 +3352,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8lx-Iu-Lhm"/>
-        <segue reference="CZw-Sp-Jx4"/>
         <segue reference="JA8-6Q-pQS"/>
         <segue reference="sJ9-j8-2f6"/>
+        <segue reference="6xH-gy-31G"/>
         <segue reference="wjw-Kt-TRa"/>
+        <segue reference="acX-vh-CGC"/>
         <segue reference="cWP-ka-XaA"/>
     </inferredMetricsTieBreakers>
 </document>
