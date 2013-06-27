@@ -73,6 +73,7 @@ static const CGFloat speedPixel = 0.0015;
         [self addChildViewController:self.storeListViewController];
         CGRect frame =  self.storeListViewController.tableView.frame;
         frame.origin.y = 44;
+        frame.size.height = self.contentView.frame.size.height - 44;
         self.storeListViewController.tableView.frame = frame;
          [self.contentView addSubview:self.storeListViewController.tableView];
         self.storeListViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
