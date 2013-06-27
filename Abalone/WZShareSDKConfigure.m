@@ -34,7 +34,7 @@
     //添加搜狐微博应用
     [ShareSDK connectSohuWeiboWithConsumerKey:@"SAfm TG1blxZY3HztESWx"
                                consumerSecret:@"yfTZf)!rVwh*3dqQuVJVs UL37!F)!yS9S!Orcs ij" redirectUri:@"http://www.sharesdk.cn"];
-    
+  
     //添加豆瓣应用
     [ShareSDK connectDoubanWithAppKey:@"07d08fbfc1210e931771af3f43632bb9" appSecret:@"e32896161e72be91"
                           redirectUri:@"http://dev.kumoway.com/braininference/infos.php"];
@@ -52,7 +52,7 @@
     [ShareSDK connectFacebookWithAppKey:@"107704292745179" appSecret:@"38053202e1a5fe26c80c753071f0b573"];
     //添加Twitter应用
     [ShareSDK connectTwitterWithConsumerKey:@"mnTGqtXk0TYMXYTN7qUxg"
-                             consumerSecret:@"ROkFqr8c3m1HXqS3rm3TJ0WkAJuwBOSaWhPbZ9Ojuc" redirectUri:@"http://www.sharesdk.cn"];
+                             consumerSecret:@"ROkFqr8c3m1HXqS3rm3TJ0WkAJuwBOSaWhPbZ9Ojuc" redirectUri:@"http://www.sharesdk.cn"]; 
 }
 
 @end
