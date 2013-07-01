@@ -13,5 +13,6 @@
 - (void)awakeFromNib
 {
     [self.view setBackgroundColor:[WZTheme backColor]];
+    self.hidesBottomBarWhenPushed = YES;
 }
 @end

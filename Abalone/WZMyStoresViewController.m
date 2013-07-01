@@ -20,11 +20,28 @@
 
 @implementation WZMyStoresViewController
 
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        
+    }
+    return self;
+}
+
+-(void)awakeFromNib
+{
+    NSLog(@"%@",self.view);
+}
+
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     self.hidesBottomBarWhenPushed = YES;
+    
     UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 86, 30)];
     [rightButton setBackgroundImage:[UIImage imageNamed:@"添加"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
@@ -37,13 +54,15 @@
         [self addChildViewController:self.myStoreListViewController];
         CGRect frame = self.myStoreListViewController.tableView.frame;
         frame.origin.y = 44;
-        frame.size.height = self.view.frame.size.height - 44;
+        frame.size.height = self.view.frame.size.height;
         self.myStoreListViewController.tableView.frame = frame;
+        NSLog(@"%@",NSStringFromCGRect(self.myStoreListViewController.tableView.frame));
+         self.myStoreListViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:self.myStoreListViewController.tableView];
-        self.myStoreListViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self.myStoreListViewController didMoveToParentViewController:self];
     }
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSuccess:) name:@"locationSuccess" object:nil];
+    NSLog(@"hello%@",NSStringFromCGRect(self.view.frame));
 }
 
 -(void)locationSuccess:(NSNotification*) notification
@@ -108,6 +127,11 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+     NSLog(@"hello%@",NSStringFromCGRect(self.view.frame));
+    CGRect frame = self.view.frame;
+    frame.size.height = 416;
+    self.view.frame = frame;
+    self.view.backgroundColor = [UIColor redColor];
     if ([WZUser me]) {
         [WZFetchService fetchServiceByUser:[WZUser me]];
     }
