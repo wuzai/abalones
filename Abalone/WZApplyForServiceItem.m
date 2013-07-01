@@ -44,6 +44,7 @@ NSString *const ApplyServiceItemFail = @"applyServiceItemFail";
 
 +(void)succeedIn:(RKObjectLoader *)loader withResults:(NSArray *)results
 {
+    NSLog(@"%@",results);
     
     if (loader.response.statusCode == 203) {
          [[NSNotificationCenter defaultCenter] postNotificationName:ApplyServiceItemFail object:@"申领请求已发出，等待商户审核."];

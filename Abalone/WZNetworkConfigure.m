@@ -36,6 +36,10 @@
     //update date format
     //2012-02-14T13:36:55.000Z
     [RKObjectMapping addDefaultDateFormatterForString:@"yyyy-MM-dd'T'hh:mm:ss.SSS'Z'" inTimeZone:nil];
+    RKObjectMapping *errorMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
+    
+    [errorMapping mapKeyPath:@"error" toAttribute:@"error"];
+    [[RKObjectManager sharedManager].mappingProvider setMapping:errorMapping forKeyPath:@"error"];
 }
 
 @end

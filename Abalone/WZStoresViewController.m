@@ -44,6 +44,7 @@ static const CGFloat speedPixel = 0.0015;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.clipsToBounds = NO;
     _advertisementsItem = self.navigationItem.rightBarButtonItem;
     self.title = @"商户";
     self.segmentControl.selectedSegmentIndex = 3;
