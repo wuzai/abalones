@@ -26,7 +26,8 @@ NSString *const FetchMerchantFail = @"fetchMerchantFail";
 + (BOOL)fetchMerchantList
 {
     NSDate   *timeStamp = [[NSUserDefaults standardUserDefaults] valueForKey:(NSString *)kWZUpdateMerchantsTimeStamp];
-    if (!timeStamp) {
+    if (!timeStamp)
+    {
         timeStamp = [NSDate dateWithTimeIntervalSince1970:0];
     }
    

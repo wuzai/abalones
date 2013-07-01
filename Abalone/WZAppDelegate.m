@@ -25,8 +25,7 @@
     [WZNetworkConfigure startup];
     [[WZDataHub hub] startup];
     [WZTheme customize];
-    [WZShareSDKConfigure sharedInit];
-    
+    [WZShareSDKConfigure sharedInit];    
     return YES;
 }
 

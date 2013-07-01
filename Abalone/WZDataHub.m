@@ -25,8 +25,7 @@
     static WZDataHub *_hub = nil;
     @synchronized (_hub) {
         if (!_hub) {
-            _hub = [[self class] new];
-        }
+            _hub = [[self class] new];        }
     }
     return _hub;
 }
