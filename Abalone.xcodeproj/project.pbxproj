@@ -305,6 +305,8 @@
 		8A0ED2B61782B0E0009DE3E2 /* mystorecellbackground2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B41782B0E0009DE3E2 /* mystorecellbackground2@2x.png */; };
 		8A0ED2BA1782B9BD009DE3E2 /* mystorecellbackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B81782B9BD009DE3E2 /* mystorecellbackground3.png */; };
 		8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */; };
+		8A0ED2F41782C479009DE3E2 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F21782C479009DE3E2 /* add.png */; };
+		8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F31782C479009DE3E2 /* add@2x.png */; };
 		A500D96F173C9D1800037AD8 /* WZCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */; };
 		A500D97E173CD08600037AD8 /* WZRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D97D173CD08600037AD8 /* WZRecommendUser.m */; };
 		A500D981173CD3C100037AD8 /* WZRecommendUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D980173CD3C100037AD8 /* WZRecommendUserViewController.m */; };
@@ -858,6 +860,8 @@
 		8A0ED2B41782B0E0009DE3E2 /* mystorecellbackground2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystorecellbackground2@2x.png"; sourceTree = "<group>"; };
 		8A0ED2B81782B9BD009DE3E2 /* mystorecellbackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mystorecellbackground3.png; sourceTree = "<group>"; };
 		8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystorecellbackground3@2x.png"; sourceTree = "<group>"; };
+		8A0ED2F21782C479009DE3E2 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		8A0ED2F31782C479009DE3E2 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		A500D96D173C9D1800037AD8 /* WZCaptchaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCaptchaViewController.h; sourceTree = "<group>"; };
 		A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCaptchaViewController.m; sourceTree = "<group>"; };
 		A500D97C173CD08600037AD8 /* WZRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRecommendUser.h; sourceTree = "<group>"; };
@@ -1245,6 +1249,8 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8A0ED2F21782C479009DE3E2 /* add.png */,
+				8A0ED2F31782C479009DE3E2 /* add@2x.png */,
 				5FA43483177A9344001BBCB3 /* custom tabbar */,
 				5F7F2BED17574B930028B13D /* Menu.png */,
 				5FA999D117781D49004A8B48 /* 占位图1.png */,
@@ -2421,6 +2427,8 @@
 				5F4B1BFB1782820200ADB09A /* 4s@2x.png in Resources */,
 				8A0ED2BA1782B9BD009DE3E2 /* mystorecellbackground3.png in Resources */,
 				8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */,
+				8A0ED2F41782C479009DE3E2 /* add.png in Resources */,
+				8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
