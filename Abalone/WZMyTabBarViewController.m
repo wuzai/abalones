@@ -41,17 +41,17 @@
     NSLog(@"%@",self.view);
     self.custombg = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-49, 320, 49)];
     self.custombg.backgroundColor = [UIColor clearColor];
-  //  self.custombg.image = [UIImage imageNamed:@"TabBar"];
+    self.custombg.image = [UIImage imageNamed:@"customTabbar"];
     self.custombg.userInteractionEnabled = YES;
     [self.view addSubview:self.custombg];
     
     NSInteger width = 320 /4;
    
     
-    self.selectedbg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, 49)];
-    self.selectedbg.image = [UIImage imageNamed:@"selectedbg"];
-    [self.custombg addSubview:self.selectedbg];
-    self.selectedbg.alpha = 0.5;
+//    self.selectedbg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, 49)];
+//    self.selectedbg.image = [UIImage imageNamed:@"selectedbg"];
+//    [self.custombg addSubview:self.selectedbg];
+//    self.selectedbg.alpha = 0.5;
     
     
     for (int i=0; i<4; i++) {
@@ -62,8 +62,8 @@
         [button addTarget:self action:@selector(changeSelected:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i + 1 ;
         [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%i",i+1]] forState:UIControlStateNormal];
-      //  [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%is",i+1]] forState:UIControlStateSelected];
-        button.alpha = 0.8;
+        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%is",i+1]] forState:UIControlStateSelected];
+      //  button.alpha = 0.8;
         [self.custombg addSubview:button];
         if (i == 0) {
             button.selected = YES;
@@ -83,11 +83,11 @@
     
     for (int i= 0; i<4; i++) {
         UIButton *theButton = (UIButton *)[self.custombg viewWithTag:i+1];
-//        if (button == theButton) {
-//            [theButton setSelected:YES];
-//        }else{
-//            [theButton setSelected:NO];
-//        }
+        if (button == theButton) {
+            [theButton setSelected:YES];
+        }else{
+            [theButton setSelected:NO];
+        }
     }
 }
 
