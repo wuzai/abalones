@@ -307,6 +307,8 @@
 		8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */; };
 		8A0ED2F41782C479009DE3E2 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F21782C479009DE3E2 /* add.png */; };
 		8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F31782C479009DE3E2 /* add@2x.png */; };
+		8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9217841D7300D1838F /* AlaloneBackground.png */; };
+		8AF44D9517841D7500D1838F /* AlaloneBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9317841D7400D1838F /* AlaloneBackground@2x.png */; };
 		A500D96F173C9D1800037AD8 /* WZCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */; };
 		A500D97E173CD08600037AD8 /* WZRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D97D173CD08600037AD8 /* WZRecommendUser.m */; };
 		A500D981173CD3C100037AD8 /* WZRecommendUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D980173CD3C100037AD8 /* WZRecommendUserViewController.m */; };
@@ -862,6 +864,8 @@
 		8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystorecellbackground3@2x.png"; sourceTree = "<group>"; };
 		8A0ED2F21782C479009DE3E2 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		8A0ED2F31782C479009DE3E2 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		8AF44D9217841D7300D1838F /* AlaloneBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlaloneBackground.png; sourceTree = "<group>"; };
+		8AF44D9317841D7400D1838F /* AlaloneBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlaloneBackground@2x.png"; sourceTree = "<group>"; };
 		A500D96D173C9D1800037AD8 /* WZCaptchaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCaptchaViewController.h; sourceTree = "<group>"; };
 		A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCaptchaViewController.m; sourceTree = "<group>"; };
 		A500D97C173CD08600037AD8 /* WZRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRecommendUser.h; sourceTree = "<group>"; };
@@ -1575,6 +1579,8 @@
 		5FA43483177A9344001BBCB3 /* custom tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				8AF44D9217841D7300D1838F /* AlaloneBackground.png */,
+				8AF44D9317841D7400D1838F /* AlaloneBackground@2x.png */,
 				8A0ED2961782AA25009DE3E2 /* bg.png */,
 				8A0ED2971782AA25009DE3E2 /* bg@2x.png */,
 				8A0ED2981782AA25009DE3E2 /* dian.png */,
@@ -2429,6 +2435,8 @@
 				8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */,
 				8A0ED2F41782C479009DE3E2 /* add.png in Resources */,
 				8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */,
+				8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */,
+				8AF44D9517841D7500D1838F /* AlaloneBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
