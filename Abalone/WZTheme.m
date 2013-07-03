@@ -26,7 +26,9 @@
     static UIColor *_backColor = nil;
     @synchronized (_backColor) {
         if (!_backColor) {
-            _backColor = [UIColor colorWithWhite:0.85 alpha:1];
+            _backColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"AlaloneBackground"]];
+           // [self.view setBackgroundColor:bgColor];
+           // _backColor = [UIColor colorWithWhite:0.85 alpha:1];
         }
     }
     return _backColor;
