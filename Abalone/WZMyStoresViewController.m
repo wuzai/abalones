@@ -42,8 +42,8 @@
     [super viewDidLoad];
      self.hidesBottomBarWhenPushed = YES;
     
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 86, 30)];
-    [rightButton setBackgroundImage:[UIImage imageNamed:@"添加"] forState:UIControlStateNormal];
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+    [rightButton setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
     self.navigationItem.rightBarButtonItem = barButtonItem;
