@@ -180,8 +180,8 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
         [self sort];
     
     }else{
-        [self.myStoreList removeAllObjects];
-        [self.tableView reloadData];
+         [self.myStoreList removeAllObjects];
+         [self.tableView reloadData];
     }
     
     WZMyStoresViewController *parent = (WZMyStoresViewController *)self.parentViewController;
