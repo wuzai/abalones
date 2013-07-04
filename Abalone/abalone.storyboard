@@ -1104,7 +1104,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="登录_content.png" id="Xw0-fl-meh">
-                                <rect key="frame" x="9" y="60" width="303" height="122"/>
+                                <rect key="frame" x="9" y="50" width="303" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QWq-QE-gWy">
@@ -1155,7 +1155,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xpA-xD-qf2">
-                                <rect key="frame" x="176" y="214" width="125" height="44"/>
+                                <rect key="frame" x="196" y="214" width="125" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="登录.png">
@@ -1170,7 +1170,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PAd-kF-sPh">
-                                <rect key="frame" x="20" y="214" width="125" height="44"/>
+                                <rect key="frame" x="2" y="214" width="125" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="找回密码.png">
@@ -1307,7 +1307,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="注册_section背景.png" id="Mse-1S-UHR">
-                                <rect key="frame" x="10" y="14" width="300" height="179"/>
+                                <rect key="frame" x="10" y="14" width="300" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7z8-zQ-a5k">
@@ -3041,7 +3041,7 @@
         <image name="用户反馈_content.png" width="310" height="198"/>
         <image name="申领.png" width="125" height="44"/>
         <image name="登录.png" width="109" height="35"/>
-        <image name="登录_content.png" width="309" height="102"/>
+        <image name="登录_content.png" width="260" height="67"/>
         <image name="设置301.png" width="30" height="30"/>
         <image name="边框.png" width="96" height="68"/>
     </resources>
@@ -3052,10 +3052,10 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="JA8-6Q-pQS"/>
-        <segue reference="6QB-8D-gpg"/>
-        <segue reference="cWP-ka-XaA"/>
         <segue reference="sJ9-j8-2f6"/>
         <segue reference="6xH-gy-31G"/>
         <segue reference="wjw-Kt-TRa"/>
+        <segue reference="qrf-xs-FfO"/>
+        <segue reference="cWP-ka-XaA"/>
     </inferredMetricsTieBreakers>
 </document>
