@@ -1377,7 +1377,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AbX-oL-Aca">
-                                <rect key="frame" x="12" y="250" width="125" height="44"/>
+                                <rect key="frame" x="5" y="250" width="125" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="取消.png">
@@ -1435,7 +1435,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NVF-bn-sky">
-                                <rect key="frame" x="20" y="198" width="79" height="27"/>
+                                <rect key="frame" x="10" y="198" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                         </subviews>
@@ -3035,7 +3035,7 @@
         <image name="服务条款_content.png" width="309" height="389"/>
         <image name="服务项.png" width="300" height="32"/>
         <image name="注册.png" width="63" height="28"/>
-        <image name="注册_section背景.png" width="310" height="186"/>
+        <image name="注册_section背景.png" width="302" height="182"/>
         <image name="活动301.png" width="30" height="30"/>
         <image name="消息301.png" width="30" height="30"/>
         <image name="用户反馈_content.png" width="310" height="198"/>
