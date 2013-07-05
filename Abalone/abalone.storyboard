@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -1201,7 +1201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwF-V2-eaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="1298"/>
+            <point key="canvasLocation" x="2414" y="1114"/>
         </scene>
         <!--Reset Password View Controller - 找回密码-->
         <scene sceneID="vwv-VM-pWZ">
@@ -1452,7 +1452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8L-oe-pOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="1339"/>
+            <point key="canvasLocation" x="3040" y="1075"/>
         </scene>
         <!--Recommend View Controller - 商户推荐-->
         <scene sceneID="IBt-UO-jwS">
@@ -1554,7 +1554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyl-46-u4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="1101"/>
+            <point key="canvasLocation" x="1374" y="1913"/>
         </scene>
         <!--Navigation Controller - 设置-->
         <scene sceneID="MUa-mH-wVq">
