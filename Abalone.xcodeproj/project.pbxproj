@@ -60,6 +60,7 @@
 		5F43B6E6173B6F9A001F1443 /* WZMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F43B6E3173B6F9A001F1443 /* WZMapViewController.m */; };
 		5F46A5FE170AFC03006AC91D /* WZStoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F46A5FD170AFC03006AC91D /* WZStoresViewController.m */; };
 		5F47B82217865B03002488EC /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F47B82117865B03002488EC /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F47B82617865EAA002488EC /* WZShowMyStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */; };
 		5F4B1BD117827ED300ADB09A /* customTabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B1BCF17827ED300ADB09A /* customTabbar.png */; };
 		5F4B1BD217827ED300ADB09A /* customTabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B1BD017827ED300ADB09A /* customTabbar@2x.png */; };
 		5F4B1BED1782820200ADB09A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B1BDE1782820200ADB09A /* 1.png */; };
@@ -550,6 +551,8 @@
 		5F46A5FD170AFC03006AC91D /* WZStoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZStoresViewController.m; sourceTree = "<group>"; };
 		5F47B82017865B03002488EC /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		5F47B82117865B03002488EC /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		5F47B82417865EAA002488EC /* WZShowMyStoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZShowMyStoreDetailViewController.h; sourceTree = "<group>"; };
+		5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZShowMyStoreDetailViewController.m; sourceTree = "<group>"; };
 		5F4B1BCF17827ED300ADB09A /* customTabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customTabbar.png; sourceTree = "<group>"; };
 		5F4B1BD017827ED300ADB09A /* customTabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customTabbar@2x.png"; sourceTree = "<group>"; };
 		5F4B1BDE1782820200ADB09A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -1666,6 +1669,8 @@
 				5FF548D0173C909D003BAB85 /* MyMerchantPointCell.xib */,
 				5FF548D7173C9148003BAB85 /* WZMyMerchantPointCell.h */,
 				5FF548D8173C9148003BAB85 /* WZMyMerchantPointCell.m */,
+				5F47B82417865EAA002488EC /* WZShowMyStoreDetailViewController.h */,
+				5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */,
 			);
 			name = MyStoreDetail;
 			sourceTree = "<group>";
@@ -2608,6 +2613,7 @@
 				5FA999D01777ED84004A8B48 /* WZADCell.m in Sources */,
 				5FA4347D177A786E001BBCB3 /* WZMyTabBarViewController.m in Sources */,
 				5F47B82217865B03002488EC /* iCarousel.m in Sources */,
+				5F47B82617865EAA002488EC /* WZShowMyStoreDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
