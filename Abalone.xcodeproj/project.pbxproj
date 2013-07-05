@@ -308,6 +308,8 @@
 		8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */; };
 		8A0ED2F41782C479009DE3E2 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F21782C479009DE3E2 /* add.png */; };
 		8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F31782C479009DE3E2 /* add@2x.png */; };
+		8A9D351A178553D8009B1B5C /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3518178553D7009B1B5C /* 更多.png */; };
+		8A9D351B178553D8009B1B5C /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3519178553D7009B1B5C /* 更多@2x.png */; };
 		8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9217841D7300D1838F /* AlaloneBackground.png */; };
 		8AF44D9517841D7500D1838F /* AlaloneBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9317841D7400D1838F /* AlaloneBackground@2x.png */; };
 		A500D96F173C9D1800037AD8 /* WZCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */; };
@@ -867,6 +869,8 @@
 		8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystorecellbackground3@2x.png"; sourceTree = "<group>"; };
 		8A0ED2F21782C479009DE3E2 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		8A0ED2F31782C479009DE3E2 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		8A9D3518178553D7009B1B5C /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
+		8A9D3519178553D7009B1B5C /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
 		8AF44D9217841D7300D1838F /* AlaloneBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlaloneBackground.png; sourceTree = "<group>"; };
 		8AF44D9317841D7400D1838F /* AlaloneBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlaloneBackground@2x.png"; sourceTree = "<group>"; };
 		A500D96D173C9D1800037AD8 /* WZCaptchaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCaptchaViewController.h; sourceTree = "<group>"; };
@@ -1832,6 +1836,8 @@
 		A5829204173602DB00B417FA /* User */ = {
 			isa = PBXGroup;
 			children = (
+				8A9D3518178553D7009B1B5C /* 更多.png */,
+				8A9D3519178553D7009B1B5C /* 更多@2x.png */,
 				A500D983173CDFBF00037AD8 /* section1.png */,
 				A500D984173CDFBF00037AD8 /* section1@2x.png */,
 				A58DE69C173BA0210017E107 /* 提交.png */,
@@ -2450,6 +2456,8 @@
 				8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */,
 				8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */,
 				8AF44D9517841D7500D1838F /* AlaloneBackground@2x.png in Resources */,
+				8A9D351A178553D8009B1B5C /* 更多.png in Resources */,
+				8A9D351B178553D8009B1B5C /* 更多@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,20 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
     [self.refreshControl addTarget:self action:@selector(refreshControlEnventValueChanged) forControlEvents:UIControlEventValueChanged];
 }
 
+//进入登陆界面
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+         NSLog(@"%d",buttonIndex);
+
+        if(buttonIndex==0)
+        {
+           [self.parentViewController performSegueWithIdentifier:@"gotoLogin" sender:nil];
+        }
+        
+    
+}
+
+
 -(void)refreshControlEnventValueChanged
 {
     self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"刷新中。。。"];
@@ -38,7 +52,7 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchServiceFail:) name:kFetchServiceFailNotificationKey object:nil];
     if (![WZUser me]) {
       [self fetchServiceFail:nil];
-        [[[UIAlertView alloc]initWithTitle:@"提示" message: @"请先登陆 " delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+        [[[UIAlertView alloc]initWithTitle:@"提示" message: @"请先登陆 " delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
         return;
     }
     if (![WZFetchService fetchServiceByUser:[WZUser me]]) {
@@ -166,8 +180,8 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
         [self sort];
     
     }else{
-        [self.myStoreList removeAllObjects];
-        [self.tableView reloadData];
+         [self.myStoreList removeAllObjects];
+         [self.tableView reloadData];
     }
     
     WZMyStoresViewController *parent = (WZMyStoresViewController *)self.parentViewController;

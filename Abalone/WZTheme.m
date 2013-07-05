@@ -15,7 +15,8 @@
     static UIColor *_themeColor = nil;
     @synchronized (_themeColor) {
         if (!_themeColor) {
-            _themeColor = [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1];
+            _themeColor = [UIColor colorWithRed:84.0/255.0 green:77.0/255.0 blue:84.0/255.0 alpha:1.0];
+//            [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1];
         }
     }
     return _themeColor;
