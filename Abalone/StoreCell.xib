@@ -101,8 +101,7 @@
 								<string key="IBUIText"/>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MCAwIDAAA</bytes>
-									<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+									<bytes key="NSRGB">MC44NzI0OTQ5MDQ5IDAuODcyNDk0OTA0OSAwLjg3MjQ5NDkwNDkAA</bytes>
 								</object>
 								<object class="NSColor" key="IBUIHighlightedColor" id="406197307">
 									<int key="NSColorSpace">3</int>
@@ -162,7 +161,6 @@
 								<string key="NSFrame">{{227, 66}, {90, 21}}</string>
 								<reference key="NSSuperview" ref="249442935"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>

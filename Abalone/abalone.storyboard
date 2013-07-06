@@ -587,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulr-Tf-Qll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="679"/>
+            <point key="canvasLocation" x="1852" y="695"/>
         </scene>
         <!--User Profile View Controller - 用户资料-->
         <scene sceneID="1hf-0U-tQr">
@@ -1123,17 +1123,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="手机号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ViR-Lc-PW6">
-                                <rect key="frame" x="38" y="77" width="77" height="30"/>
+                                <rect key="frame" x="10" y="78" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDU-fa-S6J">
-                                <rect key="frame" x="38" y="127" width="77" height="30"/>
+                                <rect key="frame" x="10" y="127" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入11位手机号码" textAlignment="center" minimumFontSize="17" id="GB3-yY-i8H">
@@ -1392,31 +1392,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="手机号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ss-IB-eIh">
-                                <rect key="frame" x="27" y="22" width="80" height="30"/>
+                                <rect key="frame" x="22" y="22" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nsh-Lz-FCE">
-                                <rect key="frame" x="27" y="61" width="96" height="30"/>
+                                <rect key="frame" x="22" y="61" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="确认密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dmO-L6-RJT">
-                                <rect key="frame" x="27" y="105" width="96" height="30"/>
+                                <rect key="frame" x="22" y="105" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="验证码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7o4-sW-mn8">
-                                <rect key="frame" x="27" y="145" width="96" height="30"/>
+                                <rect key="frame" x="22" y="145" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.87249490490000003" green="0.87249490490000003" blue="0.87249490490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="twh-v2-rpH">
@@ -1435,7 +1435,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NVF-bn-sky">
-                                <rect key="frame" x="10" y="198" width="79" height="27"/>
+                                <rect key="frame" x="17" y="198" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                         </subviews>
@@ -1618,7 +1618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFZ-Iq-7jT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="-1090"/>
+            <point key="canvasLocation" x="1209" y="-1302"/>
         </scene>
         <!--My Merchant Point Record List View Controller-->
         <scene sceneID="eiH-xy-rwR">
@@ -2367,7 +2367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9u-eq-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="-1075"/>
+            <point key="canvasLocation" x="1833" y="-1157"/>
         </scene>
         <!--Store Detail View Controller-->
         <scene sceneID="ma3-m1-UFt">
@@ -3051,11 +3051,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6QB-8D-gpg"/>
         <segue reference="JA8-6Q-pQS"/>
-        <segue reference="6xH-gy-31G"/>
+        <segue reference="6QB-8D-gpg"/>
         <segue reference="sJ9-j8-2f6"/>
-        <segue reference="wjw-Kt-TRa"/>
         <segue reference="cWP-ka-XaA"/>
+        <segue reference="CZw-Sp-Jx4"/>
+        <segue reference="wjw-Kt-TRa"/>
     </inferredMetricsTieBreakers>
 </document>
