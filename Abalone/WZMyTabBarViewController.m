@@ -57,7 +57,7 @@
     for (int i=0; i<4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
        
-        button.frame = CGRectMake(i*width, 4, 80, 49);
+        button.frame = CGRectMake(i*width, 0, 80, 49);
       
         [button addTarget:self action:@selector(changeSelected:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i + 1 ;
