@@ -38,6 +38,7 @@
     UIImage *image = backgroundImageView.image;
     image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
     backgroundImageView.image = image;
+    [self.view setBackgroundColor: [UIColor colorWithPatternImage: [UIImage imageNamed: @"text.png"]]];
     [scrollView setContentSize:frame.size];
 	// Do any additional setup after loading the view.
 }

@@ -309,6 +309,8 @@
 		8A0ED2BB1782B9BD009DE3E2 /* mystorecellbackground3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */; };
 		8A0ED2F41782C479009DE3E2 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F21782C479009DE3E2 /* add.png */; };
 		8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F31782C479009DE3E2 /* add@2x.png */; };
+		8A9741AB178A8A9C00A889F3 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9741A9178A8A9C00A889F3 /* text.png */; };
+		8A9741AC178A8A9C00A889F3 /* text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9741AA178A8A9C00A889F3 /* text@2x.png */; };
 		8A9D351A178553D8009B1B5C /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3518178553D7009B1B5C /* 更多.png */; };
 		8A9D351B178553D8009B1B5C /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3519178553D7009B1B5C /* 更多@2x.png */; };
 		8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9217841D7300D1838F /* AlaloneBackground.png */; };
@@ -872,6 +874,8 @@
 		8A0ED2B91782B9BD009DE3E2 /* mystorecellbackground3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mystorecellbackground3@2x.png"; sourceTree = "<group>"; };
 		8A0ED2F21782C479009DE3E2 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		8A0ED2F31782C479009DE3E2 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		8A9741A9178A8A9C00A889F3 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		8A9741AA178A8A9C00A889F3 /* text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text@2x.png"; sourceTree = "<group>"; };
 		8A9D3518178553D7009B1B5C /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
 		8A9D3519178553D7009B1B5C /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
 		8AF44D9217841D7300D1838F /* AlaloneBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlaloneBackground.png; sourceTree = "<group>"; };
@@ -1273,6 +1277,8 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8A9741A9178A8A9C00A889F3 /* text.png */,
+				8A9741AA178A8A9C00A889F3 /* text@2x.png */,
 				8A0ED2F21782C479009DE3E2 /* add.png */,
 				8A0ED2F31782C479009DE3E2 /* add@2x.png */,
 				5FA43483177A9344001BBCB3 /* custom tabbar */,
@@ -2463,6 +2469,8 @@
 				8AF44D9517841D7500D1838F /* AlaloneBackground@2x.png in Resources */,
 				8A9D351A178553D8009B1B5C /* 更多.png in Resources */,
 				8A9D351B178553D8009B1B5C /* 更多@2x.png in Resources */,
+				8A9741AB178A8A9C00A889F3 /* text.png in Resources */,
+				8A9741AC178A8A9C00A889F3 /* text@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
