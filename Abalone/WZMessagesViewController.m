@@ -49,6 +49,42 @@
     return self;
 }
 
+
+
+
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
+    
+    return _reloading;
+    
+}
+
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
+    
+    return [NSDate date];
+}
+- (void)reloadTableViewDataSource{
+    NSLog(@"==开始加载数据");
+   [self reload];
+    _reloading = YES;
+}
+- (void)doneLoadingTableViewData{
+    NSLog(@"===加载完数据");
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:WZDownloadMessageSucceedNotification object:nil];
+    _reloading = NO;
+    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableView];
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+}
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+     [_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+}
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
+    [self reloadTableViewDataSource];
+    [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

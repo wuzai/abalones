@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface WZMessagesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+#import "EGORefreshTableHeaderView.h"
+@interface WZMessagesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate>
+{
+    EGORefreshTableHeaderView *_refreshHeaderView;
+    BOOL _reloading;
+}
 - (IBAction)cleanup:(id)sender;
 - (IBAction)lookupMerchant:(id)sender;
+- (void)reloadTableViewDataSource;
+
+- (void)doneLoadingTableViewData;
 @end

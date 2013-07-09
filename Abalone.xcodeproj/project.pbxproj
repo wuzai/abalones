@@ -311,6 +311,7 @@
 		8A0ED2F51782C479009DE3E2 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0ED2F31782C479009DE3E2 /* add@2x.png */; };
 		8A9741AB178A8A9C00A889F3 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9741A9178A8A9C00A889F3 /* text.png */; };
 		8A9741AC178A8A9C00A889F3 /* text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9741AA178A8A9C00A889F3 /* text@2x.png */; };
+		8A9C8AFF178BB065008B59EF /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C8AFE178BB065008B59EF /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A9D351A178553D8009B1B5C /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3518178553D7009B1B5C /* 更多.png */; };
 		8A9D351B178553D8009B1B5C /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9D3519178553D7009B1B5C /* 更多@2x.png */; };
 		8AF44D9417841D7500D1838F /* AlaloneBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF44D9217841D7300D1838F /* AlaloneBackground.png */; };
@@ -876,6 +877,8 @@
 		8A0ED2F31782C479009DE3E2 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		8A9741A9178A8A9C00A889F3 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 		8A9741AA178A8A9C00A889F3 /* text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text@2x.png"; sourceTree = "<group>"; };
+		8A9C8AFD178BB065008B59EF /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		8A9C8AFE178BB065008B59EF /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		8A9D3518178553D7009B1B5C /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
 		8A9D3519178553D7009B1B5C /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
 		8AF44D9217841D7300D1838F /* AlaloneBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlaloneBackground.png; sourceTree = "<group>"; };
@@ -2095,6 +2098,8 @@
 				5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */,
 				5FA4347B177A786E001BBCB3 /* WZMyTabBarViewController.h */,
 				5FA4347C177A786E001BBCB3 /* WZMyTabBarViewController.m */,
+				8A9C8AFD178BB065008B59EF /* EGORefreshTableHeaderView.h */,
+				8A9C8AFE178BB065008B59EF /* EGORefreshTableHeaderView.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -2622,6 +2627,7 @@
 				5FA4347D177A786E001BBCB3 /* WZMyTabBarViewController.m in Sources */,
 				5F47B82217865B03002488EC /* iCarousel.m in Sources */,
 				5F47B82617865EAA002488EC /* WZShowMyStoreDetailViewController.m in Sources */,
+				8A9C8AFF178BB065008B59EF /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
