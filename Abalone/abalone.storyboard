@@ -3058,10 +3058,10 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="6QB-8D-gpg"/>
-        <segue reference="JA8-6Q-pQS"/>
-        <segue reference="cWP-ka-XaA"/>
-        <segue reference="CZw-Sp-Jx4"/>
         <segue reference="6Z4-FC-BTN"/>
         <segue reference="lDJ-Kv-KiJ"/>
+        <segue reference="aWS-9h-fYN"/>
+        <segue reference="CZw-Sp-Jx4"/>
+        <segue reference="cWP-ka-XaA"/>
     </inferredMetricsTieBreakers>
 </document>
