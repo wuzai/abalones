@@ -184,7 +184,7 @@ static NSString *const noCellIdentifier = @"noStoreCell";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.storesArray.count) {
-        return 100.0;
+        return 110.0;
     }
     return 0.0;
 }
