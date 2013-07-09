@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet SDSegmentedControl *segmentControl;
 
 @property (weak, nonatomic) IBOutlet UIImageView *noStoreWarnning;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *addStores;
+
+- (IBAction)addStores:(id)sender;
 
 
 @end

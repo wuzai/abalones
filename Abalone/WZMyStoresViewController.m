@@ -42,11 +42,11 @@
     [super viewDidLoad];
      self.hidesBottomBarWhenPushed = YES;
     
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
-    [rightButton setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
-    [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-    self.navigationItem.rightBarButtonItem = barButtonItem;
+//    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+//    [rightButton setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+//    [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+//    self.navigationItem.rightBarButtonItem = barButtonItem;
     
     self.segmentControl.selectedSegmentIndex = 3;
 	if (!self.myStoreListViewController) {
@@ -80,11 +80,11 @@
     
 }
 
-
--(void)addStores:(id)sender
-{
-    [self performSegueWithIdentifier:@"addStores" sender:nil];
-}
+//
+//-(void)addStores:(id)sender
+//{
+//    [self performSegueWithIdentifier:@"addStores" sender:nil];
+//}
 
 -(IBAction)sort:(UISegmentedControl *)segmentcontrol{
     if (segmentcontrol.selectedSegmentIndex == 1) {
@@ -168,5 +168,10 @@
         }
     }
 }
+
+- (IBAction)addStores:(id)sender {
+    [self performSegueWithIdentifier:@"addStores" sender:nil];
+}
+
 
 @end
