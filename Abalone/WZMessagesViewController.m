@@ -217,6 +217,26 @@
     return @"删 除";
 }
 
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+//-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (editingStyle==UITableViewCellEditingStyleDelete) {
+//        //        获取选中删除行索引值
+//        NSInteger row = [indexPath row];
+//        //        通过获取的索引值删除数组中的值
+//        [_messages removeObjectAtIndex:row];
+//        //        删除单元格的某一行时，在用动画效果实现删除过程
+//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    }  
+//}
+
+
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
