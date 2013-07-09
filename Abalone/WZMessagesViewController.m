@@ -93,7 +93,7 @@
 }
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
     [self reloadTableViewDataSource];
-    [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+    [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:1.0];
 }
 - (void)viewDidLoad
 {
