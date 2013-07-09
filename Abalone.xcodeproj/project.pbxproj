@@ -52,6 +52,8 @@
 		42CFA2B91744D67B0009D767 /* 边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2B71744D67A0009D767 /* 边框@2x.png */; };
 		42CFA2C31744DB940009D767 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C11744DB930009D767 /* logo.png */; };
 		42CFA2C41744DB940009D767 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C21744DB940009D767 /* logo@2x.png */; };
+		42E26298178C36D700EE9E93 /* 商户边框.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26296178C36D600EE9E93 /* 商户边框.png */; };
+		42E26299178C36D700EE9E93 /* 商户边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26297178C36D700EE9E93 /* 商户边框@2x.png */; };
 		5F1CCCA81755CE3700F9803E /* WZStoreTypeSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */; };
 		5F1CCCDB1755DDFB00F9803E /* WZStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDA1755DDFB00F9803E /* WZStore.m */; };
 		5F1CCCDE1755E59800F9803E /* WZStore+AllTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDD1755E59800F9803E /* WZStore+AllTypes.m */; };
@@ -537,6 +539,8 @@
 		42CFA2C21744DB940009D767 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		42CFA2C51744DBB40009D767 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		42CFA2C71744DBB80009D767 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		42E26296178C36D600EE9E93 /* 商户边框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户边框.png"; sourceTree = "<group>"; };
+		42E26297178C36D700EE9E93 /* 商户边框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户边框@2x.png"; sourceTree = "<group>"; };
 		5F1CCCA61755CE3700F9803E /* WZStoreTypeSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStoreTypeSelectorViewController.h; sourceTree = "<group>"; };
 		5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZStoreTypeSelectorViewController.m; sourceTree = "<group>"; };
 		5F1CCCD91755DDFB00F9803E /* WZStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStore.h; sourceTree = "<group>"; };
@@ -1316,6 +1320,8 @@
 				5FA171B417438916008C0CD6 /* 无服务警告.png */,
 				42CFA2B61744D6790009D767 /* 边框.png */,
 				42CFA2B71744D67A0009D767 /* 边框@2x.png */,
+				42E26296178C36D600EE9E93 /* 商户边框.png */,
+				42E26297178C36D700EE9E93 /* 商户边框@2x.png */,
 				5FA171B517438916008C0CD6 /* 无服务警告@2x.png */,
 				5FA171B0174388E4008C0CD6 /* 暂无服务商户.png */,
 				5FA171B1174388E4008C0CD6 /* 暂无服务商户@2x.png */,
@@ -2490,6 +2496,8 @@
 				4215225E178C199D00540030 /* 2@2x.png in Resources */,
 				4215225F178C199D00540030 /* 2s.png in Resources */,
 				42152260178C199D00540030 /* 2s@2x.png in Resources */,
+				42E26298178C36D700EE9E93 /* 商户边框.png in Resources */,
+				42E26299178C36D700EE9E93 /* 商户边框@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
