@@ -27,4 +27,11 @@
     [mapping connectRelationship:@"store" withObjectForPrimaryKeyAttribute:@"fromStoreId"];
     return mapping;
 }
+
++(RKObjectMapping *)serialMessageMapping
+{
+    RKObjectMapping *mapping = [RKObjectMapping serializationMapping];
+    [mapping mapKeyPath:@"user_id" toAttribute:@"gid"];
+    return mapping;
+}
 @end

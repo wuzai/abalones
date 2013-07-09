@@ -83,6 +83,8 @@
 		5F47B82617865EAA002488EC /* WZShowMyStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */; };
 		5F4B1BD117827ED300ADB09A /* customTabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B1BCF17827ED300ADB09A /* customTabbar.png */; };
 		5F4B1BD217827ED300ADB09A /* customTabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B1BD017827ED300ADB09A /* customTabbar@2x.png */; };
+		5F4FC77D178C07CB00714E02 /* WZDeleteUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4FC77C178C07CB00714E02 /* WZDeleteUserMessage.m */; };
+		5F4FC785178C0D3700714E02 /* WZDeleteOneMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4FC784178C0D3700714E02 /* WZDeleteOneMessage.m */; };
 		5F54C0EF175DB73C002680D9 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F54C0EE175DB73C002680D9 /* MyAnnotation.m */; };
 		5F674F3017103BDC00034265 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F2F17103BDC00034265 /* CFNetwork.framework */; };
 		5F674F3217103BE400034265 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F3117103BE400034265 /* CoreData.framework */; };
@@ -579,6 +581,10 @@
 		5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZShowMyStoreDetailViewController.m; sourceTree = "<group>"; };
 		5F4B1BCF17827ED300ADB09A /* customTabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customTabbar.png; sourceTree = "<group>"; };
 		5F4B1BD017827ED300ADB09A /* customTabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customTabbar@2x.png"; sourceTree = "<group>"; };
+		5F4FC77B178C07CB00714E02 /* WZDeleteUserMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZDeleteUserMessage.h; sourceTree = "<group>"; };
+		5F4FC77C178C07CB00714E02 /* WZDeleteUserMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZDeleteUserMessage.m; sourceTree = "<group>"; };
+		5F4FC783178C0D3700714E02 /* WZDeleteOneMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZDeleteOneMessage.h; sourceTree = "<group>"; };
+		5F4FC784178C0D3700714E02 /* WZDeleteOneMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZDeleteOneMessage.m; sourceTree = "<group>"; };
 		5F54C0ED175DB73C002680D9 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
 		5F54C0EE175DB73C002680D9 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 		5F674F1D17103AA100034265 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ../RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
@@ -1211,6 +1217,10 @@
 				A500D97D173CD08600037AD8 /* WZRecommendUser.m */,
 				5FA999C41777E084004A8B48 /* WZAdForStore.h */,
 				5FA999C51777E084004A8B48 /* WZAdForStore.m */,
+				5F4FC77B178C07CB00714E02 /* WZDeleteUserMessage.h */,
+				5F4FC77C178C07CB00714E02 /* WZDeleteUserMessage.m */,
+				5F4FC783178C0D3700714E02 /* WZDeleteOneMessage.h */,
+				5F4FC784178C0D3700714E02 /* WZDeleteOneMessage.m */,
 			);
 			name = Networks;
 			sourceTree = "<group>";
@@ -2632,6 +2642,8 @@
 				5F47B82217865B03002488EC /* iCarousel.m in Sources */,
 				5F47B82617865EAA002488EC /* WZShowMyStoreDetailViewController.m in Sources */,
 				8A9C8AFF178BB065008B59EF /* EGORefreshTableHeaderView.m in Sources */,
+				5F4FC77D178C07CB00714E02 /* WZDeleteUserMessage.m in Sources */,
+				5F4FC785178C0D3700714E02 /* WZDeleteOneMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

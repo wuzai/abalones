@@ -16,6 +16,7 @@
 #import "WZLocationContrl.h"
 #import "WZStoreTypeSelectorViewController.h"
 #import "QuartzCore/QuartzCore.h"
+#import "WZDeleteUserMessage.h"
 
 #pragma mark - 配置参数
 static const CGFloat LeftMenuMaxWidth = 120;
@@ -91,6 +92,11 @@ static const CGFloat speedPixel = 0.0015;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSuccess:) name:@"locationSuccess" object:nil];
     
+    
+    if ([WZUser me]) {
+        [WZDeleteUserMessage deleteMessagesForUser:[WZUser me]];
+        
+    }
     
 }
 
