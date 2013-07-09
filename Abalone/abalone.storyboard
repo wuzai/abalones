@@ -1601,7 +1601,7 @@
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="无服务警告.png" id="uWE-iu-btO">
-                                <rect key="frame" x="10" y="89" width="302" height="240"/>
+                                <rect key="frame" x="71" y="58" width="193" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -2320,7 +2320,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="暂无服务商户.png" id="CHQ-W4-tph">
-                                        <rect key="frame" x="9" y="88" width="302" height="240"/>
+                                        <rect key="frame" x="71" y="58" width="193" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
