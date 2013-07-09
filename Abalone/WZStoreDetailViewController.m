@@ -34,6 +34,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.storeNameLabel.text = self.store.storeName;
+    self.storeNameLabel.backgroundColor = [UIColor redColor];
     self.storeImageView.imageURL = [NSURL URLWithString:self.store.rectangleImage];
     [super viewWillAppear:animated];
     self.storeDetailInfoViewController.store = self.store;
@@ -53,7 +54,8 @@
     self.title = @"门店详情";
     self.segmentedControl.selectedSegmentIndex = 1;
     self.segmentedControl.interItemSpace = 30.0f;
-   
+    self.segmentedControl.viewForBaselineLayout.backgroundColor=[UIColor redColor];
+    
     if (!self.contentTableViews) {
         self.contentTableViews = [NSMutableArray arrayWithCapacity:3];
     }
