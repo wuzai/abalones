@@ -64,13 +64,23 @@
 }
 - (void)reloadTableViewDataSource{
     NSLog(@"==开始加载数据");
-   [self reload];
+   [self download];
     _reloading = YES;
 }
 - (void)doneLoadingTableViewData{
     NSLog(@"===加载完数据");
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:WZDownloadMessageSucceedNotification object:nil];
     _reloading = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:WZDownloadMessageSucceedNotification object:nil];
+    
+    if([_messages count]>0)
+    {
+        [_tableView reloadData];
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"暂无短消息" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+       // [alert release];
+    }
+    
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableView];
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -91,6 +101,17 @@
     _cleanupItem = self.navigationItem.rightBarButtonItem;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:WZDownloadMessageSucceedNotification object:nil];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
+    
+    
+    if (_refreshHeaderView == nil) {
+        EGORefreshTableHeaderView *view1 = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 10.0f-_tableView.bounds.size.height, _tableView.frame.size.width, self.view.bounds.size.height)];
+        view1.backgroundColor=[UIColor clearColor];
+        view1.delegate = self;
+        [_tableView addSubview:view1];
+        _refreshHeaderView = view1;
+       // [view1 release];
+    }
+    [_refreshHeaderView refreshLastUpdatedDate];
 	// Do any additional setup after loading the view.
 }
 

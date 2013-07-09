@@ -81,7 +81,8 @@ NSString *const WZDownloadMessageFailedNotification = @"DownloadMessageFailed";
         if (!timeStamp) {
             timeStamp = [NSDate dateWithTimeIntervalSince1970:0];
         }
-        return [[WZNetworkHelper helper] help:[self class] with:@{kWZTimeStampKey: timeStamp, @"user_id":uid} object:nil by:RKRequestMethodGET];
+//        return [[WZNetworkHelper helper] help:[self class] with:@{kWZTimeStampKey: timeStamp, @"user_id":uid} object:nil by:RKRequestMethodGET];
+              return [[WZNetworkHelper helper] help:[self class] with:@{@"user_id":uid} object:nil by:RKRequestMethodGET];
     }
     return NO;
 }
