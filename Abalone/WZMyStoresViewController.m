@@ -53,7 +53,7 @@
         self.myStoreListViewController = [WZMyStoreListViewController new];
         [self addChildViewController:self.myStoreListViewController];
         CGRect frame = self.myStoreListViewController.tableView.frame;
-        frame.origin.y = 44;
+        frame.origin.y = 40;
         frame.size.height = self.view.frame.size.height;
         self.myStoreListViewController.tableView.frame = frame;
         NSLog(@"%@",NSStringFromCGRect(self.myStoreListViewController.tableView.frame));
@@ -173,5 +173,8 @@
     [self performSegueWithIdentifier:@"addStores" sender:nil];
 }
 
-
+//-(void)addStores:(id)sender
+//{
+//    [self performSegueWithIdentifier:@"addStores" sender:nil];
+//}
 @end

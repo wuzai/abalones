@@ -101,12 +101,16 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     // Reset UIKit original widget
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 
-    // Init layer
-    self.backgroundColor = [UIColor colorWithRed:0.961 green:0.961 blue:0.961 alpha:1];
+    // Init 筛选条背景颜色，陈纲
+    self.backgroundColor = UIColor.clearColor;
+
+    
+    
+    
     self.layer.backgroundColor = UIColor.clearColor.CGColor;
     self.layer.shadowColor = UIColor.blackColor.CGColor;
     self.layer.shadowRadius = .8;
-    self.layer.shadowOpacity = .6;
+    self.layer.shadowOpacity = 1;
     self.layer.shadowOffset = CGSizeMake(0, 1);
 
     // Init border bottom layer
@@ -126,7 +130,8 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
 
     // Init stain view
     [_scrollView addSubview:self._selectedStainView = SDStainView.new];
-    self._selectedStainView.backgroundColor = [UIColor colorWithWhite:0.816 alpha:1];
+    //设置选中框中的颜色
+    self._selectedStainView.backgroundColor = [UIColor clearColor];
 }
 
 - (UIColor *)backgroundColor
@@ -901,14 +906,19 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     [super initialize];
 
     SDSegmentView *appearance = [self appearance];
-    [appearance setTitleColor:[UIColor colorWithWhite:0.392 alpha:1] forState:UIControlStateNormal];
-    [appearance setTitleShadowColor:UIColor.whiteColor forState:UIControlStateNormal];
+    //设置文字未选中颜色
+    [appearance setTitleColor:[UIColor colorWithWhite:0.75 alpha:1] forState:UIControlStateNormal];
+    
+//    [appearance setTitleShadowColor:UIColor.whiteColor forState:UIControlStateNormal];
 
-    [appearance setTitleColor:[UIColor colorWithWhite:0.235 alpha:1] forState:UIControlStateSelected];
-    [appearance setTitleShadowColor:UIColor.whiteColor forState:UIControlStateSelected];
+    //设置文字选中颜色
+    [appearance setTitleColor:[UIColor colorWithWhite:1 alpha:1] forState:UIControlStateSelected];
+    
+//    [appearance setTitleShadowColor:UIColor.blackColor forState:UIControlStateSelected];
 
-    [appearance setTitleColor:[UIColor colorWithWhite:0.800 alpha:1] forState:UIControlStateDisabled];
-    [appearance setTitleShadowColor:UIColor.clearColor forState:UIControlStateDisabled];
+    [appearance setTitleColor:[UIColor colorWithWhite:1 alpha:1] forState:UIControlStateDisabled];
+    
+//    [appearance setTitleShadowColor:UIColor.clearColor forState:UIControlStateDisabled];
 
     [appearance setItemFont:[UIFont boldSystemFontOfSize:14]];
 }
@@ -937,9 +947,12 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
         self.contentEdgeInsets = UIEdgeInsetsMake(0, 0.0, 0, 8.0); // Enlarge touchable area
 
 #ifdef SDSegmentedControlDebug
-        self.backgroundColor = [UIColor colorWithHue:1.00 saturation:1.0 brightness:1.0 alpha:0.5];
-        self.imageView.backgroundColor = [UIColor colorWithHue:0.66 saturation:1.0 brightness:1.0 alpha:0.5];
-        self.titleLabel.backgroundColor = [UIColor colorWithHue:0.33 saturation:1.0 brightness:1.0 alpha:0.5];
+        self._selectedStainView.backgroundColor = [UIColor clearColor];
+        
+        self.imageView.backgroundColor = [UIColor clearColor];
+        
+        self.titleLabel.backgroundColor =  [ [UIColor clearColor];
+                                   
 #endif
     }
     return self;
@@ -1023,7 +1036,8 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     appearance.shadowBlur = 2.5;
     appearance.shadowColor = UIColor.blackColor;
     appearance.innerStrokeLineWidth = 1.5;
-    appearance.innerStrokeColor = UIColor.whiteColor;
+    appearance.innerStrokeColor = [UIColor clearColor
+                                   ];
 }
 
 + (id)appearance
