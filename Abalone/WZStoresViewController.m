@@ -73,8 +73,8 @@ static const CGFloat speedPixel = 0.0015;
          self.storeListViewController = [WZStoreListViewController new];
         [self addChildViewController:self.storeListViewController];
         CGRect frame =  self.storeListViewController.tableView.frame;
-        frame.origin.y = 44;
-        frame.size.height = self.contentView.frame.size.height - 44;
+        frame.origin.y = 40;
+        frame.size.height = self.contentView.frame.size.height - 40;
         self.storeListViewController.tableView.frame = frame;
          [self.contentView addSubview:self.storeListViewController.tableView];
         self.storeListViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -169,7 +169,10 @@ static const CGFloat speedPixel = 0.0015;
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    CGRect frame = self.view.frame;
+    frame.origin.y = 40;
+    self.view.frame = frame;
+    self.contentView.backgroundColor = [UIColor redColor];
    // [self loadAdvertisements];
 }
 

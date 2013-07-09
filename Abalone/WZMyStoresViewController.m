@@ -42,18 +42,18 @@
     [super viewDidLoad];
      self.hidesBottomBarWhenPushed = YES;
     
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
-    [rightButton setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
-    [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-    self.navigationItem.rightBarButtonItem = barButtonItem;
+//    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+//    [rightButton setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+//    [rightButton addTarget:self action:@selector(addStores:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+//    self.navigationItem.rightBarButtonItem = barButtonItem;
     
     self.segmentControl.selectedSegmentIndex = 3;
 	if (!self.myStoreListViewController) {
         self.myStoreListViewController = [WZMyStoreListViewController new];
         [self addChildViewController:self.myStoreListViewController];
         CGRect frame = self.myStoreListViewController.tableView.frame;
-        frame.origin.y = 44;
+        frame.origin.y = 40;
         frame.size.height = self.view.frame.size.height;
         self.myStoreListViewController.tableView.frame = frame;
         NSLog(@"%@",NSStringFromCGRect(self.myStoreListViewController.tableView.frame));
@@ -80,11 +80,11 @@
     
 }
 
-
--(void)addStores:(id)sender
-{
-    [self performSegueWithIdentifier:@"addStores" sender:nil];
-}
+//
+//-(void)addStores:(id)sender
+//{
+//    [self performSegueWithIdentifier:@"addStores" sender:nil];
+//}
 
 -(IBAction)sort:(UISegmentedControl *)segmentcontrol{
     if (segmentcontrol.selectedSegmentIndex == 1) {
@@ -169,4 +169,12 @@
     }
 }
 
+- (IBAction)addStores:(id)sender {
+    [self performSegueWithIdentifier:@"addStores" sender:nil];
+}
+
+//-(void)addStores:(id)sender
+//{
+//    [self performSegueWithIdentifier:@"addStores" sender:nil];
+//}
 @end
