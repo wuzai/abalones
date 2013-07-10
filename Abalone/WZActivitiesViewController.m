@@ -251,7 +251,7 @@
     EGOImageView *imageView = (EGOImageView *)view;
     if (imageView == nil) {
         imageView = [[EGOImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, [UIScreen mainScreen].applicationFrame.size.height)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
+       // imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         imageView.center = self.view.center;
         imageView.placeholderImage = [UIImage imageNamed:@"占位图2"];
