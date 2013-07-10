@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -507,6 +507,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="修改密码背景.png" id="YpY-nK-73z">
                                 <rect key="frame" x="5" y="10" width="310" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="02U-BR-VvM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
@@ -890,29 +891,29 @@
             </objects>
             <point key="canvasLocation" x="1638" y="1305"/>
         </scene>
-        <!--Point View Controller - 我的珍珠-->
+        <!--Point View Controller - 贝客积分-->
         <scene sceneID="dXb-tA-8Ir">
             <objects>
                 <tableViewController id="dYr-Vm-GCX" customClass="WZPointViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Y2B-YN-MSp">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="nvA-TM-Gas">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" id="5Nk-os-8YN" customClass="WZMultiImageView">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                                    <rect key="frame" x="14" y="0.0" width="293" height="166"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="6j1-ri-LaK">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                                            <rect key="frame" x="-7" y="8" width="306" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </scrollView>
                                         <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" defersCurrentPageDisplay="YES" numberOfPages="3" id="8QV-xi-jCE">
-                                            <rect key="frame" x="141" y="119" width="38" height="36"/>
+                                            <rect key="frame" x="127" y="119" width="38" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="pageIndicatorTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="currentPageIndicatorTintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -924,91 +925,43 @@
                                         <outlet property="pageControl" destination="8QV-xi-jCE" id="1Lx-L3-z5R"/>
                                     </connections>
                                 </view>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="积分规则" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3l-WO-q8Z">
+                                    <rect key="frame" x="14" y="178" width="172" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                         <sections>
-                            <tableViewSection headerTitle="珍珠收集规则" id="m9q-4p-L4o">
+                            <tableViewSection id="m9q-4p-L4o">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="mPG-BR-fg9" rowHeight="150" style="IBUITableViewCellStyleDefault" id="Ko3-nx-MpO">
-                                        <rect key="frame" x="0.0" y="202" width="320" height="152"/>
+                                        <rect key="frame" x="0.0" y="208" width="320" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPG-BR-fg9">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPG-BR-fg9" userLabel="Label - ⦿ 成功注册会员，获赠200粒珍珠。 ⦿ 会员登录系统，获赠1粒系统珍珠。 ⦿ 会员资料填写完整，获赠20粒系统珍珠 ⦿ 每邀请一位用户注册成为会员，获赠20粒系统珍珠。">
                                                     <rect key="frame" x="10" y="0.0" width="280" height="149"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <string key="text">⦿ 成功注册会员，获赠200粒珍珠。
 ⦿ 会员登录系统，获赠1粒系统珍珠。
 ⦿ 会员资料填写完整，获赠20粒系统珍珠
 ⦿ 每邀请一位用户注册成为会员，获赠20粒系统珍珠。</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="珍珠消费渠道" id="iLt-w2-6wa">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rcN-wO-FXc" style="IBUITableViewCellStyleDefault" id="t1x-0U-RZG">
-                                        <rect key="frame" x="0.0" y="400" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="换商户体验券" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rcN-wO-FXc">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jKS-Rt-UtV" style="IBUITableViewCellStyleDefault" id="pCf-Wk-4vD">
-                                        <rect key="frame" x="0.0" y="445" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="换商户代金券" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jKS-Rt-UtV">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="WM0-fs-Hwa" style="IBUITableViewCellStyleDefault" id="oCe-D4-GBb">
-                                        <rect key="frame" x="0.0" y="489" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="抽奖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WM0-fs-Hwa">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1018,7 +971,7 @@
                             <outlet property="delegate" destination="dYr-Vm-GCX" id="NFQ-g8-ylX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的珍珠" id="PJe-xZ-KN1">
+                    <navigationItem key="navigationItem" title="贝客积分" id="PJe-xZ-KN1">
                         <barButtonItem key="rightBarButtonItem" title="详情" id="x1C-UQ-N2l">
                             <connections>
                                 <segue destination="bDf-4K-ow3" kind="push" id="lDJ-Kv-KiJ"/>
@@ -3041,6 +2994,315 @@
         <image name="设置301.png" width="30" height="30"/>
         <image name="边框.png" width="96" height="68"/>
     </resources>
+    <classes>
+        <class className="EGOImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EGOImageView.h"/>
+        </class>
+        <class className="SDSegmentedControl" superclassName="UISegmentedControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SDSegmentedControl.h"/>
+        </class>
+        <class className="WZAboutUsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAboutUsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="call:"/>
+                <relationship kind="action" name="web:"/>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="WZActivitiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZActivitiesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="header:"/>
+                <relationship kind="outlet" name="_headerView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="_tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="WZAddCommentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAddCommentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sendComment:"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="wordNum" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZAdvertisementCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAdvertisementCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="logoView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="merchantLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZAdvertisementViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAdvertisementViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="WZCaptchaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZCaptchaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="reset:"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZContentViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZContentViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="merchantName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="opAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="opContent" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="opPeople" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="opTime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="totalPoint" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZGenderSwitch" superclassName="UISwitch">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZGenderSwitch.h"/>
+        </class>
+        <class className="WZLicenseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZLicenseViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="contenView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZLoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMapViewController.h"/>
+        </class>
+        <class className="WZMessageCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMessageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="contentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="logoView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="merchantButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZMessagesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMessagesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cleanup:"/>
+                <relationship kind="action" name="lookupMerchant:"/>
+                <relationship kind="outlet" name="_tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="WZMoreViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMoreViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="userLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZMultiImageView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMultiImageView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contentView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+            </relationships>
+        </class>
+        <class className="WZMyMerchantPointRecordListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyMerchantPointRecordListViewController.h"/>
+        </class>
+        <class className="WZMyServiceDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyServiceDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceImageView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="servicePromptMessage" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceRule" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZMyStoreDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyStoreDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="shareMyStore:" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="WZMyStoresViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyStoresViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addStores:"/>
+                <relationship kind="outlet" name="addStores" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="noStoreWarnning" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="segmentControl" candidateClass="SDSegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="WZMyTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyTabBarViewController.h"/>
+        </class>
+        <class className="WZOtherStoresViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZOtherStoresViewController.h"/>
+        </class>
+        <class className="WZPasswordViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPasswordViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="reset:"/>
+                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="newPasswordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="oldPasswordField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZPointRecordDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPointRecordDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="WZPointViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPointViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="accessoryView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="WZMultiImageView"/>
+                <relationship kind="outlet" name="ruleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZRecommendUserViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRecommendUserViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="recomend:"/>
+                <relationship kind="outlet" name="telphoneField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZRecommendViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRecommendViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="recomend:"/>
+                <relationship kind="outlet" name="merchantNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="telphoneField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZRegisterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRegisterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="register_:"/>
+                <relationship kind="outlet" name="captchaField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="licenseSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZResetPasswordViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZResetPasswordViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="reset:"/>
+                <relationship kind="outlet" name="captchaField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WZSendLargessViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZSendLargessViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="checkCellPhone:"/>
+                <relationship kind="action" name="sendLargess:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="largessToCellPhone" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="senderButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZShowServiceItemDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZShowServiceItemDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="applyServiceItem:"/>
+                <relationship kind="outlet" name="ServiceItemapplyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="addressbackImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="contentbackImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="serviceItemAddressLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemContentTextView" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemDateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemHeaderCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="serviceItemImageView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="serviceItemMerchantName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemRule" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemRulebackImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="serviceItemTypeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZStoreDetailInfoViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoreDetailInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="merchantIntro" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="storeAddressTextView" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="storeCellPhoneLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="webURL" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZStoreDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoreDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeView:"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="SDSegmentedControl"/>
+                <relationship kind="outlet" name="storeImageView" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="storeNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WZStoresViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoresViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="advertisements:"/>
+                <relationship kind="action" name="sort:" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="_advertisementsBackground" candidateClass="UIView"/>
+                <relationship kind="outlet" name="_advertisementsView" candidateClass="WZMultiImageView"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="noStoresWarnning" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="segmentControl" candidateClass="SDSegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="WZUseServiceViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZUseServiceViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="useService:"/>
+                <relationship kind="outlet" name="serviceCode" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceImage" candidateClass="EGOImageView"/>
+                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="useButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="WZUserProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZUserProfileViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="birthday:"/>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="closeKeyboard:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="action" name="update:"/>
+                <relationship kind="outlet" name="birthButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="genderSwitch" candidateClass="WZGenderSwitch"/>
+                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
