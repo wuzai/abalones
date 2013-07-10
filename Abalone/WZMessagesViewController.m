@@ -22,15 +22,21 @@
 #import "WZStore.h"
 #import "WZMyStoreDetailViewController.h"
 #import "WZUser+Equal.h"
+#import "WZDeleteOneMessage.h"
+#import "WZDeleteUserMessage.h"
+#import "WZMessage+Networks.h"
 
 @interface WZMessagesViewController ()<UIAlertViewDelegate> {
     IBOutlet UITableView *_tableView;
     NSMutableArray *_messages;
+    NSMutableArray *tempmessages;
     UIBarButtonItem *_cleanupItem;
     NSIndexPath *_selectedIndexPath;
     UILabel *_testLabel;
     UIImage *_cellBackgroundImage;
     WZUser *_last;
+    NSInteger flag;
+    
 }
 - (void)download;
 - (void)downloadSucceed:(NSNotification *)notification;
@@ -95,9 +101,56 @@
     [self reloadTableViewDataSource];
     [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:1.0];
 }
+
+-(void)deletefail
+{
+//    [_messages removeAllObjects];
+//    for (int i = 0; i<[tempmessages count]; i++) {
+//        NSString * str = [tempmessages objectAtIndex:i];
+//        [_messages addObject:str];
+//        }
+////    
+////    _messages=tempmessages;
+////    //[_messages addObjectsFromArray:tempmessages];
+//   [_tableView reloadData];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"删除失败，请检查网络" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+}
+-(void)deleteUer
+{
+    [_messages makeObjectsPerformSelector:@selector(deleteEntity)];
+    
+  
+    
+    [[RKObjectManager sharedManager].objectStore save:nil];
+    [self reload];
+}
+-(void)deleteMes
+{
+    [[_messages objectAtIndex:flag ] deleteEntity];
+    [_messages removeObjectAtIndex:flag];
+    
+    [[RKObjectManager sharedManager].objectStore save:nil];
+    [_tableView reloadData];
+//    [_tableView deleteRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>:[NSArray arrayWithObject:] withRowAnimation:UITableViewRowAnimationFade];
+    self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
+   // [self tableView:commitEditingStyle:forRowAtIndexPath];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //注册网络请求通知
+      [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(deleteUer) name:kDELETEUSERMESSAGESUCCESSNOTIFICTION object:nil];
+     [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(deletefail) name:kDELETEUSERMESSAGEFAILNOTIFICTION object:nil];
+    
+    
+    //#define kDELETEONEMESSAGESUCCESSNOTIFICTION @"deleteOneMessageSuccess"
+//#define kDELETEONEMESSAGEFAILNOTIFICTION @"deleteOneMessageFail"
+     [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector( deleteMes) name:kDELETEONEMESSAGESUCCESSNOTIFICTION object:nil];
+       [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(deletefail) name:kDELETEONEMESSAGEFAILNOTIFICTION object:nil];
+    
+    
+    
     _cleanupItem = self.navigationItem.rightBarButtonItem;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:WZDownloadMessageSucceedNotification object:nil];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
@@ -138,6 +191,9 @@
     if (!_messages) {
         _messages = [NSMutableArray new];
     }
+    if (!tempmessages) {
+        tempmessages = [NSMutableArray new];
+    }
     WZUser *me = [WZUser me];
     if (!me) {
         [_messages removeAllObjects];
@@ -146,9 +202,14 @@
     }
     else if (![_messages count])
     {
+        
         [_messages addObjectsFromArray:[me.messages allObjects]];
         [_tableView reloadData];
         self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
+    }
+   if(![tempmessages count])
+    {
+        [tempmessages addObjectsFromArray:[me.messages allObjects]];
     }
     
     
@@ -268,11 +329,10 @@
 {
     if (editingStyle==UITableViewCellEditingStyleDelete) {
         WZMessage *message = [_messages objectAtIndex:indexPath.row];
-        [message deleteEntity];
-        [_messages removeObject:message];
-        [[RKObjectManager sharedManager].objectStore save:nil];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-        self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
+      //
+        [WZDeleteOneMessage deleteOneMessage:message];
+        flag=indexPath.row;
+       
     }
 }
 
@@ -286,9 +346,7 @@
 
 - (void)_cleanup
 {
-    [_messages makeObjectsPerformSelector:@selector(deleteEntity)];
-    [[RKObjectManager sharedManager].objectStore save:nil];
-    [self reload];
+     [WZDeleteUserMessage deleteMessagesForUser: [WZUser me]] ;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -336,5 +394,14 @@
     if ([results count]) {
         [self reload];
     }
+}
+-(void)dealloc
+{
+ 
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDELETEUSERMESSAGESUCCESSNOTIFICTION object:nil];
+       [[NSNotificationCenter defaultCenter] removeObserver:self name:kDELETEUSERMESSAGEFAILNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDELETEONEMESSAGESUCCESSNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDELETEONEMESSAGEFAILNOTIFICTION object:nil];
+   
 }
 @end
