@@ -99,6 +99,7 @@
 
 -(void)changePage:(id)sender
 {
+    [sender setUserInteractionEnabled:NO];
     int number = arc4random() % 4;
     HMGLTransition *animation;
     switch (number) {
@@ -134,7 +135,7 @@
     [[HMGLTransitionManager sharedTransitionManager] commitTransition];
     
    
-    
+      [sender setUserInteractionEnabled:YES];
 }
 
 - (void)didReceiveMemoryWarning
