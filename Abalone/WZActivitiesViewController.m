@@ -20,6 +20,7 @@
 #import "DoorsTransition.h"
 #import "ClothTransition.h"
 #import "FlipTransition.h"
+#import "EGOImageView.h"
 
 @interface WZActivitiesViewController ()
 {
@@ -29,6 +30,7 @@
     IBOutlet EGOImageView *_headerView;
 }
 @property (nonatomic,strong) SwipeView *swipeView;
+@property (nonatomic,strong) UIPageControl *pageControl;
 
 - (void)reload;
 @end
@@ -48,17 +50,30 @@
 {
     [super viewDidLoad];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
-//    _switchItem = self.navigationItem.rightBarButtonItem;
-	// Do any additional setup after loading the view.
     self.swipeView = [[SwipeView alloc] initWithFrame:self.view.bounds];
     self.swipeView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.swipeView];
-  // self.swipeView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"AlaloneBackground"]];
     self.swipeView.backgroundColor = [UIColor grayColor];
+    
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44-49-44, 320, 44)];
+    [self.view addSubview:self.pageControl];
    
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"反转" style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
     
+    
+    _swipeView.alignment = SwipeViewAlignmentCenter;
+    _swipeView.pagingEnabled = YES;
+    _swipeView.wrapEnabled = NO;
+  //  _swipeView.itemsPerPage = 3;
+    _swipeView.truncateFinalPage = YES;
+    _swipeView.delegate = self;
+    _swipeView.dataSource = self;
+    
+    //configure page control
+    _pageControl.numberOfPages = _swipeView.numberOfPages;
+    _pageControl.defersCurrentPageDisplay = YES;
+     _pageControl.numberOfPages = 10;
 }
 
 -(void)changePage:(id)sender
@@ -90,6 +105,12 @@
     [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
     
     [[HMGLTransitionManager sharedTransitionManager] commitTransition];
+    
+    if (self.swipeView.hidden) {
+        self.pageControl.hidden = YES;
+    }else{
+        self.pageControl.hidden = NO;
+    }
     
 }
 
@@ -173,4 +194,42 @@
         advertisementViewController.advertisement = sender;
     }
 }
+
+
+#pragma mark -swipeView delegate and dataSource
+- (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView
+{
+    return [_advertisements count];
+}
+
+- (UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
+{
+    EGOImageView *imageView = (EGOImageView *)view;
+    if (imageView == nil) {
+        imageView = [[EGOImageView alloc] init];
+        
+    }
+      WZAd *ad = [_advertisements objectAtIndex:index];
+    imageView.imageURL = [NSURL URLWithString:ad.postImage];
+    return imageView;
+}
+
+- (void)swipeViewCurrentItemIndexDidChange:(SwipeView *)swipeView
+{
+    //update page control page
+    _pageControl.currentPage = swipeView.currentPage;
+}
+
+- (void)swipeView:(SwipeView *)swipeView didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"Selected item at index %i", index);
+}
+
+- (IBAction)pageControlTapped
+{
+    //update swipe view page
+    [_swipeView scrollToPage:_pageControl.currentPage duration:0.4];
+}
+
+
 @end

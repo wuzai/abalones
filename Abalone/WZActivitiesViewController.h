@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SwipeView.h"
 
-@interface WZActivitiesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface WZActivitiesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,SwipeViewDataSource,SwipeViewDelegate>
 {
     IBOutlet UITableView *_tableView;
 }
