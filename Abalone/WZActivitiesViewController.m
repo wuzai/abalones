@@ -21,6 +21,7 @@
 #import "ClothTransition.h"
 #import "FlipTransition.h"
 #import "EGOImageView.h"
+#import "WZAd+Networks.h"
 
 @interface WZActivitiesViewController ()
 {
@@ -51,16 +52,17 @@
 {
     [super viewDidLoad];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
-    self.swipeView = [[SwipeView alloc] initWithFrame:self.view.bounds];
-    self.swipeView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.swipeView];
+    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height -20-44-49)];
     self.swipeView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:self.swipeView];
+    
     
     self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44-49-44, 320, 44)];
     [self.view addSubview:self.pageControl];
    
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"反转" style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
     
     
     _swipeView.alignment = SwipeViewAlignmentCenter;
@@ -73,6 +75,26 @@
     //configure page control
     _pageControl.numberOfPages = _swipeView.numberOfPages;
     _pageControl.defersCurrentPageDisplay = YES;
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadAdsSuccess:) name:WZAdvertisementsDownloadSucceedNotification  object:nil];
+}
+
+-(void)downloadAdsSuccess:(NSNotification *)notification
+{
+    [self reload];
+
+    [self.swipeView reloadData];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void)updateAds:(id)sender
+{
+    [WZAd download];
 }
 
 -(void)changePage:(id)sender
@@ -212,6 +234,7 @@
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         imageView.center = self.view.center;
+        imageView.placeholderImage = [UIImage imageNamed:@"占位图2"];
     }
       WZAd *ad = [_advertisements objectAtIndex:index];
     imageView.imageURL =  [NSURL URLWithString: ad.postImage];
