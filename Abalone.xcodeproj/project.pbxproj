@@ -219,6 +219,15 @@
 		5FA2AC6117252AE0001390F4 /* WZLocation+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2AC6017252AE0001390F4 /* WZLocation+Mapping.m */; };
 		5FA2AC6A17255E6F001390F4 /* WZStore+NetWorks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2AC6917255E6F001390F4 /* WZStore+NetWorks.m */; };
 		5FA2B250178CF105009AEC75 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B24F178CF105009AEC75 /* SwipeView.m */; };
+		5FA2B267178CF2A2009AEC75 /* ClothTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B258178CF2A2009AEC75 /* ClothTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B268178CF2A2009AEC75 /* DoorsTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B25A178CF2A2009AEC75 /* DoorsTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B269178CF2A2009AEC75 /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B25C178CF2A2009AEC75 /* FlipTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B26A178CF2A2009AEC75 /* HMGLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B25E178CF2A2009AEC75 /* HMGLTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B26B178CF2A2009AEC75 /* HMGLTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B260178CF2A2009AEC75 /* HMGLTransitionManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B26C178CF2A2009AEC75 /* HMGLTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B262178CF2A2009AEC75 /* HMGLTransitionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B26D178CF2A2009AEC75 /* RotateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B264178CF2A2009AEC75 /* RotateTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B26E178CF2A2009AEC75 /* Switch3DTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B266178CF2A2009AEC75 /* Switch3DTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FA2B270178CF44D009AEC75 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA2B26F178CF44D009AEC75 /* OpenGLES.framework */; };
 		5FA3358317549A5B00D1EE8B /* WZLocationContrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */; };
 		5FA3FB60172A4D1600D5869B /* WZCoupon+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3FB5F172A4D1600D5869B /* WZCoupon+Mapping.m */; };
 		5FA3FB6F172A50BF00D5869B /* WZMeteringCard+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3FB6E172A50BF00D5869B /* WZMeteringCard+Mapping.m */; };
@@ -762,6 +771,23 @@
 		5FA2AC6917255E6F001390F4 /* WZStore+NetWorks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZStore+NetWorks.m"; sourceTree = "<group>"; };
 		5FA2B24E178CF105009AEC75 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
 		5FA2B24F178CF105009AEC75 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		5FA2B257178CF2A2009AEC75 /* ClothTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothTransition.h; sourceTree = "<group>"; };
+		5FA2B258178CF2A2009AEC75 /* ClothTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothTransition.m; sourceTree = "<group>"; };
+		5FA2B259178CF2A2009AEC75 /* DoorsTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorsTransition.h; sourceTree = "<group>"; };
+		5FA2B25A178CF2A2009AEC75 /* DoorsTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoorsTransition.m; sourceTree = "<group>"; };
+		5FA2B25B178CF2A2009AEC75 /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
+		5FA2B25C178CF2A2009AEC75 /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
+		5FA2B25D178CF2A2009AEC75 /* HMGLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransition.h; sourceTree = "<group>"; };
+		5FA2B25E178CF2A2009AEC75 /* HMGLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransition.m; sourceTree = "<group>"; };
+		5FA2B25F178CF2A2009AEC75 /* HMGLTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionManager.h; sourceTree = "<group>"; };
+		5FA2B260178CF2A2009AEC75 /* HMGLTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionManager.m; sourceTree = "<group>"; };
+		5FA2B261178CF2A2009AEC75 /* HMGLTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionView.h; sourceTree = "<group>"; };
+		5FA2B262178CF2A2009AEC75 /* HMGLTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionView.m; sourceTree = "<group>"; };
+		5FA2B263178CF2A2009AEC75 /* RotateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateTransition.h; sourceTree = "<group>"; };
+		5FA2B264178CF2A2009AEC75 /* RotateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateTransition.m; sourceTree = "<group>"; };
+		5FA2B265178CF2A2009AEC75 /* Switch3DTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch3DTransition.h; sourceTree = "<group>"; };
+		5FA2B266178CF2A2009AEC75 /* Switch3DTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch3DTransition.m; sourceTree = "<group>"; };
+		5FA2B26F178CF44D009AEC75 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5FA3358117549A5B00D1EE8B /* WZLocationContrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLocationContrl.h; sourceTree = "<group>"; };
 		5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLocationContrl.m; sourceTree = "<group>"; };
 		5FA3FB5E172A4D1600D5869B /* WZCoupon+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZCoupon+Mapping.h"; sourceTree = "<group>"; };
@@ -1082,10 +1108,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F27685A17167E3A0032E69F /* QuartzCore.framework in Frameworks */,
+				5FA2B270178CF44D009AEC75 /* OpenGLES.framework in Frameworks */,
 				5FA276CA174EFA1F003AA9B7 /* libz.1.2.5.dylib in Frameworks */,
 				5FA276C8174EFA0B003AA9B7 /* libicucore.dylib in Frameworks */,
 				5FA276C6174EF9F2003AA9B7 /* MessageUI.framework in Frameworks */,
-				5F27685A17167E3A0032E69F /* QuartzCore.framework in Frameworks */,
 				5F674F3817103BFF00034265 /* SystemConfiguration.framework in Frameworks */,
 				5F27684D17165DD20032E69F /* MapKit.framework in Frameworks */,
 				5F27684B17165DCC0032E69F /* CoreLocation.framework in Frameworks */,
@@ -1633,6 +1660,29 @@
 			path = SwipeView;
 			sourceTree = "<group>";
 		};
+		5FA2B256178CF2A2009AEC75 /* HMGLTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2B257178CF2A2009AEC75 /* ClothTransition.h */,
+				5FA2B258178CF2A2009AEC75 /* ClothTransition.m */,
+				5FA2B259178CF2A2009AEC75 /* DoorsTransition.h */,
+				5FA2B25A178CF2A2009AEC75 /* DoorsTransition.m */,
+				5FA2B25B178CF2A2009AEC75 /* FlipTransition.h */,
+				5FA2B25C178CF2A2009AEC75 /* FlipTransition.m */,
+				5FA2B25D178CF2A2009AEC75 /* HMGLTransition.h */,
+				5FA2B25E178CF2A2009AEC75 /* HMGLTransition.m */,
+				5FA2B25F178CF2A2009AEC75 /* HMGLTransitionManager.h */,
+				5FA2B260178CF2A2009AEC75 /* HMGLTransitionManager.m */,
+				5FA2B261178CF2A2009AEC75 /* HMGLTransitionView.h */,
+				5FA2B262178CF2A2009AEC75 /* HMGLTransitionView.m */,
+				5FA2B263178CF2A2009AEC75 /* RotateTransition.h */,
+				5FA2B264178CF2A2009AEC75 /* RotateTransition.m */,
+				5FA2B265178CF2A2009AEC75 /* Switch3DTransition.h */,
+				5FA2B266178CF2A2009AEC75 /* Switch3DTransition.m */,
+			);
+			path = HMGLTransitions;
+			sourceTree = "<group>";
+		};
 		5FA43483177A9344001BBCB3 /* custom tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1797,6 +1847,7 @@
 		A551AA5C170A76680013C5B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FA2B26F178CF44D009AEC75 /* OpenGLES.framework */,
 				5FA276C9174EFA1F003AA9B7 /* libz.1.2.5.dylib */,
 				5FA276C7174EFA0B003AA9B7 /* libicucore.dylib */,
 				5FA276C5174EF9F2003AA9B7 /* MessageUI.framework */,
@@ -2106,6 +2157,7 @@
 		A5AEFF871712A046004354B4 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				5FA2B256178CF2A2009AEC75 /* HMGLTransitions */,
 				5FA2B24D178CF105009AEC75 /* SwipeView */,
 				A576232F170AB97200DEAD1E /* Advertisement */,
 				A5AEFF8B1712A05C004354B4 /* WZActivitiesViewController.h */,
@@ -2666,6 +2718,14 @@
 				5F4FC77D178C07CB00714E02 /* WZDeleteUserMessage.m in Sources */,
 				5F4FC785178C0D3700714E02 /* WZDeleteOneMessage.m in Sources */,
 				5FA2B250178CF105009AEC75 /* SwipeView.m in Sources */,
+				5FA2B267178CF2A2009AEC75 /* ClothTransition.m in Sources */,
+				5FA2B268178CF2A2009AEC75 /* DoorsTransition.m in Sources */,
+				5FA2B269178CF2A2009AEC75 /* FlipTransition.m in Sources */,
+				5FA2B26A178CF2A2009AEC75 /* HMGLTransition.m in Sources */,
+				5FA2B26B178CF2A2009AEC75 /* HMGLTransitionManager.m in Sources */,
+				5FA2B26C178CF2A2009AEC75 /* HMGLTransitionView.m in Sources */,
+				5FA2B26D178CF2A2009AEC75 /* RotateTransition.m in Sources */,
+				5FA2B26E178CF2A2009AEC75 /* Switch3DTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

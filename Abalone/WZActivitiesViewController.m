@@ -14,6 +14,12 @@
 #import "WZAdvertisementViewController.h"
 #import <RestKit/RestKit.h>
 #import "EGOImageView.h"
+#import "HMGLTransition.h"
+#import "Switch3DTransition.h"
+#import "HMGLTransitionManager.h"
+#import "DoorsTransition.h"
+#import "ClothTransition.h"
+#import "FlipTransition.h"
 
 @interface WZActivitiesViewController ()
 {
@@ -22,6 +28,8 @@
     WZAd *_header;
     IBOutlet EGOImageView *_headerView;
 }
+@property (nonatomic,strong) SwipeView *swipeView;
+
 - (void)reload;
 @end
 
@@ -42,7 +50,46 @@
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
 //    _switchItem = self.navigationItem.rightBarButtonItem;
 	// Do any additional setup after loading the view.
+    self.swipeView = [[SwipeView alloc] initWithFrame:self.view.bounds];
+    self.swipeView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.swipeView];
+  // self.swipeView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"AlaloneBackground"]];
+    self.swipeView.backgroundColor = [UIColor grayColor];
+   
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"反转" style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
+    
+}
+
+-(void)changePage:(id)sender
+{
+    int number = arc4random() % 4;
+    HMGLTransition *animation;
+    switch (number) {
+        case 0:
+             animation = [[DoorsTransition alloc] init];
+            break;
+        case 1:
+            animation = [[Switch3DTransition alloc] init];
+            break;
+        case 2:
+            animation = [[FlipTransition alloc] init];
+            break;
+        case 3:
+            animation = [[ClothTransition alloc] init];
+            break;
+            
+        default:
+            break;
+    }
+    
+   
+    [[HMGLTransitionManager sharedTransitionManager] setTransition:animation];
+    [[HMGLTransitionManager sharedTransitionManager] beginTransition:self.view];
+    
+    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+    
+    [[HMGLTransitionManager sharedTransitionManager] commitTransition];
     
 }
 
