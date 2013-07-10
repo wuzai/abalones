@@ -55,6 +55,7 @@
     self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height -20-44-49)];
     self.swipeView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.swipeView];
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     
     self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44-49-44, 320, 44)];
@@ -78,6 +79,7 @@
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadAdsSuccess:) name:WZAdvertisementsDownloadSucceedNotification  object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadAdsFail:) name:WZAdvertisementsDownloadFailedNotification  object:nil];
 }
 
 -(void)downloadAdsSuccess:(NSNotification *)notification
@@ -85,6 +87,16 @@
     [self reload];
     
     [self.swipeView reloadData];
+    UIActivityIndicatorView *activity = (UIActivityIndicatorView *)self.navigationItem.leftBarButtonItem.customView;
+    [activity stopAnimating];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"刷新"] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
+}
+
+-(void)downloadAdsFail:(NSNotification *)notification
+{
+    UIActivityIndicatorView *activity = (UIActivityIndicatorView *)self.navigationItem.leftBarButtonItem.customView;
+    [activity stopAnimating];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"刷新"] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
 }
 
 -(void)dealloc
@@ -94,6 +106,13 @@
 
 -(void)updateAds:(id)sender
 {
+    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    activityIndicator.frame = CGRectMake(10, 5, 30, 30);
+   
+    [self.navigationItem.leftBarButtonItem setCustomView:activityIndicator];
+    [activityIndicator startAnimating];
+    
+    
     [WZAd download];
 }
 
