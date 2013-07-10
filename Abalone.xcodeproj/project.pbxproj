@@ -228,6 +228,10 @@
 		5FA2B26D178CF2A2009AEC75 /* RotateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B264178CF2A2009AEC75 /* RotateTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5FA2B26E178CF2A2009AEC75 /* Switch3DTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B266178CF2A2009AEC75 /* Switch3DTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5FA2B270178CF44D009AEC75 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA2B26F178CF44D009AEC75 /* OpenGLES.framework */; };
+		5FA2B275178D0F8C009AEC75 /* 反转.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2B271178D0F8C009AEC75 /* 反转.png */; };
+		5FA2B276178D0F8C009AEC75 /* 反转@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2B272178D0F8C009AEC75 /* 反转@2x.png */; };
+		5FA2B277178D0F8C009AEC75 /* 刷新.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2B273178D0F8C009AEC75 /* 刷新.png */; };
+		5FA2B278178D0F8C009AEC75 /* 刷新@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2B274178D0F8C009AEC75 /* 刷新@2x.png */; };
 		5FA3358317549A5B00D1EE8B /* WZLocationContrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */; };
 		5FA3FB60172A4D1600D5869B /* WZCoupon+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3FB5F172A4D1600D5869B /* WZCoupon+Mapping.m */; };
 		5FA3FB6F172A50BF00D5869B /* WZMeteringCard+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3FB6E172A50BF00D5869B /* WZMeteringCard+Mapping.m */; };
@@ -788,6 +792,10 @@
 		5FA2B265178CF2A2009AEC75 /* Switch3DTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch3DTransition.h; sourceTree = "<group>"; };
 		5FA2B266178CF2A2009AEC75 /* Switch3DTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch3DTransition.m; sourceTree = "<group>"; };
 		5FA2B26F178CF44D009AEC75 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5FA2B271178D0F8C009AEC75 /* 反转.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "反转.png"; sourceTree = "<group>"; };
+		5FA2B272178D0F8C009AEC75 /* 反转@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "反转@2x.png"; sourceTree = "<group>"; };
+		5FA2B273178D0F8C009AEC75 /* 刷新.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新.png"; sourceTree = "<group>"; };
+		5FA2B274178D0F8C009AEC75 /* 刷新@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新@2x.png"; sourceTree = "<group>"; };
 		5FA3358117549A5B00D1EE8B /* WZLocationContrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLocationContrl.h; sourceTree = "<group>"; };
 		5FA3358217549A5B00D1EE8B /* WZLocationContrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLocationContrl.m; sourceTree = "<group>"; };
 		5FA3FB5E172A4D1600D5869B /* WZCoupon+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZCoupon+Mapping.h"; sourceTree = "<group>"; };
@@ -1327,6 +1335,10 @@
 			isa = PBXGroup;
 			children = (
 				8A9741A9178A8A9C00A889F3 /* text.png */,
+				5FA2B271178D0F8C009AEC75 /* 反转.png */,
+				5FA2B272178D0F8C009AEC75 /* 反转@2x.png */,
+				5FA2B273178D0F8C009AEC75 /* 刷新.png */,
+				5FA2B274178D0F8C009AEC75 /* 刷新@2x.png */,
 				8A9741AA178A8A9C00A889F3 /* text@2x.png */,
 				8A0ED2F21782C479009DE3E2 /* add.png */,
 				8A0ED2F31782C479009DE3E2 /* add@2x.png */,
@@ -2563,6 +2575,10 @@
 				42152260178C199D00540030 /* 2s@2x.png in Resources */,
 				42E26298178C36D700EE9E93 /* 商户边框.png in Resources */,
 				42E26299178C36D700EE9E93 /* 商户边框@2x.png in Resources */,
+				5FA2B275178D0F8C009AEC75 /* 反转.png in Resources */,
+				5FA2B276178D0F8C009AEC75 /* 反转@2x.png in Resources */,
+				5FA2B277178D0F8C009AEC75 /* 刷新.png in Resources */,
+				5FA2B278178D0F8C009AEC75 /* 刷新@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

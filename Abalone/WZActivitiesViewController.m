@@ -61,8 +61,8 @@
     [self.view addSubview:self.pageControl];
    
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"反转"] style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"刷新"] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
     
     
     _swipeView.alignment = SwipeViewAlignmentCenter;
@@ -83,7 +83,7 @@
 -(void)downloadAdsSuccess:(NSNotification *)notification
 {
     [self reload];
-
+    
     [self.swipeView reloadData];
 }
 
@@ -99,7 +99,7 @@
 
 -(void)changePage:(id)sender
 {
-    [sender setUserInteractionEnabled:NO];
+    [sender setEnabled:NO];
     int number = arc4random() % 4;
     HMGLTransition *animation;
     switch (number) {
@@ -135,7 +135,7 @@
     [[HMGLTransitionManager sharedTransitionManager] commitTransition];
     
    
-      [sender setUserInteractionEnabled:YES];
+     [sender setEnabled:YES];
 }
 
 - (void)didReceiveMemoryWarning
