@@ -10,6 +10,7 @@
 #import "WZNetworkHelper.h"
 
 extern NSString *const WZAdvertisementsDownloadSucceedNotification;
+extern NSString *const WZAdvertisementsDownloadFailedNotification;
 
 @interface WZAd (Networks) <WZNetworkBeggar>
 + (BOOL)download;

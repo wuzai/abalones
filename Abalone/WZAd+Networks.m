@@ -12,6 +12,7 @@
 #import "WZServiceItem.h"
 
 NSString *const WZAdvertisementsDownloadSucceedNotification = @"AdvertisementsDownloadSucceed";
+NSString *const WZAdvertisementsDownloadFailedNotification = @"AdvertisementsDownloadFailed";
 
 static NSString *const kUserDefaultsAdverisementsKey = @"AdvertisementsTimeStamp";
 
@@ -68,6 +69,6 @@ static NSString *const kUserDefaultsAdverisementsKey = @"AdvertisementsTimeStamp
 
 + (void)failedIn:(RKObjectLoader *)loader withError:(NSError *)error
 {
-    
+    [[NSNotificationCenter defaultCenter]  postNotificationName:WZAdvertisementsDownloadFailedNotification object:error];
 }
 @end
