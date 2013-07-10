@@ -52,7 +52,7 @@
 {
     [super viewDidLoad];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
-    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height -20-44-49)];
+    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(8, 20, 304, [UIScreen mainScreen].bounds.size.height -40-44-49)];
     self.swipeView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.swipeView];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
