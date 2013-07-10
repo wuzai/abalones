@@ -28,6 +28,7 @@
     UIImage *_cellBackgroundImage;
     WZAd *_header;
     IBOutlet EGOImageView *_headerView;
+    BOOL showFlag;
 }
 @property (nonatomic,strong) SwipeView *swipeView;
 @property (nonatomic,strong) UIPageControl *pageControl;
@@ -65,7 +66,6 @@
     _swipeView.alignment = SwipeViewAlignmentCenter;
     _swipeView.pagingEnabled = YES;
     _swipeView.wrapEnabled = NO;
-  //  _swipeView.itemsPerPage = 3;
     _swipeView.truncateFinalPage = YES;
     _swipeView.delegate = self;
     _swipeView.dataSource = self;
@@ -73,7 +73,6 @@
     //configure page control
     _pageControl.numberOfPages = _swipeView.numberOfPages;
     _pageControl.defersCurrentPageDisplay = YES;
-     _pageControl.numberOfPages = 10;
 }
 
 -(void)changePage:(id)sender
@@ -103,14 +102,16 @@
     [[HMGLTransitionManager sharedTransitionManager] beginTransition:self.view];
     
     [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
-    
-    [[HMGLTransitionManager sharedTransitionManager] commitTransition];
-    
-    if (self.swipeView.hidden) {
+    showFlag = !showFlag;
+    if (showFlag) {
         self.pageControl.hidden = YES;
     }else{
         self.pageControl.hidden = NO;
     }
+    
+    [[HMGLTransitionManager sharedTransitionManager] commitTransition];
+    
+   
     
 }
 
@@ -124,6 +125,7 @@
 {
     [super viewWillAppear:animated];
     [self reload];
+     _pageControl.numberOfPages = _swipeView.numberOfPages;
 }
 
 #pragma mark - Reload
@@ -206,11 +208,13 @@
 {
     EGOImageView *imageView = (EGOImageView *)view;
     if (imageView == nil) {
-        imageView = [[EGOImageView alloc] init];
-        
+        imageView = [[EGOImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, [UIScreen mainScreen].applicationFrame.size.height)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        imageView.center = self.view.center;
     }
       WZAd *ad = [_advertisements objectAtIndex:index];
-    imageView.imageURL = [NSURL URLWithString:ad.postImage];
+    imageView.imageURL =  [NSURL URLWithString: ad.postImage];
     return imageView;
 }
 
@@ -222,10 +226,11 @@
 
 - (void)swipeView:(SwipeView *)swipeView didSelectItemAtIndex:(NSInteger)index
 {
-    NSLog(@"Selected item at index %i", index);
+    WZAd *advertisement = [_advertisements objectAtIndex:index];
+    [self performSegueWithIdentifier:@"Advertisement" sender:advertisement];
 }
 
-- (IBAction)pageControlTapped
+- (void)pageControlTapped
 {
     //update swipe view page
     [_swipeView scrollToPage:_pageControl.currentPage duration:0.4];
