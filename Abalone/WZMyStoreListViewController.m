@@ -167,7 +167,7 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.myStoreList.count) {
-        return 165.0;
+        return 135.0;
     }else{
         return self.view.frame.size.height;
     }
