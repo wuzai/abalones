@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface WZPasswordViewController : UIViewController
+- (IBAction)cancel:(id)sender;
 - (IBAction)reset:(id)sender;
 - (IBAction)closeKeyboard:(id)sender;
 @end

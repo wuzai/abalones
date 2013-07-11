@@ -12,4 +12,6 @@
 @property (nonatomic,copy) NSString *username;
 - (IBAction)reset:(id)sender;
 - (IBAction)closeKeyboard:(id)sender;
+- (IBAction)cancel:(id)sender;
+
 @end

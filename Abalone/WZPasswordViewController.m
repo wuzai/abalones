@@ -60,6 +60,13 @@
     return nil;
 }
 
+- (IBAction)cancel:(id)sender {
+    
+    [self closeKeyboard:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
 - (IBAction)reset:(id)sender
 {
     [self closeKeyboard:nil];

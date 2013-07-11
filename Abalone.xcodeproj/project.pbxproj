@@ -15,6 +15,8 @@
 		420B3976178E61DA004DB550 /* 边框条3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B3970178E61DA004DB550 /* 边框条3@2x.png */; };
 		420B397E178E6575004DB550 /* 标题条@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B397C178E6575004DB550 /* 标题条@2x.png */; };
 		420B397F178E6575004DB550 /* 标题条.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B397D178E6575004DB550 /* 标题条.png */; };
+		420B3983178E7A04004DB550 /* 修改.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B3981178E7A04004DB550 /* 修改.png */; };
+		420B3984178E7A04004DB550 /* 修改@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B3982178E7A04004DB550 /* 修改@2x.png */; };
 		42152250178C016800540030 /* 推荐.png in Resources */ = {isa = PBXBuildFile; fileRef = 4215224E178C016800540030 /* 推荐.png */; };
 		42152251178C016800540030 /* 推荐@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4215224F178C016800540030 /* 推荐@2x.png */; };
 		42836F241739DE0900E485D1 /* 登录_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F231739DE0900E485D1 /* 登录_content.png */; };
@@ -526,6 +528,8 @@
 		420B3970178E61DA004DB550 /* 边框条3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "边框条3@2x.png"; sourceTree = "<group>"; };
 		420B397C178E6575004DB550 /* 标题条@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标题条@2x.png"; sourceTree = "<group>"; };
 		420B397D178E6575004DB550 /* 标题条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标题条.png"; sourceTree = "<group>"; };
+		420B3981178E7A04004DB550 /* 修改.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改.png"; sourceTree = "<group>"; };
+		420B3982178E7A04004DB550 /* 修改@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改@2x.png"; sourceTree = "<group>"; };
 		4215224E178C016800540030 /* 推荐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "推荐.png"; sourceTree = "<group>"; };
 		4215224F178C016800540030 /* 推荐@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "推荐@2x.png"; sourceTree = "<group>"; };
 		42836F231739DE0900E485D1 /* 登录_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录_content.png"; sourceTree = "<group>"; };
@@ -1410,6 +1414,8 @@
 				42CE72A6178BE946007FDCC3 /* 转赠.png */,
 				42CE72A7178BE948007FDCC3 /* 转赠@2x.png */,
 				5F438D701740BE560006EA65 /* 暂时无图片.png */,
+				420B3981178E7A04004DB550 /* 修改.png */,
+				420B3982178E7A04004DB550 /* 修改@2x.png */,
 				5F438D711740BE560006EA65 /* 暂时无图片@2x.png */,
 				5F438D6C17409BDD0006EA65 /* 服务项列表@2x.png */,
 				5F438D6D17409BDD0006EA65 /* 服务项列表.png */,
@@ -2627,6 +2633,8 @@
 				420B3976178E61DA004DB550 /* 边框条3@2x.png in Resources */,
 				420B397E178E6575004DB550 /* 标题条@2x.png in Resources */,
 				420B397F178E6575004DB550 /* 标题条.png in Resources */,
+				420B3983178E7A04004DB550 /* 修改.png in Resources */,
+				420B3984178E7A04004DB550 /* 修改@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

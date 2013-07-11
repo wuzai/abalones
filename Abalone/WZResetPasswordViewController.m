@@ -73,6 +73,17 @@
         [confirmField resignFirstResponder];
     }
 }
+
+- (IBAction)cancel:(id)sender {
+    [self closeKeyboard:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
+
+
+
 - (NSString *)warning
 {
     NSString *warning = nil;
