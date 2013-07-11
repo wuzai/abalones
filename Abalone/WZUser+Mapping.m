@@ -15,13 +15,11 @@
 @implementation WZUser (Mapping)
 + (RKObjectMapping *)userMapping
 {
-    RKManagedObjectMapping *mapping = [RKManagedObjectMapping mappingForClass:[WZUser class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
-     mapping.primaryKeyAttribute = @"gid";
-    [mapping mapKeyPath:@"_id" toAttribute:@"gid"];
+    RKManagedObjectMapping *mapping = [RKManagedObjectMapping mappingForClass:[self class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
     [mapping mapKeyPath:@"userName" toAttribute:@"username"];
     [mapping mapAttributes:@"gender",@"name",@"email",@"point",@"birth", nil];
-    
-   
+    [mapping mapKeyPath:@"_id" toAttribute:@"gid"];
+    mapping.primaryKeyAttribute = @"gid";
     return mapping;
 }
 

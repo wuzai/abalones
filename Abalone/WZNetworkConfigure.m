@@ -17,22 +17,22 @@
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
    // RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/CoreData", RKLogLevelTrace);
-   //static NSString *const host = @"http://172.168.1.110:3000";
-   static NSString *const host = @"http://www.5zzg.com/systest";
+    //static NSString *const host = @"http://172.168.1.110:3000";
+    static NSString *const host = @"http://www.5zzg.com/sys";
     
     NSURL *baseURL = [NSURL URLWithString:host];
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:baseURL];
     objectManager.objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"Abalone.sqlite" usingSeedDatabaseName:nil managedObjectModel:nil delegate:self];
     objectManager.acceptMIMEType = RKMIMETypeJSON;
     objectManager.serializationMIMEType = RKMIMETypeJSON;
-//    NSString *username = [WZKeychain keychain].username;
-//    NSString *password = [WZKeychain keychain].password;
-//    if (username && password) {
-//        RKClient *client = objectManager.client;
-//        client.authenticationType = RKRequestAuthenticationTypeHTTPBasic;
-//        client.username = username;
-//        client.password = password;
-//    }
+    NSString *username = [WZKeychain keychain].username;
+    NSString *password = [WZKeychain keychain].password;
+    if (username && password) {
+        RKClient *client = objectManager.client;
+        client.authenticationType = RKRequestAuthenticationTypeHTTPBasic;
+        client.username = username;
+        client.password = password;
+    }
     
 //    objectManager.client.disableCertificateValidation = YES;
     //update date format
