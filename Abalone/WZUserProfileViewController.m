@@ -95,6 +95,8 @@
 {
     WZProfileModifier *modifier = [WZProfileModifier modifier];
     [modifier prepareChange:_nameField.text forKey:kWZUserProfileNameKey];
+    //[self setSwitch:_genderSwitch onText:"是" offText:"否"];
+    
     NSString *value = [_genderSwitch isOn]?@"男":@"女";
     [modifier prepareChange:_emailField.text forKey:kWZUserProfileEmailKey];
     [modifier prepareChange:value forKey:kWZUserProfileGenderKey];
