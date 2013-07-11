@@ -111,6 +111,24 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",self.store.cellPhone]]];
     }
 }
+
+
+- (UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        UIImage *image = [UIImage imageNamed:@"联系信息"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+         return imageView;
+    }else if(section == 1){
+        UIImage *image = [UIImage imageNamed:@"商户简介"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        return imageView;
+
+    }
+    return nil;
+}
 @end
 
 

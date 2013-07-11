@@ -223,10 +223,10 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.myStoreList.count) {
-        WZShowMyStoreDetailViewController *showMyStoreDetailVC = [[WZShowMyStoreDetailViewController alloc] init];
-        showMyStoreDetailVC.store = self.myStoreList[indexPath.row];
-        [self.parentViewController.navigationController pushViewController:showMyStoreDetailVC animated:YES];
-//        [self.parentViewController performSegueWithIdentifier:@"showMyStoreDetail" sender:self.myStoreList[indexPath.row]];
+//        WZShowMyStoreDetailViewController *showMyStoreDetailVC = [[WZShowMyStoreDetailViewController alloc] init];
+//        showMyStoreDetailVC.store = self.myStoreList[indexPath.row];
+//        [self.parentViewController.navigationController pushViewController:showMyStoreDetailVC animated:YES];
+        [self.parentViewController performSegueWithIdentifier:@"showMyStoreDetail" sender:self.myStoreList[indexPath.row]];
     }else{
         return;
     }

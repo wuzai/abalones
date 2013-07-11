@@ -54,7 +54,7 @@
         [self addChildViewController:self.myStoreListViewController];
         CGRect frame = self.myStoreListViewController.tableView.frame;
         frame.origin.y = 40;
-        frame.size.height = self.view.frame.size.height;
+        frame.size.height = self.view.frame.size.height - 44*2;
         self.myStoreListViewController.tableView.frame = frame;
         NSLog(@"%@",NSStringFromCGRect(self.myStoreListViewController.tableView.frame));
          self.myStoreListViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;

@@ -33,10 +33,11 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     self.storeNameLabel.text = self.store.storeName;
     self.storeNameLabel.backgroundColor = [UIColor redColor];
     self.storeImageView.imageURL = [NSURL URLWithString:self.store.rectangleImage];
-    [super viewWillAppear:animated];
+    self.tableView.tableHeaderView = self.storeImageView;
     self.storeDetailInfoViewController.store = self.store;
     self.serviceItemListViewController.store = self.store;
     self.commentListViewController.merchant = self.store.merchant;
@@ -199,16 +200,22 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger row = indexPath.row;
-    if (row == 0) {
-        return 150;
-    }else if(row == 1){
-        return 70;
-    }else{
-        if (IPHONE5) {
-            return 385;
+    if (indexPath.section == 0) {
+        if (row == 0) {
+            return 0;
+        }else if(row == 1){
+            return 70;
+        }else{
+            if (IPHONE5) {
+                return 385;
+            }
+            return 297;
         }
-        return 297;
+    }else if(indexPath.section == 1){
+        return 200;
     }
+    
+    
 }
 
 
