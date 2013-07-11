@@ -61,7 +61,7 @@
 								<string key="NSFrame">{{10, 12}, {194, 76}}</string>
 								<reference key="NSSuperview" ref="269748731"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="63060363"/>
+								<reference key="NSNextKeyView" ref="691028145"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -72,10 +72,25 @@
 								<string key="NSFrame">{{218, 12}, {96, 46}}</string>
 								<reference key="NSSuperview" ref="269748731"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="1001375601"/>
+								<reference key="NSNextKeyView" ref="63060363"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUIImageView" id="45284128">
+								<reference key="NSNextResponder" ref="269748731"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{10, 100}, {304, 19}}</string>
+								<reference key="NSSuperview" ref="269748731"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="226162967"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">标题条.png</string>
+								</object>
 							</object>
 							<object class="IBUILabel" id="63060363">
 								<reference key="NSNextResponder" ref="269748731"/>
@@ -83,7 +98,7 @@
 								<string key="NSFrame">{{213, 59}, {102, 41}}</string>
 								<reference key="NSSuperview" ref="269748731"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="691028145"/>
+								<reference key="NSNextKeyView" ref="45284128"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -120,7 +135,12 @@
 								<string key="NSFrame">{{10, 101}, {204, 19}}</string>
 								<reference key="NSSuperview" ref="269748731"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="1001375601"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<object class="NSColor" key="IBUIBackgroundColor" id="370305546">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MCAwAA</bytes>
+								</object>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -143,7 +163,7 @@
 								<string key="NSFrame">{{239, 100}, {75, 20}}</string>
 								<reference key="NSSuperview" ref="269748731"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="226162967"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -167,10 +187,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="912813127"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MCAwAA</bytes>
-						</object>
+						<reference key="IBUIBackgroundColor" ref="370305546"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -262,6 +279,7 @@
 							<reference ref="63060363"/>
 							<reference ref="226162967"/>
 							<reference ref="1001375601"/>
+							<reference ref="45284128"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -295,6 +313,11 @@
 						<reference key="object" ref="912813127"/>
 						<reference key="parent" ref="382028361"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">25</int>
+						<reference key="object" ref="45284128"/>
+						<reference key="parent" ref="382028361"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -310,13 +333,14 @@
 				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.CustomClassName">WZMyStoreListCell</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -371,10 +395,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">mystorecellbackground3.png</string>
-			<string key="NS.object.0">{320, 121}</string>
-		</object>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="mystorecellbackground3.png">{320, 121}</string>
+			<string key="标题条.png">{320, 16}</string>
+		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

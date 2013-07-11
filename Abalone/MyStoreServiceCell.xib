@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12C54</string>
+		<string key="IBDocument.SystemVersion">11G63</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1138.51</string>
+		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
@@ -41,20 +41,6 @@
 						<reference key="NSNextResponder" ref="212544647"/>
 						<int key="NSvFlags">256</int>
 						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIImageView" id="823153892">
-								<reference key="NSNextResponder" ref="18466726"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{320, 90}</string>
-								<reference key="NSSuperview" ref="18466726"/>
-								<reference key="NSNextKeyView" ref="640121036"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<object class="NSCustomResource" key="IBUIImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">服务背景.png</string>
-								</object>
-							</object>
 							<object class="IBUIImageView" id="640121036">
 								<reference key="NSNextResponder" ref="18466726"/>
 								<int key="NSvFlags">292</int>
@@ -80,8 +66,10 @@
 								<string key="IBUIText">vip会员卡</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MCAwIDAAA</bytes>
-									<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<object class="NSColorSpace" key="NSCustomColorSpace" id="450758081">
+										<int key="NSID">1</int>
+									</object>
 								</object>
 								<object class="NSColor" key="IBUIHighlightedColor" id="516933096">
 									<int key="NSColorSpace">3</int>
@@ -102,7 +90,7 @@
 							<object class="IBUIButton" id="706083132">
 								<reference key="NSNextResponder" ref="18466726"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{157, 46}, {71, 35}}</string>
+								<string key="NSFrame">{{157, 53}, {71, 28}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
 								<reference key="NSNextKeyView" ref="542589006"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -137,7 +125,7 @@
 							<object class="IBUIButton" id="542589006">
 								<reference key="NSNextResponder" ref="18466726"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{234, 47}, {71, 34}}</string>
+								<string key="NSFrame">{{234, 55}, {71, 26}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -187,7 +175,8 @@
 								<string key="IBUIText">无限</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MSAwLjEwOTc3NDkzNTUgMC4xMDE3MTU3NTU5AA</bytes>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<reference key="NSCustomColorSpace" ref="450758081"/>
 								</object>
 								<reference key="IBUIHighlightedColor" ref="516933096"/>
 								<int key="IBUIBaselineAdjustment">0</int>
@@ -206,9 +195,9 @@
 						</array>
 						<string key="NSFrameSize">{320, 89}</string>
 						<reference key="NSSuperview" ref="212544647"/>
-						<reference key="NSNextKeyView" ref="823153892"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
+						<object class="NSColor" key="IBUIBackgroundColor" id="236751816">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -223,6 +212,7 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="18466726"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
+				<reference key="IBUIBackgroundColor" ref="236751816"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUISelectionStyle">0</int>
 				<reference key="IBUIContentView" ref="18466726"/>
@@ -306,7 +296,6 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="706083132"/>
 							<reference ref="542589006"/>
-							<reference ref="823153892"/>
 							<reference ref="734331798"/>
 							<reference ref="640121036"/>
 							<reference ref="330160991"/>
@@ -335,11 +324,6 @@
 						<reference key="parent" ref="212544647"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="823153892"/>
-						<reference key="parent" ref="212544647"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
 						<reference key="object" ref="330160991"/>
 						<reference key="parent" ref="212544647"/>
@@ -355,7 +339,6 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.CustomClassName">WZMyStoreServiceCell</string>
@@ -378,10 +361,9 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="使用.png">{125, 44}</string>
-			<string key="服务背景.png">{320, 90}</string>
+			<string key="使用.png">{109, 35}</string>
 			<string key="电池.png">{30, 13}</string>
-			<string key="转赠.png">{125, 44}</string>
+			<string key="转赠.png">{109, 35}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
