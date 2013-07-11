@@ -72,7 +72,7 @@ NSString *const WZLoginFailedNotification = @"LoginFailed";
 + (BOOL)login:(NSString *)username withPassword:(NSString *)password
 {
     [[WZKeychain keychain] prepareForUsername:username password:password];
-    return [[WZNetworkHelper helper] help:[self class] with:nil object:@{@"username": username,@"password":password} by:RKRequestMethodPOST];
+    return [[WZNetworkHelper helper] help:[self class] with:@{@"username": username,@"password":password} object:nil by:RKRequestMethodGET];
 }
 
 #pragma mark - Callbacks
