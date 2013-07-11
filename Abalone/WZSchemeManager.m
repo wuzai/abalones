@@ -46,6 +46,7 @@
 - (WZNetworkScheme *)schemeForRoute:(NSString *)route method:(RKRequestMethod)method
 {
     for (WZNetworkScheme *scheme in _schemes) {
+        NSLog(@"test: %@ and %@",scheme.route,route);
         if ([scheme.route isEqualToString:route]&&(scheme.method==method)) {
             return scheme;
         }

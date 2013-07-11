@@ -14,8 +14,15 @@
 - (NSString *)route
 {
     NSMutableArray *array = [NSMutableArray arrayWithArray:[self.URL.path componentsSeparatedByString:@"/"]];
-    [array removeObjectsInRange:NSMakeRange(0, 3)];
-    return [array componentsJoinedByString:@"/"];
+//    [array removeObjectsInRange:NSMakeRange(0, 3)];
+//    return [array componentsJoinedByString:@"/"];
+    __block NSString *result;
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isEqual:@"v1"]) {
+            result = array[idx +1];
+        }
+    }];
+    return result;
 }
 
 - (WZNetworkScheme *)scheme
