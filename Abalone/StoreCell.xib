@@ -70,7 +70,7 @@
 									<string key="NSResourceName">discount2.png</string>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="417076090">
+							<object class="IBUIImageView" id="595526099">
 								<reference key="NSNextResponder" ref="249442935"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{0, 91}, {320, 21}}</string>
@@ -136,7 +136,10 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">小南国美食城</string>
-								<reference key="IBUITextColor" ref="406197307"/>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
+								</object>
 								<reference key="IBUIHighlightedColor" ref="406197307"/>
 								<int key="IBUIBaselineAdjustment">0</int>
 								<int key="IBUITextAlignment">1</int>
@@ -270,7 +273,7 @@
 							<reference ref="615121370"/>
 							<reference ref="541931110"/>
 							<reference ref="413100231"/>
-							<reference ref="417076090"/>
+							<reference ref="595526099"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -301,7 +304,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
-						<reference key="object" ref="417076090"/>
+						<reference key="object" ref="595526099"/>
 						<reference key="parent" ref="837838978"/>
 					</object>
 				</array>
