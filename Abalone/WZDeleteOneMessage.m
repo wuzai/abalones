@@ -13,7 +13,7 @@
 
 @implementation WZDeleteOneMessage
 
-+(BOOL)deleteOneMessage:(WZMessage *)message;
++(BOOL)deleteOneMessage:(WZMessage *)message;//deleteOneMessageSuccess
 {
     NSDictionary *dic = @{@"sendMessageRecord_id":message.gid};
     

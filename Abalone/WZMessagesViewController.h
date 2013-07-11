@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "EGORefreshTableHeaderView.h"
+
 @interface WZMessagesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate>
 {
     EGORefreshTableHeaderView *_refreshHeaderView;
