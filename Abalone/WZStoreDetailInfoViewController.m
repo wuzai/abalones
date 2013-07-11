@@ -126,6 +126,12 @@
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         return imageView;
 
+    }else if(section == 2){
+        UIImage *image = [UIImage imageNamed:@"商户相关"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        return imageView;
+        
     }
     return nil;
 }
