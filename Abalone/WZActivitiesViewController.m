@@ -176,17 +176,19 @@
         _advertisements = [NSMutableArray new];
     }
     [_advertisements removeAllObjects];
-    NSMutableSet *roll = [NSMutableSet new];
-    for (WZAd *ad in [WZAd allObjects]) {
-        if ([ad.fromDate timeIntervalSinceNow]<0 && [ad.toDate timeIntervalSinceNow]>0) {
-            [_advertisements addObject:ad];
-            if ([ad.showToDate timeIntervalSinceNow]>0&&[ad.showFromDate timeIntervalSinceNow]<0 && ad.postImage) {
-                [roll addObject:ad];
-            }
-        }
-    }
-    _header = [roll anyObject];
+    NSMutableSet *roll ;//= [NSMutableSet new];
+//    for (WZAd *ad in [WZAd allObjects]) {
+//        if ([ad.fromDate timeIntervalSinceNow]<0 && [ad.toDate timeIntervalSinceNow]>0) {
+//            [_advertisements addObject:ad];
+//            if ([ad.showToDate timeIntervalSinceNow]>0&&[ad.showFromDate timeIntervalSinceNow]<0 && ad.postImage) {
+//                [roll addObject:ad];
+//            }
+//        }
+//    }
+    
     [_advertisements sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"fromDate" ascending:NO]]];
+    roll = [NSSet setWithArray:_advertisements];
+    _header = [roll anyObject];
     _headerView.imageURL = _header.header;
     [_tableView reloadData];
 }
@@ -200,6 +202,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+   
     return 90;
 }
 
