@@ -769,7 +769,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7c-ff-C8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="604"/>
+            <point key="canvasLocation" x="1521" y="315"/>
         </scene>
         <!--License View Controller - 服务条款-->
         <scene sceneID="Uh0-wU-m26">
@@ -1459,7 +1459,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NVF-bn-sky">
-                                <rect key="frame" x="20" y="198" width="79" height="27"/>
+                                <rect key="frame" x="20" y="196" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                         </subviews>
@@ -1651,7 +1651,7 @@
             <objects>
                 <tableViewController id="bDf-4K-ow3" customClass="WZMyMerchantPointRecordListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XI4-fy-21Z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -1673,7 +1673,7 @@
             <objects>
                 <viewController id="XaS-aT-gNe" customClass="WZPointRecordDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bB3-ca-QSM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="printer_header@2x.png" id="TKP-Oy-igL">
@@ -1681,7 +1681,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="bYJ-EB-x9Z">
-                                <rect key="frame" x="8" y="20" width="305" height="386"/>
+                                <rect key="frame" x="8" y="20" width="305" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1924,7 +1924,7 @@
             <objects>
                 <tableViewController id="RuE-CT-2yF" customClass="WZMyStoreDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qQa-w3-67y">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -1939,6 +1939,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="JYD-RQ-8XX" kind="push" identifier="showMyServiceDetail" id="BvW-5K-8ZO"/>
                         <segue destination="6yi-9t-gZu" kind="push" identifier="sendLargess" id="Irc-E6-7Wf"/>
@@ -1956,7 +1957,7 @@
             <objects>
                 <tableViewController id="6yi-9t-gZu" customClass="WZSendLargessViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Cu5-bM-3Qh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2071,7 +2072,7 @@
             <objects>
                 <tableViewController id="jnD-lR-Eon" customClass="WZUseServiceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zqr-4E-qMZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2194,7 +2195,7 @@
             <objects>
                 <tableViewController id="JYD-RQ-8XX" customClass="WZMyServiceDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="IFv-v4-CvQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -3405,11 +3406,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fQ9-Os-rn4"/>
-        <segue reference="JA8-6Q-pQS"/>
         <segue reference="6QB-8D-gpg"/>
-        <segue reference="sJ9-j8-2f6"/>
+        <segue reference="JA8-6Q-pQS"/>
+        <segue reference="cWP-ka-XaA"/>
         <segue reference="6xH-gy-31G"/>
+        <segue reference="sJ9-j8-2f6"/>
         <segue reference="wjw-Kt-TRa"/>
     </inferredMetricsTieBreakers>
 </document>
