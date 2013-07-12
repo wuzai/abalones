@@ -10,6 +10,7 @@
 
 @interface WZAboutUsViewController : UIViewController
 @property (nonatomic,weak) IBOutlet UIImageView *backgroundView;
+- (IBAction)goWeb:(id)sender;
 - (IBAction)call:(id)sender;
 - (IBAction)web:(id)sender;
 @end
