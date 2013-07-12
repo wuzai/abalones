@@ -16,12 +16,18 @@
     NSMutableArray *array = [NSMutableArray arrayWithArray:[self.URL.path componentsSeparatedByString:@"/"]];
 //    [array removeObjectsInRange:NSMakeRange(0, 3)];
 //    return [array componentsJoinedByString:@"/"];
-    __block NSString *result;
+   
+  __block  NSUInteger index;
+    
     [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if ([obj isEqual:@"v1"]) {
-            result = array[idx +1];
+            index = idx+1;
+            *stop = YES;
         }
     }];
+    [array removeObjectsInRange:NSMakeRange(0, index)];
+   NSString  *result = [array componentsJoinedByString:@"/"];
+    NSLog(@"result == %@",result);
     return result;
 }
 
