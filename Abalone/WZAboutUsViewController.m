@@ -39,13 +39,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)goWeb:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"www.5zzg.com/sys"]]];
+}
+
 - (IBAction)call:(id)sender
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://02558506331"]];
-}
-
-- (IBAction)web:(id)sender
-{
-    
 }
 @end
