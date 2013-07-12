@@ -86,7 +86,7 @@
         [self.parentViewController performSegueWithIdentifier:@"showOtherStores" sender:nil];
     }else if(indexPath.row == 1 &&indexPath.section == 0){
         [self.parentViewController performSegueWithIdentifier:@"showMap" sender:nil];
-    }else if(indexPath.row == 0 && indexPath.section == 0){
+    }else if(indexPath.row == 0 && indexPath.section == 0){ 
         NSString *message = [NSString stringWithFormat:@"您确定拨打 %@ 吗？",self.store.cellPhone];
         UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 44, 300, 100)];
         messageLabel.text = message;

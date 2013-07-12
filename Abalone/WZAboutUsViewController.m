@@ -40,11 +40,14 @@
 }
 
 - (IBAction)goWeb:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"www.5zzg.com/sys"]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"www.5zzg.com"]]];
 }
 
 - (IBAction)call:(id)sender
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://02558506331"]];
+    
+    
+    
 }
 @end

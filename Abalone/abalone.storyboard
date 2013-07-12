@@ -490,6 +490,13 @@
                                 <color key="textColor" red="1" green="0.1097749355" blue="0.1017157559" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="加盟热线：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YyB-di-0Fq">
+                                <rect key="frame" x="45" y="128" width="264" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.1097749355" blue="0.1017157559" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="当前版本：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RFn-Jl-AxG">
                                 <rect key="frame" x="86" y="312" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -508,7 +515,19 @@
                                 <rect key="frame" x="124" y="92" width="176" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="www.5zzg.com/sys">
+                                <state key="normal" title="www.5zzg.com/wehere">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p1K-x1-MDD">
+                                <rect key="frame" x="124" y="120" width="176" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="025－58506331">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -516,7 +535,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goWeb:" destination="2jY-fw-Dd0" eventType="touchUpInside" id="piE-Ca-hRp"/>
+                                    <action selector="call:" destination="2jY-fw-Dd0" eventType="touchUpInside" id="R52-Gr-W7A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -526,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewk-dO-5BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="1521"/>
+            <point key="canvasLocation" x="918" y="1540"/>
         </scene>
         <!--Password View Controller - 修改密码-->
         <scene sceneID="19R-GV-O03">
@@ -3131,10 +3150,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAboutUsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="call:"/>
-
                 <relationship kind="action" name="goWeb:"/>
-
-                <relationship kind="action" name="web:"/>
                 <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
             </relationships>
         </class>
