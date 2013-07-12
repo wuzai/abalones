@@ -81,6 +81,12 @@
 		5F27685A17167E3A0032E69F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27685917167E3A0032E69F /* QuartzCore.framework */; };
 		5F276861171681320032E69F /* WZStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F276860171681320032E69F /* WZStoreDetailViewController.m */; };
 		5F27687C1716ABE70032E69F /* WZMerchant+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */; };
+		5F41A174178F9DF1000A3A52 /* 服务规则.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16E178F9DF1000A3A52 /* 服务规则.png */; };
+		5F41A175178F9DF1000A3A52 /* 服务规则@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */; };
+		5F41A176178F9DF1000A3A52 /* 服务详情.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A170178F9DF1000A3A52 /* 服务详情.png */; };
+		5F41A177178F9DF1000A3A52 /* 服务详情@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A171178F9DF1000A3A52 /* 服务详情@2x.png */; };
+		5F41A178178F9DF1000A3A52 /* 温馨提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A172178F9DF1000A3A52 /* 温馨提示.png */; };
+		5F41A179178F9DF1000A3A52 /* 温馨提示@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A173178F9DF1000A3A52 /* 温馨提示@2x.png */; };
 		5F438D651740933A0006EA65 /* 服务项.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F438D631740933A0006EA65 /* 服务项.png */; };
 		5F438D661740933A0006EA65 /* 服务项@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F438D641740933A0006EA65 /* 服务项@2x.png */; };
 		5F438D6E17409BDD0006EA65 /* 服务项列表@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F438D6C17409BDD0006EA65 /* 服务项列表@2x.png */; };
@@ -605,6 +611,12 @@
 		5F27686217168EF70032E69F /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		5F27687A1716ABE60032E69F /* WZMerchant+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZMerchant+Mapping.h"; sourceTree = "<group>"; };
 		5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMerchant+Mapping.m"; sourceTree = "<group>"; };
+		5F41A16E178F9DF1000A3A52 /* 服务规则.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则.png"; sourceTree = "<group>"; };
+		5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则@2x.png"; sourceTree = "<group>"; };
+		5F41A170178F9DF1000A3A52 /* 服务详情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务详情.png"; sourceTree = "<group>"; };
+		5F41A171178F9DF1000A3A52 /* 服务详情@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务详情@2x.png"; sourceTree = "<group>"; };
+		5F41A172178F9DF1000A3A52 /* 温馨提示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温馨提示.png"; sourceTree = "<group>"; };
+		5F41A173178F9DF1000A3A52 /* 温馨提示@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温馨提示@2x.png"; sourceTree = "<group>"; };
 		5F438D631740933A0006EA65 /* 服务项.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务项.png"; sourceTree = "<group>"; };
 		5F438D641740933A0006EA65 /* 服务项@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务项@2x.png"; sourceTree = "<group>"; };
 		5F438D6C17409BDD0006EA65 /* 服务项列表@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务项列表@2x.png"; sourceTree = "<group>"; };
@@ -1366,6 +1378,12 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5F41A16E178F9DF1000A3A52 /* 服务规则.png */,
+				5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */,
+				5F41A170178F9DF1000A3A52 /* 服务详情.png */,
+				5F41A171178F9DF1000A3A52 /* 服务详情@2x.png */,
+				5F41A172178F9DF1000A3A52 /* 温馨提示.png */,
+				5F41A173178F9DF1000A3A52 /* 温馨提示@2x.png */,
 				5F069856178ED438006DDFAA /* 反转.png */,
 				5F069857178ED438006DDFAA /* 反转@2x.png */,
 				5F06982E178E4C60006DDFAA /* 联系信息.png */,
@@ -2643,6 +2661,12 @@
 				5F069849178ECF4C006DDFAA /* 商户相关@2x.png in Resources */,
 				5F069858178ED438006DDFAA /* 反转.png in Resources */,
 				5F069859178ED438006DDFAA /* 反转@2x.png in Resources */,
+				5F41A174178F9DF1000A3A52 /* 服务规则.png in Resources */,
+				5F41A175178F9DF1000A3A52 /* 服务规则@2x.png in Resources */,
+				5F41A176178F9DF1000A3A52 /* 服务详情.png in Resources */,
+				5F41A177178F9DF1000A3A52 /* 服务详情@2x.png in Resources */,
+				5F41A178178F9DF1000A3A52 /* 温馨提示.png in Resources */,
+				5F41A179178F9DF1000A3A52 /* 温馨提示@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

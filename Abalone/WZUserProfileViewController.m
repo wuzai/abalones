@@ -60,7 +60,7 @@
 - (NSString *)warning
 {
     NSString *warning = nil;
-    if (_emailField.text && ![_emailField.text isValidEmail]) {
+    if (_emailField.text.length  && ![_emailField.text isValidEmail]) {
         warning = @"邮箱不合法";
     }
     return warning;
