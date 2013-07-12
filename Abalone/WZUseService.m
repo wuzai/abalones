@@ -56,6 +56,8 @@ NSString *const kUseServiceFailNotificationKey =@"useServiceFail";
         message = @"相应服务未能找到";
     }else if(loader.response.statusCode == 400){
         message = @"使用失败！";
+    }else{
+        message = error.localizedDescription;
     }
   
     [[NSNotificationCenter defaultCenter] postNotificationName:kUseServiceFailNotificationKey object:message];
