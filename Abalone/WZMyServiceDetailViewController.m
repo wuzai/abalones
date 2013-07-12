@@ -121,6 +121,30 @@
     return size.height + 10 >44 ? size.height + 10 : 44;
 }
 
+
+- (UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 1) {
+        UIImage *image = [UIImage imageNamed:@"服务规则"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        return imageView;
+    }else if(section == 2){
+        UIImage *image = [UIImage imageNamed:@"服务详情"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        return imageView;
+        
+    }else if(section == 3){
+        UIImage *image = [UIImage imageNamed:@"温馨提示"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        return imageView;
+        
+    }
+    return nil;
+}
+
 @end
 
 
