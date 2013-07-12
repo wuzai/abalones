@@ -145,7 +145,7 @@
     
     
     //#define kDELETEONEMESSAGESUCCESSNOTIFICTION @"deleteOneMessageSuccess"
-//#define kDELETEONEMESSAGEFAILNOTIFICTION @"deleteOneMessageFail"
+//#define kDELETEONEMESSAGEFAILNOTIFICTION @"deleteOneMessageFail"/／4
      [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector( deleteMes) name:kDELETEONEMESSAGESUCCESSNOTIFICTION object:nil];
        [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(deletefail) name:kDELETEONEMESSAGEFAILNOTIFICTION object:nil];
     
