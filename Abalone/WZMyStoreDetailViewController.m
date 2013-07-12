@@ -44,7 +44,8 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"门店详情";
+    
+    
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     NSBundle *classBundle = [NSBundle bundleForClass:[WZMyStoreDetailHeaderCell class]];
@@ -69,6 +70,8 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 {
     [super viewWillAppear:animated];
     self.services = self.store.myServicesInTheStore;
+    self.title = [NSString stringWithFormat:@"%@", self.store.storeName ];
+
     [WZFetchService fetchServiceByUser:[WZUser me]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchServiceSuccess:) name:kFetchServiceSuccessNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchServiceFail:) name:kFetchServiceFailNotificationKey object:nil];
