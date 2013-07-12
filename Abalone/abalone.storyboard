@@ -3131,7 +3131,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAboutUsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="call:"/>
+
                 <relationship kind="action" name="goWeb:"/>
+
                 <relationship kind="action" name="web:"/>
                 <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
             </relationships>
