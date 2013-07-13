@@ -22,7 +22,7 @@
     @"merchantName",@"name",
     @"logoUrl",@"logo",
     @"webSite",@"url",
-    @"description",@"intro",
+    @"intro",@"intro",
     @"customerServicePhone",@"telphone",
      @"memberNum",@"memberNumber",
      @"point",@"score",nil];
