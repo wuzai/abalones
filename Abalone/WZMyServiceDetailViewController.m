@@ -125,7 +125,7 @@
 - (UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section == 1) {
-        UIImage *image = [UIImage imageNamed:@"服务规则"];
+        UIImage *image = [UIImage imageNamed:@"使用说明"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         return imageView;

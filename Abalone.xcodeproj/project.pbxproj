@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420A2FEA1793E1F500CE8BE9 /* 使用说明.png in Resources */ = {isa = PBXBuildFile; fileRef = 420A2FE81793E1F500CE8BE9 /* 使用说明.png */; };
+		420A2FEB1793E1F500CE8BE9 /* 使用说明@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420A2FE91793E1F500CE8BE9 /* 使用说明@2x.png */; };
 		420B3971178E61DA004DB550 /* 边框条1.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B396B178E61DA004DB550 /* 边框条1.png */; };
 		420B3972178E61DA004DB550 /* 边框条1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B396C178E61DA004DB550 /* 边框条1@2x.png */; };
 		420B3973178E61DA004DB550 /* 边框条2.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B396D178E61DA004DB550 /* 边框条2.png */; };
@@ -532,6 +534,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		420A2FE81793E1F500CE8BE9 /* 使用说明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用说明.png"; sourceTree = "<group>"; };
+		420A2FE91793E1F500CE8BE9 /* 使用说明@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用说明@2x.png"; sourceTree = "<group>"; };
 		420B396B178E61DA004DB550 /* 边框条1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "边框条1.png"; sourceTree = "<group>"; };
 		420B396C178E61DA004DB550 /* 边框条1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "边框条1@2x.png"; sourceTree = "<group>"; };
 		420B396D178E61DA004DB550 /* 边框条2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "边框条2.png"; sourceTree = "<group>"; };
@@ -1397,6 +1401,8 @@
 			isa = PBXGroup;
 			children = (
 				5F41A16E178F9DF1000A3A52 /* 服务规则.png */,
+				420A2FE81793E1F500CE8BE9 /* 使用说明.png */,
+				420A2FE91793E1F500CE8BE9 /* 使用说明@2x.png */,
 				5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */,
 				5F41A170178F9DF1000A3A52 /* 服务详情.png */,
 				5F41A171178F9DF1000A3A52 /* 服务详情@2x.png */,
@@ -2687,6 +2693,8 @@
 				42D5D4A1178FA655004700FF /* 刷新@2x.png in Resources */,
 				42D5D4AC178FB00D004700FF /* 反转.png in Resources */,
 				42D5D4AD178FB00D004700FF /* 反转@2x.png in Resources */,
+				420A2FEA1793E1F500CE8BE9 /* 使用说明.png in Resources */,
+				420A2FEB1793E1F500CE8BE9 /* 使用说明@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
