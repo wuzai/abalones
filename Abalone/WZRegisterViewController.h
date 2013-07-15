@@ -12,7 +12,7 @@
 @property (nonatomic,weak) IBOutlet UITextField *usernameField;
 @property (nonatomic,weak) IBOutlet UITextField *passwordField;
 @property (nonatomic,weak) IBOutlet UITextField *confirmField;
-@property (nonatomic,weak) IBOutlet UITextField *captchaField;
+
 @property (nonatomic,weak) IBOutlet UISwitch *licenseSwitch;
 - (IBAction)register_:(id)sender;
 - (IBAction)cancel:(id)sender;

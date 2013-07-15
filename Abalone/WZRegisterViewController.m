@@ -22,7 +22,7 @@
 @implementation WZRegisterViewController
 @synthesize usernameField = _usernameField;
 @synthesize passwordField = _passwordField;
-@synthesize captchaField = _captchaField;
+
 @synthesize confirmField = _confirmField;
 @synthesize licenseSwitch = _licenseSwitch;
 
@@ -71,12 +71,12 @@
     else if (![_confirmField.text isEqualToString:_passwordField.text]) {
         warning = @"密码不一致";
     }
-    else if (![_captchaField.text isValidCaptcha]) {
-        warning = @"验证码不能为空";
-    }
-    else if (![_captchaField.text isValidPassword]) {
-        warning = @"验证码不正确";
-    }
+//    else if (![_captchaField.text isValidCaptcha]) {
+//        warning = @"验证码不能为空";
+//    }
+//    else if (![_captchaField.text isValidPassword]) {
+//        warning = @"验证码不正确";
+//    }
     else if ([_licenseSwitch isOn]==NO) {
         warning = @"请先阅读服务条款";
     }
@@ -97,7 +97,7 @@
         [UIWindow lock];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registerSucceed:) name:WZRegisterSucceedNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registerFailed:) name:WZRegisterFailedNotification object:nil];
-        [WZSignup signup:_usernameField.text withPassword:_passwordField.text andCaptcha:_captchaField.text];
+        [WZSignup signup:_usernameField.text withPassword:_passwordField.text andCaptcha:_passwordField.text];
     }
 }
 
@@ -112,7 +112,7 @@
     [_usernameField resignFirstResponder];
     [_passwordField resignFirstResponder];
     [_confirmField resignFirstResponder];
-    [_captchaField resignFirstResponder];
+//    [_captchaField resignFirstResponder];
 }
 
 #pragma mark - Callbacks
