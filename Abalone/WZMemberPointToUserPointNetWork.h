@@ -13,7 +13,7 @@
 #define kMEMBERPOINTTOUSERPOINTFAILNOTIFICTION @"memberPointToUserPointFail"
 
 
-@interface WZMemberPointToUserPointNetWork : NSObject
+@interface WZMemberPointToUserPointNetWork : NSObject <WZNetworkBeggar>
 
 /* 会员积分兑换
 >* 请求方式 ： POST
@@ -28,5 +28,6 @@
 * 404 - 会员未找到/积分记录未找到，可能是数据错误
  */
 
++(BOOL) member:(NSString *)memberID setMemberPointToUserPoint:(NSInteger)pointNum;
 
 @end
