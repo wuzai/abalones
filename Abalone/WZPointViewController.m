@@ -55,7 +55,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,7 +74,15 @@
         [self reloadPoint];
         updated = YES;
     }
+    
     [[WZUser me] fetch];
+    WZUser *me = [WZUser me];
+   
+    if (me.gid) {
+//        self.navigationItem.rightBarButtonItem = nil;
+    }else{
+         self.navigationItem.rightBarButtonItem = nil;
+    }
     [WZRegulation updateRegulationVersion];
 }
 /*

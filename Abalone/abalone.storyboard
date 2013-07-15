@@ -1064,6 +1064,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="accessoryView" destination="nvA-TM-Gas" id="lf7-Tu-tId"/>
+                        <outlet property="detailButton" destination="x1C-UQ-N2l" id="nyA-Bn-y7a"/>
                         <outlet property="imageView" destination="5Nk-os-8YN" id="mt1-Ku-bBr"/>
                         <outlet property="ruleLabel" destination="mPG-BR-fg9" id="H0l-ZL-8Fs"/>
                     </connections>
@@ -3290,6 +3291,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPointViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="accessoryView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="detailButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="imageView" candidateClass="WZMultiImageView"/>
                 <relationship kind="outlet" name="ruleLabel" candidateClass="UILabel"/>
             </relationships>
@@ -3319,7 +3321,6 @@
                 <relationship kind="action" name="cancel:"/>
                 <relationship kind="action" name="closeKeyboard:"/>
                 <relationship kind="action" name="register_:"/>
-                <relationship kind="outlet" name="captchaField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="licenseSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
@@ -3432,9 +3433,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aWS-9h-fYN"/>
-        <segue reference="sJ9-j8-2f6"/>
         <segue reference="6xH-gy-31G"/>
+        <segue reference="aWS-9h-fYN"/>
+        <segue reference="lDJ-Kv-KiJ"/>
         <segue reference="wjw-Kt-TRa"/>
         <segue reference="acX-vh-CGC"/>
         <segue reference="cWP-ka-XaA"/>
