@@ -77,12 +77,12 @@
     //判断服务类型
     if ([self.serviceItem.serviceItemType  isEqualToString:@"MemberCard"])
     {
-        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"类型:会员卡"];
+        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"会员卡"];
         self.serviceItemDateLabel.hidden = true;
     }
     else if([self.serviceItem.serviceItemType isEqualToString:@"Coupon"])
     {
-        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"类型:团购活动"];
+        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@":团购活动"];
         self.serviceItemDateLabel.hidden = false;
         self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
     }
