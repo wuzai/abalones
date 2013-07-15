@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIView *accessoryView;
 @property (weak, nonatomic) IBOutlet UILabel *ruleLabel;
 @property (weak, nonatomic) IBOutlet WZMultiImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *detailButton;
+
 @end
