@@ -69,12 +69,24 @@
     [formatter setDateFormat:@"yyyy-MM-dd"];
     NSString *fromDate = [formatter stringFromDate:self.serviceItem.fromDate];
     NSString *endDate = [formatter stringFromDate:self.serviceItem.toDate];
-    self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
-    self.serviceItemAddressLabel.text = self.store.address;
-    self.serviceItemMerchantName.text = [NSString stringWithFormat:@"主办方:%@",self.serviceItem.merchant.name];
-   // NSString *serviceItemType = nil;
     
-    self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"类型:%@",self.serviceItem.serviceItemType];
+    self.serviceItemAddressLabel.text = self.store.address;
+    self.serviceItemAddressLabel.text = [NSString stringWithFormat:@"地址:%@",self.store.address];
+   // NSString *serviceItemType = nil;
+    self.serviceItemNameLabel.text =self.serviceItem.serviceItemName;
+    //判断服务类型
+    if ([self.serviceItem.serviceItemType  isEqualToString:@"MemberCard"])
+    {
+        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"类型:会员卡"];
+        self.serviceItemDateLabel.hidden = true;
+    }
+    else if([self.serviceItem.serviceItemType isEqualToString:@"Coupon"])
+    {
+        self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"类型:团购活动"];
+        self.serviceItemDateLabel.hidden = false;
+        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+    }
+
     if(self.serviceItem.isApplicable.boolValue == YES && self.serviceItem.isRequireApply.boolValue == YES){
         self.ServiceItemapplyButton.hidden = NO;
     }else{
