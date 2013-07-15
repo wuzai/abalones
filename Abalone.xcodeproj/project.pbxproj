@@ -127,6 +127,7 @@
 		5F7F2BFE17574BDD0028B13D /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BFD17574BDD0028B13D /* MenuCell.xib */; };
 		5F9B811517939B4F0089E9EC /* WZUserPointNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B811417939B4F0089E9EC /* WZUserPointNetWork.m */; };
 		5F9B811D1793A51D0089E9EC /* WZMemberPointNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B811C1793A51D0089E9EC /* WZMemberPointNetWork.m */; };
+		5F9B81201793A8460089E9EC /* WZMemberPointToUserPointNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B811F1793A8460089E9EC /* WZMemberPointToUserPointNetWork.m */; };
 		5F9D2DDC171FDBCD00DAF830 /* WZStore+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D2DDB171FDBCD00DAF830 /* WZStore+Mapping.m */; };
 		5F9D4EA3170BC13E009855CC /* WZStoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D4EA2170BC13E009855CC /* WZStoreListViewController.m */; };
 		5F9D4EAC170BD104009855CC /* StoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9D4EAB170BD104009855CC /* StoreCell.xib */; };
@@ -673,6 +674,8 @@
 		5F9B811417939B4F0089E9EC /* WZUserPointNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZUserPointNetWork.m; sourceTree = "<group>"; };
 		5F9B811B1793A51D0089E9EC /* WZMemberPointNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMemberPointNetWork.h; sourceTree = "<group>"; };
 		5F9B811C1793A51D0089E9EC /* WZMemberPointNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMemberPointNetWork.m; sourceTree = "<group>"; };
+		5F9B811E1793A8460089E9EC /* WZMemberPointToUserPointNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMemberPointToUserPointNetWork.h; sourceTree = "<group>"; };
+		5F9B811F1793A8460089E9EC /* WZMemberPointToUserPointNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMemberPointToUserPointNetWork.m; sourceTree = "<group>"; };
 		5F9D2DDA171FDBCD00DAF830 /* WZStore+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZStore+Mapping.h"; sourceTree = "<group>"; };
 		5F9D2DDB171FDBCD00DAF830 /* WZStore+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZStore+Mapping.m"; sourceTree = "<group>"; };
 		5F9D4EA1170BC13E009855CC /* WZStoreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStoreListViewController.h; sourceTree = "<group>"; };
@@ -1320,6 +1323,8 @@
 				5F9B811417939B4F0089E9EC /* WZUserPointNetWork.m */,
 				5F9B811B1793A51D0089E9EC /* WZMemberPointNetWork.h */,
 				5F9B811C1793A51D0089E9EC /* WZMemberPointNetWork.m */,
+				5F9B811E1793A8460089E9EC /* WZMemberPointToUserPointNetWork.h */,
+				5F9B811F1793A8460089E9EC /* WZMemberPointToUserPointNetWork.m */,
 			);
 			name = Networks;
 			sourceTree = "<group>";
@@ -2848,6 +2853,7 @@
 				8A9B85A917939A5E00958259 /* WZMyPointCell.m in Sources */,
 				5F9B811517939B4F0089E9EC /* WZUserPointNetWork.m in Sources */,
 				5F9B811D1793A51D0089E9EC /* WZMemberPointNetWork.m in Sources */,
+				5F9B81201793A8460089E9EC /* WZMemberPointToUserPointNetWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
