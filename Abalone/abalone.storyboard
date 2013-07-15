@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -2608,11 +2608,11 @@
                         <sections>
                             <tableViewSection id="OgF-GM-yfH">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="220" id="TT0-Sw-GbQ">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="221"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="235" id="TT0-Sw-GbQ">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="219"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="59s-ZB-jYA">
@@ -2623,20 +2623,8 @@
                                                             <rect key="frame" x="0.0" y="6" width="300" height="141"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="time.png" id="mDR-Nr-t3g">
-                                                            <rect key="frame" x="8" y="156" width="12" height="12"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zhuban.png" id="ImG-3l-E6E">
-                                                            <rect key="frame" x="7" y="178" width="12" height="12"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="lei.png" id="cIO-8Z-eHR">
-                                                            <rect key="frame" x="7" y="200" width="11" height="11"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DfU-3h-aCn">
-                                                            <rect key="frame" x="189" y="170" width="101" height="38"/>
+                                                            <rect key="frame" x="189" y="159" width="101" height="38"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                             <state key="normal" title="申领" image="申领.png">
@@ -2650,22 +2638,22 @@
                                                                 <action selector="applyServiceItem:" destination="UDd-4y-JxF" eventType="touchUpInside" id="bqw-2E-rut"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2013－12-23～2013-12-26" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GmP-XZ-1xw">
-                                                            <rect key="frame" x="32" y="150" width="206" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <color key="textColor" red="0.28368564590000001" green="0.45727156159999999" blue="0.77173913039999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="南京吾在软件有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v8v-1O-rzL">
-                                                            <rect key="frame" x="32" y="174" width="147" height="21"/>
+                                                            <rect key="frame" x="14" y="194" width="258" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.28368564590000001" green="0.45727156159999999" blue="0.77173913039999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="体验券" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rNM-c2-Iz9">
-                                                            <rect key="frame" x="32" y="196" width="147" height="21"/>
+                                                            <rect key="frame" x="14" y="154" width="147" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.28368564590000001" green="0.45727156159999999" blue="0.77173913039999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="服务名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7u-YX-5Dy">
+                                                            <rect key="frame" x="14" y="173" width="147" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.28368564590000001" green="0.45727156159999999" blue="0.77173913039999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -2674,19 +2662,26 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2013－12-23～2013-12-26" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GmP-XZ-1xw">
+                                                    <rect key="frame" x="13" y="214" width="206" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.28368564590000001" green="0.45727156159999999" blue="0.77173913039999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="85" id="wdz-ps-Jck">
-                                        <rect key="frame" x="0.0" y="231" width="320" height="85"/>
+                                        <rect key="frame" x="0.0" y="246" width="320" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  服务地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8WV-Zt-FEk">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  申领说明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8WV-Zt-FEk">
                                                     <rect key="frame" x="0.0" y="5" width="320" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2708,7 +2703,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="77" id="fVa-4k-mja">
-                                        <rect key="frame" x="0.0" y="316" width="320" height="77"/>
+                                        <rect key="frame" x="0.0" y="331" width="320" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="76"/>
@@ -2736,7 +2731,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="109" id="S8W-ii-Li1">
-                                        <rect key="frame" x="0.0" y="393" width="320" height="110"/>
+                                        <rect key="frame" x="0.0" y="408" width="320" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="108"/>
@@ -2775,20 +2770,21 @@
                     <connections>
                         <outlet property="ServiceItemapplyButton" destination="DfU-3h-aCn" id="hSM-RY-P9z"/>
                         <outlet property="contentView" destination="59s-ZB-jYA" id="TFQ-UT-n0U"/>
-                        <outlet property="serviceItemAddressLabel" destination="Fy1-9i-gHZ" id="cbN-D9-CEq"/>
+                        <outlet property="serviceItemAddressLabel" destination="v8v-1O-rzL" id="Ftc-hA-eJY"/>
                         <outlet property="serviceItemContentTextView" destination="OE9-0v-2Dt" id="59z-Ix-HdN"/>
                         <outlet property="serviceItemDateLabel" destination="GmP-XZ-1xw" id="vff-Yy-Xiz"/>
                         <outlet property="serviceItemHeaderCell" destination="TT0-Sw-GbQ" id="r9H-7W-RmH"/>
                         <outlet property="serviceItemImageView" destination="tkg-Fk-EKK" id="yML-tr-lLP"/>
-                        <outlet property="serviceItemMerchantName" destination="v8v-1O-rzL" id="i2A-xy-911"/>
+                        <outlet property="serviceItemNameLabel" destination="m7u-YX-5Dy" id="t79-86-K1T"/>
                         <outlet property="serviceItemRule" destination="1bk-vH-R3u" id="5X3-Ck-CMR"/>
                         <outlet property="serviceItemTypeLabel" destination="rNM-c2-Iz9" id="Uf1-bU-lJ9"/>
+                        <outlet property="serviceItemconditionsLabel" destination="Fy1-9i-gHZ" id="oaf-xp-iLj"/>
                         <segue destination="qz0-Z8-Iy7" kind="push" identifier="gotoLogin" id="acX-vh-CGC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i90-ft-wCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3127" y="-1249"/>
+            <point key="canvasLocation" x="2914" y="-1268"/>
         </scene>
         <!--Store Detail Info View Controller-->
         <scene sceneID="OaA-ED-y7z">
@@ -3109,12 +3105,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lei.png" width="10" height="12"/>
         <image name="printer_header@2x.png" width="584" height="46"/>
         <image name="printer_shadow@2x.png" width="558" height="40"/>
         <image name="starbucksdiscount.png" width="184" height="107"/>
-        <image name="time.png" width="12" height="12"/>
-        <image name="zhuban.png" width="12" height="12"/>
         <image name="修改.png" width="109" height="35"/>
         <image name="修改密码.png" width="109" height="34"/>
         <image name="取消.png" width="109" height="34"/>
@@ -3386,10 +3379,11 @@
                 <relationship kind="outlet" name="serviceItemDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="serviceItemHeaderCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="serviceItemImageView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="serviceItemMerchantName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="serviceItemRule" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="serviceItemRulebackImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="serviceItemTypeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="serviceItemconditionsLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="WZStoreDetailInfoViewController" superclassName="UITableViewController">

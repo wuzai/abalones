@@ -17,7 +17,7 @@
 @property (nonatomic,strong) WZStore *store;
 @property (weak, nonatomic) IBOutlet EGOImageView *serviceItemImageView;
 @property (weak, nonatomic) IBOutlet UILabel *serviceItemDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *serviceItemAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *serviceItemconditionsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *addressbackImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *serviceItemTypeLabel;
@@ -26,7 +26,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *serviceItemContentTextView;
 @property (weak, nonatomic) IBOutlet UIImageView *contentbackImageView;
 
-@property (weak, nonatomic) IBOutlet UILabel *serviceItemMerchantName;
+@property (weak, nonatomic) IBOutlet UILabel *serviceItemAddressLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *serviceItemNameLabel;
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *serviceItemHeaderCell;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
