@@ -11,4 +11,10 @@
 @interface WZMyMerchantPointCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIButton *pointButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *platformPoint;
+@property (weak, nonatomic) IBOutlet UIButton *platformSend;
+@property (weak, nonatomic) IBOutlet UIButton *merchantPointSend;
+@property (weak, nonatomic) IBOutlet UIButton *merchantPointChange;
+
+
 @end

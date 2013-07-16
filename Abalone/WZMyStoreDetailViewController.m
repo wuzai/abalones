@@ -137,6 +137,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
         cell = [self.tableView dequeueReusableCellWithIdentifier:myMerchantPointCellIdentifier];
         if([cell isKindOfClass:[WZMyMerchantPointCell class]]){
             WZMyMerchantPointCell *pointCell = (WZMyMerchantPointCell *)cell;
+            pointCell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointCellBg"]];
             NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"WZMember"];
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"merchantID = %@",self.store.merchant.gid];
             request.predicate = predicate;
@@ -409,7 +410,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     if (indexPath.row == 0) {
         return 200;
     }else if(indexPath.row == 1){
-        return 44;
+        return 120;
     }else{
         return 90;
     }

@@ -121,6 +121,12 @@
 		5F674F3417103BEF00034265 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F3317103BEF00034265 /* MobileCoreServices.framework */; };
 		5F674F3617103BF700034265 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F3517103BF700034265 /* Security.framework */; };
 		5F674F3817103BFF00034265 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F3717103BFF00034265 /* SystemConfiguration.framework */; };
+		5F7555811795195A0059D9BB /* pointCellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557B1795195A0059D9BB /* pointCellBg.png */; };
+		5F7555821795195A0059D9BB /* pointCellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557C1795195A0059D9BB /* pointCellBg@2x.png */; };
+		5F7555831795195A0059D9BB /* pointChagne.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557D1795195A0059D9BB /* pointChagne.png */; };
+		5F7555841795195A0059D9BB /* pointChagne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557E1795195A0059D9BB /* pointChagne@2x.png */; };
+		5F7555851795195A0059D9BB /* 积分转赠.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557F1795195A0059D9BB /* 积分转赠.png */; };
+		5F7555861795195A0059D9BB /* 积分转赠@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7555801795195A0059D9BB /* 积分转赠@2x.png */; };
 		5F7F2BF117574B930028B13D /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BED17574B930028B13D /* Menu.png */; };
 		5F7F2BF217574B930028B13D /* Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BEE17574B930028B13D /* Menu@2x.png */; };
 		5F7F2BF317574B930028B13D /* MenuSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BEF17574B930028B13D /* MenuSelected.png */; };
@@ -667,6 +673,12 @@
 		5F674F3317103BEF00034265 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5F674F3517103BF700034265 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5F674F3717103BFF00034265 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5F75557B1795195A0059D9BB /* pointCellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointCellBg.png; sourceTree = "<group>"; };
+		5F75557C1795195A0059D9BB /* pointCellBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointCellBg@2x.png"; sourceTree = "<group>"; };
+		5F75557D1795195A0059D9BB /* pointChagne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointChagne.png; sourceTree = "<group>"; };
+		5F75557E1795195A0059D9BB /* pointChagne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointChagne@2x.png"; sourceTree = "<group>"; };
+		5F75557F1795195A0059D9BB /* 积分转赠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "积分转赠.png"; sourceTree = "<group>"; };
+		5F7555801795195A0059D9BB /* 积分转赠@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "积分转赠@2x.png"; sourceTree = "<group>"; };
 		5F7F2BED17574B930028B13D /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
 		5F7F2BEE17574B930028B13D /* Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu@2x.png"; sourceTree = "<group>"; };
 		5F7F2BEF17574B930028B13D /* MenuSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuSelected.png; sourceTree = "<group>"; };
@@ -1400,6 +1412,12 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5F75557B1795195A0059D9BB /* pointCellBg.png */,
+				5F75557C1795195A0059D9BB /* pointCellBg@2x.png */,
+				5F75557D1795195A0059D9BB /* pointChagne.png */,
+				5F75557E1795195A0059D9BB /* pointChagne@2x.png */,
+				5F75557F1795195A0059D9BB /* 积分转赠.png */,
+				5F7555801795195A0059D9BB /* 积分转赠@2x.png */,
 				5F41A16E178F9DF1000A3A52 /* 服务规则.png */,
 				420A2FE81793E1F500CE8BE9 /* 使用说明.png */,
 				420A2FE91793E1F500CE8BE9 /* 使用说明@2x.png */,
@@ -2695,6 +2713,12 @@
 				42D5D4AD178FB00D004700FF /* 反转@2x.png in Resources */,
 				420A2FEA1793E1F500CE8BE9 /* 使用说明.png in Resources */,
 				420A2FEB1793E1F500CE8BE9 /* 使用说明@2x.png in Resources */,
+				5F7555811795195A0059D9BB /* pointCellBg.png in Resources */,
+				5F7555821795195A0059D9BB /* pointCellBg@2x.png in Resources */,
+				5F7555831795195A0059D9BB /* pointChagne.png in Resources */,
+				5F7555841795195A0059D9BB /* pointChagne@2x.png in Resources */,
+				5F7555851795195A0059D9BB /* 积分转赠.png in Resources */,
+				5F7555861795195A0059D9BB /* 积分转赠@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
