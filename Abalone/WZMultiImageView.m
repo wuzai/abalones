@@ -60,7 +60,8 @@
     [_imageViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_imageViews removeAllObjects];
     NSInteger index = 0;
-    _contentView.contentSize = CGSizeMake(_contentView.frame.size.width*[_images count], _contentView.frame.size.height);
+    _contentView.contentSize = CGSizeMake(960, _contentView.frame.size.height);
+    
     _contentView.showsHorizontalScrollIndicator = NO;
     _contentView.showsVerticalScrollIndicator = NO;
     _contentView.scrollEnabled = YES;
