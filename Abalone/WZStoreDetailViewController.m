@@ -36,7 +36,7 @@
     [super viewWillAppear:animated];
     self.storeNameLabel.text = self.store.storeName;
     self.storeNameLabel.backgroundColor = [UIColor redColor];
-    self.storeImageView.imageURL = [NSURL URLWithString:self.store.rectangleImage];
+    self.storeImageView.imageURL = [NSURL URLWithString:self.store.vipImage];
     self.tableView.tableHeaderView = self.storeImageView;
     self.storeDetailInfoViewController.store = self.store;
     self.serviceItemListViewController.store = self.store;
@@ -135,7 +135,7 @@
 -(void)updateViews
 {
     self.storeNameLabel.text = self.store.storeName;
-    self.storeImageView.imageURL = [NSURL URLWithString:self.store.rectangleImage];
+    self.storeImageView.imageURL = [NSURL URLWithString:self.store.vipImage];
     [self.storeDetailInfoViewController updateViews];
     [self.serviceItemListViewController updateViews];
     [self.commentListViewController updateViews];

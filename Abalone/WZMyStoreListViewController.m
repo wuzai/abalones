@@ -138,7 +138,7 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
         cell = [tableView dequeueReusableCellWithIdentifier:cellIdenitfier];
         if ([cell isKindOfClass:[WZMyStoreListCell class]]) {
             WZMyStoreListCell *myStoreCell = (WZMyStoreListCell *)cell;
-            myStoreCell.storeBigImage.imageURL = [NSURL URLWithString:store.squareImage];
+            myStoreCell.storeBigImage.imageURL = [NSURL URLWithString:store.vipImage];
             myStoreCell.storeBigImage.placeholderImage = [UIImage imageNamed:@"占位图4"];
             myStoreCell.LogoImge.imageURL = [NSURL URLWithString:store.merchant.logo];
             myStoreCell.LogoImge.placeholderImage = [UIImage imageNamed:@"占位图2"];
