@@ -8,6 +8,7 @@
 
 #import "WZUserPointNetWork.h"
 #import "RKObjectMapping+Null.h"
+#import "WZUser+Mapping.h"
 
 
 @implementation WZUserPointNetWork
@@ -42,7 +43,7 @@
 }
 + (RKObjectMapping *)objectMappingForMethod:(RKRequestMethod)method
 {
-    return [RKObjectMapping nullMapping];
+    return [WZUser userMapping];
 }
 
 + (RKObjectMapping *)sourceMappingForMethod:(RKRequestMethod)method
@@ -59,7 +60,7 @@
 
 +(void)failedIn:(RKObjectLoader *)loader withError:(NSError *)error
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kSENDPOINTTOUSERFAILNOTIFICTION object:error];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSENDPOINTTOUSERFAILNOTIFICTION object:[error localizedDescription]];
 }
 
 

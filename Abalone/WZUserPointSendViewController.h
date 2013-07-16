@@ -1,5 +1,5 @@
 //
-//  WZMerchantPointSendViewController.h
+//  WZUserPointSendViewController.h
 //  Abalone
 //
 //  Created by 陈 海涛 on 13-7-16.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WZMerchant.h"
+@class WZMerchant;
 
-@interface WZMerchantPointSendViewController : UITableViewController <UIAlertViewDelegate>
+@interface WZUserPointSendViewController : UITableViewController <UIAlertViewDelegate>
 @property (nonatomic,strong) WZMerchant *merchant;
 @property (weak, nonatomic) IBOutlet UILabel *sendExplain;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;

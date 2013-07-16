@@ -1,23 +1,24 @@
 //
-//  WZMerchantPointSendViewController.m
+//  WZUserPointSendViewController.m
 //  Abalone
 //
 //  Created by 陈 海涛 on 13-7-16.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
-#import "WZMerchantPointSendViewController.h"
+#import "WZUserPointSendViewController.h"
 #import "NSString+Format.h"
-#import "WZMemberPointNetWork.h"
+#import "WZUserPointNetWork.h"
 #import "WZmerchant.h"
 #import "WZUser+Me.h"
 #import "WZMember.h"
+#import "WZConfigure.h"
 
-@interface WZMerchantPointSendViewController ()
+@interface WZUserPointSendViewController ()
 
 @end
 
-@implementation WZMerchantPointSendViewController
+@implementation WZUserPointSendViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,20 +32,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"会员积分转赠";
+    self.navigationItem.title = @"平台积分转赠";
     
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.sendExplain.text = self.merchant.largessExplain;
+    self.sendExplain.text =  [WZUser me].config.pointLargessExplain ;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointSuccess:) name:kSENDMEMBERPOINTTOUSERSUCCESSNOTIFICTION object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointFail:) name:kSENDMEMBERPOINTTOUSERFAILNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendUserPointSuccess:) name:kSENDPOINTTOUSERSUCCESSNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendUserPointFail:) name:kSENDPOINTTOUSERFAILNOTIFICTION object:nil];
 }
 
--(void)sendMemberPointSuccess:(NSNotification *)notification
+-(void)sendUserPointSuccess:(NSNotification *)notification
 {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"积分转赠成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];
@@ -52,11 +53,11 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     [self dismissViewControllerAnimated:YES completion:^{
-        [self.navigationController.topViewController  performSelector:@selector(reload)];
+    [self.navigationController.topViewController  performSelector:@selector(reload)];
     }];
 }
 
--(void)sendMemberPointFail:(NSNotification *)notification
+-(void)sendUserPointFail:(NSNotification *)notification
 {
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[notification object]  delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -72,13 +73,13 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-   
+    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        CGSize size =  [self.merchant.largessExplain sizeWithFont:self.sendExplain.font constrainedToSize:CGSizeMake(self.sendExplain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
+        CGSize size =  [[WZUser me].config.pointLargessExplain sizeWithFont:self.sendExplain.font constrainedToSize:CGSizeMake(self.sendExplain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
         return size.height +20;
     }else{
         return 107;
@@ -92,20 +93,15 @@
     if (warning) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:warning message:nil delegate:nil cancelButtonTitle:@"好的" otherButtonTitles: nil];
         [alert show];
-    }else{
-        NSFetchRequest *request = [WZMember  fetchRequest];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"user.gid = %@ and merchant.gid = %@",[WZUser me].gid,self.merchant.gid];
-        request.predicate = predicate;
-        NSArray *members = [WZMember executeFetchRequest:request];
-        if (members.count) {
-            WZMember *member = [members lastObject];
-             [WZMemberPointNetWork sendMemberPoint:self.pointNum.text.intValue fromMember:member.gid toUserName:self.phoneNum.text inMerchant:self.merchant.gid];
-        }
-       
+    }else{        
+        [WZUserPointNetWork UserPointSendToUser:self.phoneNum.text fromUser:[WZUser me].gid withPoint:self.pointNum.text.integerValue];
+        
     }
     
     
 }
+
+
 
 - (void)done:(id)sender
 {

@@ -76,6 +76,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     [WZFetchService fetchServiceByUser:[WZUser me]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchServiceSuccess:) name:kFetchServiceSuccessNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchServiceFail:) name:kFetchServiceFailNotificationKey object:nil];
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -154,7 +155,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
             [pointCell.platformPoint addTarget:self action:@selector(platformPointRecord:) forControlEvents:UIControlEventTouchUpInside];
             
             [pointCell.merchantPointSend addTarget:self action:@selector(merchantPointSend:) forControlEvents:UIControlEventTouchUpInside];
-            
+            [pointCell.platformSend addTarget:self action:@selector(userPointSend:) forControlEvents:UIControlEventTouchUpInside];
           
         }
     }else{
@@ -253,6 +254,13 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     
     
     return cell;
+}
+
+-(void) userPointSend:(UIButton *)button
+{
+    WZUserPointSendViewController *pointSend = (WZUserPointSendViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"UserPointSend"];
+    pointSend.merchant = self.store.merchant;
+    [self.navigationController pushViewController:pointSend animated:YES];
 }
 
 -(void)merchantPointSend:(UIButton *)button

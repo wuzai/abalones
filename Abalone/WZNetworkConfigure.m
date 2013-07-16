@@ -17,7 +17,7 @@
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
    // RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/CoreData", RKLogLevelTrace);
-    static NSString *const host = @"http://172.168.1.110:3000";
+    static NSString *const host = @"http://172.168.1.100:3000";
     //static NSString *const host = @"http://www.5zzg.com/sys";
     
     NSURL *baseURL = [NSURL URLWithString:host];

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WZStore.h"
+#import "WZUserPointSendViewController.h"
 
 @interface WZMyStoreDetailViewController : UITableViewController
 @property (nonatomic,strong) WZStore *store;

@@ -8,6 +8,7 @@
 
 #import "WZMemberPointNetWork.h"
 #import "RKObjectMapping+Null.h"
+#import "WZMember+Mapping.h"
 
 @implementation WZMemberPointNetWork
 
@@ -39,7 +40,7 @@
 }
 + (RKObjectMapping *)objectMappingForMethod:(RKRequestMethod)method
 {
-    return [RKObjectMapping nullMapping];
+    return [WZMember memberMapping];
 }
 
 + (RKObjectMapping *)sourceMappingForMethod:(RKRequestMethod)method

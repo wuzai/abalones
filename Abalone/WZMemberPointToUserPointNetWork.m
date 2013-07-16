@@ -57,7 +57,7 @@
 
 +(void)failedIn:(RKObjectLoader *)loader withError:(NSError *)error
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kMEMBERPOINTTOUSERPOINTFAILNOTIFICTION object:error];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kMEMBERPOINTTOUSERPOINTFAILNOTIFICTION object:[error localizedDescription]];
 }
 
 
