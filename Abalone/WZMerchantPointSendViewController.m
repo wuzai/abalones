@@ -45,7 +45,7 @@
 {
     if (indexPath.row == 0) {
         CGSize size =  [self.merchant.largessExplain sizeWithFont:self.sendExplain.font constrainedToSize:CGSizeMake(self.sendExplain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
-        return size.height +10;
+        return size.height +20;
     }else{
         return 107;
     }
