@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="WZAd" representedClassName="WZAd" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fromDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -24,6 +24,12 @@
         <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="merchant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZMerchant" inverseName="comments" inverseEntity="WZMerchant" syncable="YES"/>
         <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZUser" inverseName="commetns" inverseEntity="WZUser" syncable="YES"/>
+    </entity>
+    <entity name="WZConfigure" representedClassName="WZConfigure" syncable="YES">
+        <attribute name="gid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pointLargessExplain" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZUser" inverseName="config" inverseEntity="WZUser" syncable="YES"/>
     </entity>
     <entity name="WZCoupon" representedClassName="WZCoupon" syncable="YES">
         <attribute name="allowLargess" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -83,10 +89,13 @@
         <attribute name="gid" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="largessExplain" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="memberNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="parentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rateExplain" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="scorestate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telphone" optional="YES" attributeType="String" syncable="YES"/>
@@ -193,6 +202,7 @@
         <attribute name="point" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="commetns" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZComment" inverseName="user" inverseEntity="WZComment" syncable="YES"/>
+        <relationship name="config" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZConfigure" inverseName="user" inverseEntity="WZConfigure" syncable="YES"/>
         <relationship name="coupons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZCoupon" inverseName="user" inverseEntity="WZCoupon" syncable="YES"/>
         <relationship name="memberCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMemberCard" inverseName="user" inverseEntity="WZMemberCard" syncable="YES"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMember" inverseName="user" inverseEntity="WZMember" syncable="YES"/>
@@ -207,12 +217,13 @@
         <element name="WZLocation" positionX="160" positionY="192" width="128" height="105"/>
         <element name="WZMember" positionX="61" positionY="-729" width="128" height="165"/>
         <element name="WZMemberCard" positionX="160" positionY="192" width="128" height="240"/>
-        <element name="WZMerchant" positionX="-333" positionY="-138" width="128" height="420"/>
+        <element name="WZMerchant" positionX="-333" positionY="-138" width="128" height="465"/>
         <element name="WZMessage" positionX="547" positionY="-216" width="128" height="210"/>
         <element name="WZMeteringCard" positionX="160" positionY="192" width="128" height="285"/>
         <element name="WZPointRecord" positionX="160" positionY="192" width="128" height="255"/>
         <element name="WZServiceItem" positionX="160" positionY="192" width="128" height="300"/>
         <element name="WZStore" positionX="160" positionY="192" width="128" height="285"/>
-        <element name="WZUser" positionX="-180" positionY="-603" width="128" height="255"/>
+        <element name="WZUser" positionX="-180" positionY="-603" width="128" height="270"/>
+        <element name="WZConfigure" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>

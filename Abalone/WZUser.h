@@ -2,14 +2,14 @@
 //  WZUser.h
 //  Abalone
 //
-//  Created by 吾在 on 13-5-15.
-//  Copyright (c) 2013年 吾在. All rights reserved.
+//  Created by 陈 海涛 on 13-7-16.
+//  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class WZComment, WZCoupon, WZMember, WZMemberCard, WZMessage, WZMeteringCard, WZPointRecord;
+@class WZComment, WZConfigure, WZCoupon, WZMember, WZMemberCard, WZMessage, WZMeteringCard, WZPointRecord;
 
 @interface WZUser : NSManagedObject
 
@@ -27,6 +27,7 @@
 @property (nonatomic, retain) NSSet *messages;
 @property (nonatomic, retain) NSSet *meteringCards;
 @property (nonatomic, retain) NSSet *pointRecords;
+@property (nonatomic, retain) WZConfigure *config;
 @end
 
 @interface WZUser (CoreDataGeneratedAccessors)

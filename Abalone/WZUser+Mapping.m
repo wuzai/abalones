@@ -11,6 +11,7 @@
 #import "WZCoupon+Mapping.h"
 #import "WZMeteringCard+Mapping.h"
 #import "WZMember+Mapping.h"
+#import "WZConfigure+Mapping.h"
 
 @implementation WZUser (Mapping)
 + (RKObjectMapping *)userMapping
@@ -20,6 +21,8 @@
     [mapping mapAttributes:@"gender",@"name",@"email",@"point",@"birth", nil];
     [mapping mapKeyPath:@"_id" toAttribute:@"gid"];
     mapping.primaryKeyAttribute = @"gid";
+    
+    [mapping mapRelationship:@"config" withMapping:[WZConfigure configMapping]];
     return mapping;
 }
 

@@ -27,7 +27,8 @@
      @"memberNum",@"memberNumber",
      @"point",@"score",nil];
     
-    [merchantMapping mapAttributes:@"address",@"email",@"coordinate",@"image",@"explain",@"scoreState",@"comment", nil];
+    
+    [merchantMapping mapAttributes:@"address",@"email",@"coordinate",@"image",@"explain",@"scoreState",@"comment",@"rate",@"rateExplain",@"largessExplain", nil];
     
     [merchantMapping  mapRelationship:@"stores" withMapping:[WZStore storeMapping]];
     [merchantMapping mapRelationship:@"serviceItems" withMapping:[WZServiceItem serviceItemMapping]];

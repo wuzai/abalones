@@ -2,8 +2,8 @@
 //  WZMerchant.m
 //  Abalone
 //
-//  Created by 吾在 on 13-5-15.
-//  Copyright (c) 2013年 吾在. All rights reserved.
+//  Created by 陈 海涛 on 13-7-16.
+//  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import "WZMerchant.h"
@@ -36,6 +36,9 @@
 @dynamic telphone;
 @dynamic updateTime;
 @dynamic url;
+@dynamic largessExplain;
+@dynamic rateExplain;
+@dynamic rate;
 @dynamic ads;
 @dynamic comments;
 @dynamic members;
