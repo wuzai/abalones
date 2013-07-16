@@ -138,6 +138,9 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
         if([cell isKindOfClass:[WZMyMerchantPointCell class]]){
             WZMyMerchantPointCell *pointCell = (WZMyMerchantPointCell *)cell;
             pointCell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointCellBg"]];
+            WZUser *user = [WZUser me];
+            [pointCell.platformPoint setTitle:[NSString stringWithFormat:@"%i",user.point.integerValue] forState:UIControlStateNormal];
+            
             NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"WZMember"];
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"merchantID = %@",self.store.merchant.gid];
             request.predicate = predicate;
@@ -146,6 +149,11 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                 [pointCell.pointButton setTitle: [NSString stringWithFormat:@"%i",[[members.lastObject point]intValue]] forState:UIControlStateNormal];
                 [pointCell.pointButton addTarget:self action:@selector(showRecords:) forControlEvents:UIControlEventTouchUpInside];
             }
+          
+            [pointCell.platformPoint addTarget:self action:@selector(platformPointRecord:) forControlEvents:UIControlEventTouchUpInside];
+            
+            
+            
           
         }
     }else{
@@ -244,6 +252,15 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     
     
     return cell;
+}
+
+-(void)platformPointRecord:(UIButton *)button
+{
+    WZMyMerchantPointRecordListViewController *mpl = (WZMyMerchantPointRecordListViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"pointRecordView"];
+    mpl.merchant = self.store.merchant;
+    mpl.type  = WZUserType;
+    
+    [self.navigationController pushViewController:mpl animated:YES];
 }
 
 -(void)showRecords:(id)button

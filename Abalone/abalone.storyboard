@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -545,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewk-dO-5BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="1540"/>
+            <point key="canvasLocation" x="686" y="1704"/>
         </scene>
         <!--Password View Controller - 修改密码-->
         <scene sceneID="19R-GV-O03">
@@ -1614,7 +1614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyl-46-u4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="1913"/>
+            <point key="canvasLocation" x="1290" y="1797"/>
         </scene>
         <!--Navigation Controller - 设置-->
         <scene sceneID="MUa-mH-wVq">
@@ -1684,7 +1684,7 @@
         <!--My Merchant Point Record List View Controller-->
         <scene sceneID="eiH-xy-rwR">
             <objects>
-                <tableViewController id="bDf-4K-ow3" customClass="WZMyMerchantPointRecordListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="pointRecordView" id="bDf-4K-ow3" customClass="WZMyMerchantPointRecordListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XI4-fy-21Z">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1706,7 +1706,7 @@
         <!--Point Record Detail View Controller - 积分记录详情-->
         <scene sceneID="ZyK-pK-eXc">
             <objects>
-                <viewController id="XaS-aT-gNe" customClass="WZPointRecordDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="XaS-aT-gNe" customClass="WZPointRecordDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bB3-ca-QSM">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3084,7 +3084,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zI8-C9-D1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="1275"/>
+            <point key="canvasLocation" x="32" y="1755"/>
         </scene>
     </scenes>
     <resources>
@@ -3435,9 +3435,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="6xH-gy-31G"/>
         <segue reference="aWS-9h-fYN"/>
+        <segue reference="fQ9-Os-rn4"/>
+        <segue reference="qrf-xs-FfO"/>
         <segue reference="lDJ-Kv-KiJ"/>
         <segue reference="wjw-Kt-TRa"/>
-        <segue reference="acX-vh-CGC"/>
-        <segue reference="cWP-ka-XaA"/>
     </inferredMetricsTieBreakers>
 </document>
