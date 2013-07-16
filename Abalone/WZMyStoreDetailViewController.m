@@ -26,6 +26,7 @@
 #import "WZMember.h"
 #import "WZMeteringCard.h"
 #import <ShareSDK/ShareSDK.h>
+#import "WZPointSendViewController.h"
 
 
 @interface WZMyStoreDetailViewController ()
@@ -152,7 +153,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
           
             [pointCell.platformPoint addTarget:self action:@selector(platformPointRecord:) forControlEvents:UIControlEventTouchUpInside];
             
-            
+            [pointCell.merchantPointSend addTarget:self action:@selector(merchantPointSend:) forControlEvents:UIControlEventTouchUpInside];
             
           
         }
@@ -252,6 +253,13 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     
     
     return cell;
+}
+
+-(void)merchantPointSend:(UIButton *)button
+{
+    WZPointSendViewController *psVc = [[WZPointSendViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    psVc.merchant = self.store.merchant;
+    [self.navigationController pushViewController:psVc animated:YES];
 }
 
 -(void)platformPointRecord:(UIButton *)button
