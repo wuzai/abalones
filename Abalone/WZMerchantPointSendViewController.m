@@ -7,6 +7,11 @@
 //
 
 #import "WZMerchantPointSendViewController.h"
+#import "NSString+Format.h"
+#import "WZMemberPointNetWork.h"
+#import "WZmerchant.h"
+#import "WZUser+Me.h"
+#import "WZMember.h"
 
 @interface WZMerchantPointSendViewController ()
 
@@ -26,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"会员积分转赠";
     
 }
 
@@ -33,6 +39,28 @@
 {
     [super viewWillAppear:animated];
     self.sendExplain.text = self.merchant.largessExplain;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointSuccess:) name:kSENDMEMBERPOINTTOUSERSUCCESSNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointFail:) name:kSENDMEMBERPOINTTOUSERFAILNOTIFICTION object:nil];
+}
+
+-(void)sendMemberPointSuccess:(NSNotification *)notification
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"积分转赠成功" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+-(void)sendMemberPointFail:(NSNotification *)notification
+{
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[notification object]  delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,5 +81,47 @@
 
 
 - (IBAction)sendPoint:(id)sender {
+    [self done:nil];
+    NSString *warning = [self warning];
+    if (warning) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:warning message:nil delegate:nil cancelButtonTitle:@"好的" otherButtonTitles: nil];
+        [alert show];
+    }else{
+        NSFetchRequest *request = [WZMember  fetchRequest];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"user.gid = %@ and merchant.gid = %@",[WZUser me].gid,self.merchant.gid];
+        request.predicate = predicate;
+        NSArray *members = [WZMember executeFetchRequest:request];
+        if (members.count) {
+            WZMember *member = [members lastObject];
+             [WZMemberPointNetWork sendMemberPoint:self.pointNum.text.intValue fromMember:member.gid toUserName:self.phoneNum.text inMerchant:self.merchant.gid];
+        }
+       
+    }
+    
+    
+}
+
+- (void)done:(id)sender
+{
+    [self.pointNum resignFirstResponder];
+    [self.phoneNum resignFirstResponder];
+}
+
+- (NSString *)warning
+{
+    NSString *warning = nil;
+    if (![self.phoneNum.text isValidTelphone]) {
+        warning = @"手机号不正确";
+    }
+    else if (![self.pointNum.text length]) {
+        warning = @"积分不能为空";
+    }
+    return warning;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self done:nil];
 }
 @end

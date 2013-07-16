@@ -16,5 +16,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *pointNum;
 - (IBAction)sendPoint:(id)sender;
 
-
+- (void)done:(id)sender;
 @end
