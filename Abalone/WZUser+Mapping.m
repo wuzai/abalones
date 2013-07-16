@@ -18,7 +18,8 @@
 {
     RKManagedObjectMapping *mapping = [RKManagedObjectMapping mappingForClass:[self class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
     [mapping mapKeyPath:@"userName" toAttribute:@"username"];
-    [mapping mapAttributes:@"gender",@"name",@"email",@"point",@"birth", nil];
+    [mapping mapAttributes:@"gender",@"name",@"email",@"birth", nil];
+    [mapping mapKeyPath:@"userPoint" toAttribute:@"point"];
     [mapping mapKeyPath:@"_id" toAttribute:@"gid"];
     mapping.primaryKeyAttribute = @"gid";
     
@@ -45,6 +46,7 @@
     RKManagedObjectMapping *userMapping = [RKManagedObjectMapping mappingForClass:[WZUser class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
     userMapping.primaryKeyAttribute = @"gid";
     [userMapping mapKeyPathsToAttributes:@"_id",@"gid",@"userName",@"username", nil];
+    [userMapping mapKeyPath:@"userPoint" toAttribute:@"point"];
     
     [userMapping mapRelationship:@"memberCards"  withMapping:[WZMemberCard memberCardMapping]];
     [userMapping mapRelationship:@"coupons" withMapping:[WZCoupon couponMapping]];

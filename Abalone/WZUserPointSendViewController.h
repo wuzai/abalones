@@ -11,6 +11,7 @@
 
 @interface WZUserPointSendViewController : UITableViewController <UIAlertViewDelegate>
 @property (nonatomic,strong) WZMerchant *merchant;
+@property (nonatomic,strong) UITableViewController *lastVC;
 @property (weak, nonatomic) IBOutlet UILabel *sendExplain;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *pointNum;

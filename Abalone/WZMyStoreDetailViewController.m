@@ -260,6 +260,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 {
     WZUserPointSendViewController *pointSend = (WZUserPointSendViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"UserPointSend"];
     pointSend.merchant = self.store.merchant;
+    pointSend.lastVC = self;
     [self.navigationController pushViewController:pointSend animated:YES];
 }
 
@@ -267,6 +268,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 {
     WZMerchantPointSendViewController *psVc = (WZMerchantPointSendViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"merchantPointSend"];
     psVc.merchant = self.store.merchant;
+    psVc.lastVC = self;
     [self.navigationController pushViewController:psVc animated:YES];
 }
 

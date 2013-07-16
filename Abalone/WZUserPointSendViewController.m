@@ -47,14 +47,13 @@
 
 -(void)sendUserPointSuccess:(NSNotification *)notification
 {
+     [self.lastVC.tableView reloadData];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"积分转赠成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-    [self.navigationController.topViewController  performSelector:@selector(reload)];
-    }];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)sendUserPointFail:(NSNotification *)notification
