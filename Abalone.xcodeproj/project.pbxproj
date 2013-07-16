@@ -131,6 +131,7 @@
 		5F755591179523F10059D9BB /* WZConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755590179523F10059D9BB /* WZConfigure.m */; };
 		5F755594179524060059D9BB /* WZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755593179524060059D9BB /* WZUser.m */; };
 		5F755597179524980059D9BB /* WZConfigure+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755596179524980059D9BB /* WZConfigure+Mapping.m */; };
+		5F75559A179526800059D9BB /* WZPointSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755599179526800059D9BB /* WZPointSendViewController.m */; };
 		5F7F2BF117574B930028B13D /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BED17574B930028B13D /* Menu.png */; };
 		5F7F2BF217574B930028B13D /* Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BEE17574B930028B13D /* Menu@2x.png */; };
 		5F7F2BF317574B930028B13D /* MenuSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BEF17574B930028B13D /* MenuSelected.png */; };
@@ -689,6 +690,8 @@
 		5F755593179524060059D9BB /* WZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZUser.m; sourceTree = "<group>"; };
 		5F755595179524980059D9BB /* WZConfigure+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZConfigure+Mapping.h"; sourceTree = "<group>"; };
 		5F755596179524980059D9BB /* WZConfigure+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZConfigure+Mapping.m"; sourceTree = "<group>"; };
+		5F755598179526800059D9BB /* WZPointSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZPointSendViewController.h; sourceTree = "<group>"; };
+		5F755599179526800059D9BB /* WZPointSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZPointSendViewController.m; sourceTree = "<group>"; };
 		5F7F2BED17574B930028B13D /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
 		5F7F2BEE17574B930028B13D /* Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu@2x.png"; sourceTree = "<group>"; };
 		5F7F2BEF17574B930028B13D /* MenuSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuSelected.png; sourceTree = "<group>"; };
@@ -1889,6 +1892,8 @@
 				5F47B82517865EAA002488EC /* WZShowMyStoreDetailViewController.m */,
 				8A9B85A717939A5E00958259 /* WZMyPointCell.h */,
 				8A9B85A817939A5E00958259 /* WZMyPointCell.m */,
+				5F755598179526800059D9BB /* WZPointSendViewController.h */,
+				5F755599179526800059D9BB /* WZPointSendViewController.m */,
 			);
 			name = MyStoreDetail;
 			sourceTree = "<group>";
@@ -2898,6 +2903,7 @@
 				5F755591179523F10059D9BB /* WZConfigure.m in Sources */,
 				5F755594179524060059D9BB /* WZUser.m in Sources */,
 				5F755597179524980059D9BB /* WZConfigure+Mapping.m in Sources */,
+				5F75559A179526800059D9BB /* WZPointSendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
