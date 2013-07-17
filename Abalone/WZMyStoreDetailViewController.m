@@ -159,6 +159,11 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
             [pointCell.platformSend addTarget:self action:@selector(userPointSend:) forControlEvents:UIControlEventTouchUpInside];
             
             [pointCell.merchantPointChange addTarget:self action:@selector(merchantPointToUserPoint:) forControlEvents:UIControlEventTouchUpInside];
+            if (self.store.merchant.rate.integerValue == 0) {
+                pointCell.merchantPointChange.enabled = NO;
+            }else{
+                pointCell.merchantPointChange.enabled = YES;
+            }
           
         }
     }else{
@@ -261,6 +266,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 
 - (void) merchantPointToUserPoint:(UIButton *)button
 {
+   
     WZMerchantPointToUserViewController *mtu = (WZMerchantPointToUserViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"merchantPointToUser"];
     mtu.merchant = self.store.merchant;
     mtu.lastVC = self;
