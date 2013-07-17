@@ -122,12 +122,13 @@
         CGSize size = [self.serviceItem.address sizeWithFont:self.serviceItemAddressLabel.font constrainedToSize:CGSizeMake(self.serviceItemAddressLabel.frame.size.width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
         return (size.height + 35) > 90? size.height + 35: 90;
     }else if(indexPath.row == 2){
-        CGSize size = [self.serviceItem.intro sizeWithFont:self.serviceItemContentTextView.font constrainedToSize:CGSizeMake(self.serviceItemContentTextView.frame.size.width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
-         return  MAX((size.height +25), 90);
+        CGSize size = [self.serviceItem.intro sizeWithFont:[UIFont systemFontOfSize:12.0f] constrainedToSize:CGSizeMake(self.serviceItemContentTextView.frame.size.width, 999999) lineBreakMode:NSLineBreakByWordWrapping];
+        
+         return  MAX((size.height + 35), 90);
 
     }else if(indexPath.row == 3){
         CGSize size = [self.serviceItem.ruleText sizeWithFont:self.serviceItemRule.font constrainedToSize:CGSizeMake(self.serviceItemRule.frame.size.width, 999999) lineBreakMode:NSLineBreakByWordWrapping];
-        return (size.height + 35) > 90? size.height + 35: 90;
+        return (size.height + 50) > 90? size.height + 50: 90;
     }
     
     
