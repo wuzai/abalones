@@ -25,6 +25,7 @@
     @"serviceItemType",
      @"ruleText",
      @"promptIntro",
+     @"applyExplain",
      nil];
     
     return serviceItemMapping;

@@ -29,6 +29,7 @@
 @dynamic toDate;
 @dynamic usableStores;
 @dynamic promptIntro;
+@dynamic applyExplain;
 @dynamic ads;
 @dynamic merchant;
 

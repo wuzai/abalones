@@ -89,7 +89,7 @@
 		5F27687C1716ABE70032E69F /* WZMerchant+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */; };
 		5F2D05D017963B75001FC538 /* pointChange.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D05CE17963B75001FC538 /* pointChange.png */; };
 		5F2D05D117963B75001FC538 /* pointChange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D05CF17963B75001FC538 /* pointChange@2x.png */; };
-		5F2D05DA179677D7001FC538 /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D05D9179677D7001FC538 /* WZServiceItem.m */; };
+		5F2D05E517968478001FC538 /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D05E417968478001FC538 /* WZServiceItem.m */; };
 		5F41A174178F9DF1000A3A52 /* 服务规则.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16E178F9DF1000A3A52 /* 服务规则.png */; };
 		5F41A175178F9DF1000A3A52 /* 服务规则@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */; };
 		5F41A176178F9DF1000A3A52 /* 服务详情.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A170178F9DF1000A3A52 /* 服务详情.png */; };
@@ -640,8 +640,8 @@
 		5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMerchant+Mapping.m"; sourceTree = "<group>"; };
 		5F2D05CE17963B75001FC538 /* pointChange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointChange.png; sourceTree = "<group>"; };
 		5F2D05CF17963B75001FC538 /* pointChange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointChange@2x.png"; sourceTree = "<group>"; };
-		5F2D05D8179677D7001FC538 /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
-		5F2D05D9179677D7001FC538 /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
+		5F2D05E317968478001FC538 /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
+		5F2D05E417968478001FC538 /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
 		5F41A16E178F9DF1000A3A52 /* 服务规则.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则.png"; sourceTree = "<group>"; };
 		5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则@2x.png"; sourceTree = "<group>"; };
 		5F41A170178F9DF1000A3A52 /* 服务详情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务详情.png"; sourceTree = "<group>"; };
@@ -1579,6 +1579,8 @@
 		5F9F9814171510BB00B9001A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				5F2D05E317968478001FC538 /* WZServiceItem.h */,
+				5F2D05E417968478001FC538 /* WZServiceItem.m */,
 				5F755592179524060059D9BB /* WZUser.h */,
 				5F755593179524060059D9BB /* WZUser.m */,
 				5FA171891743730F008C0CD6 /* WZAd.h */,
@@ -1598,8 +1600,6 @@
 				5FA1719317437310008C0CD6 /* WZComment.m */,
 				5FA1718A1743730F008C0CD6 /* WZAd.m */,
 				5F9F9815171510EA00B9001A /* Abalone.xcdatamodeld */,
-				5F2D05D8179677D7001FC538 /* WZServiceItem.h */,
-				5F2D05D9179677D7001FC538 /* WZServiceItem.m */,
 				5F75558F179523F10059D9BB /* WZConfigure.h */,
 				5F755590179523F10059D9BB /* WZConfigure.m */,
 				5F75558C179523070059D9BB /* WZMerchant.h */,
@@ -2931,7 +2931,7 @@
 				5F7555A317952DEA0059D9BB /* WZMerchantPointSendViewController.m in Sources */,
 				5F8DAC3017953D3500149B83 /* WZUserPointSendViewController.m in Sources */,
 				5FA297F817962B850025111C /* WZMerchantPointToUserViewController.m in Sources */,
-				5F2D05DA179677D7001FC538 /* WZServiceItem.m in Sources */,
+				5F2D05E517968478001FC538 /* WZServiceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

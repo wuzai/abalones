@@ -160,6 +160,7 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="allowLargess" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="allowShare" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="applyExplain" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fromDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="gid" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
@@ -223,7 +224,7 @@
         <element name="WZMessage" positionX="547" positionY="-216" width="128" height="210"/>
         <element name="WZMeteringCard" positionX="160" positionY="192" width="128" height="285"/>
         <element name="WZPointRecord" positionX="160" positionY="192" width="128" height="255"/>
-        <element name="WZServiceItem" positionX="160" positionY="192" width="128" height="315"/>
+        <element name="WZServiceItem" positionX="160" positionY="192" width="128" height="330"/>
         <element name="WZStore" positionX="160" positionY="192" width="128" height="285"/>
         <element name="WZUser" positionX="-180" positionY="-603" width="128" height="270"/>
     </elements>

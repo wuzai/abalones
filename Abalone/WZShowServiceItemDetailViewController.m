@@ -92,6 +92,7 @@
     }else{
         self.ServiceItemapplyButton.hidden = YES;
     }
+    self.serviceItemconditionsLabel.text = self.serviceItem.applyExplain;
     self.serviceItemContentTextView.text = self.serviceItem.intro;
     self.contentView.layer.masksToBounds = YES;
     self.contentView.layer.cornerRadius = 4.0f;
@@ -119,8 +120,9 @@
     if (indexPath.row == 0) {
         return 220;
     }else if(indexPath.row == 1){
-        CGSize size = [self.serviceItem.address sizeWithFont:self.serviceItemAddressLabel.font constrainedToSize:CGSizeMake(self.serviceItemAddressLabel.frame.size.width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
-        return (size.height + 35) > 90? size.height + 35: 90;
+        CGSize size = [self.serviceItem.applyExplain sizeWithFont:self.serviceItemconditionsLabel.font constrainedToSize:CGSizeMake(self.serviceItemconditionsLabel.frame.size.width, 999999) lineBreakMode:NSLineBreakByWordWrapping];
+        return (size.height + 50) > 90? size.height + 50: 90;
+        
     }else if(indexPath.row == 2){
         CGSize size = [self.serviceItem.intro sizeWithFont:[UIFont systemFontOfSize:12.0f] constrainedToSize:CGSizeMake(self.serviceItemContentTextView.frame.size.width, 999999) lineBreakMode:NSLineBreakByWordWrapping];
         

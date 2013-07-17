@@ -29,6 +29,7 @@
 @property (nonatomic, retain) NSDate * toDate;
 @property (nonatomic, retain) NSString * usableStores;
 @property (nonatomic, retain) NSString * promptIntro;
+@property (nonatomic, retain) NSString * applyExplain;
 @property (nonatomic, retain) NSSet *ads;
 @property (nonatomic, retain) WZMerchant *merchant;
 @end
