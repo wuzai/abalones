@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class WZMerchant;
 
 @interface WZMerchantPointToUserViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UILabel *explain;
@@ -15,5 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *pintNum;
 
+@property (nonatomic,strong) WZMerchant *merchant;
+@property (nonatomic,strong) UITableViewController *lastVC;
 
+- (IBAction)memberPointToUser:(id)sender;
 @end

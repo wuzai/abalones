@@ -27,6 +27,7 @@
 #import "WZMeteringCard.h"
 #import <ShareSDK/ShareSDK.h>
 #import "WZMerchantPointSendViewController.h"
+#import "WZMerchantPointToUserViewController.h"
 
 
 @interface WZMyStoreDetailViewController ()
@@ -260,7 +261,10 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 
 - (void) merchantPointToUserPoint:(UIButton *)button
 {
-    
+    WZMerchantPointToUserViewController *mtu = (WZMerchantPointToUserViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"merchantPointToUser"];
+    mtu.merchant = self.store.merchant;
+    mtu.lastVC = self;
+    [self.navigationController pushViewController:mtu animated:YES];
 }
 
 -(void) userPointSend:(UIButton *)button

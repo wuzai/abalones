@@ -40,6 +40,7 @@
 {
     [super viewWillAppear:animated];
     self.sendExplain.text =  [WZUser me].config.pointLargessExplain ;
+    self.sendExplain.numberOfLines = 0;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendUserPointSuccess:) name:kSENDPOINTTOUSERSUCCESSNOTIFICTION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendUserPointFail:) name:kSENDPOINTTOUSERFAILNOTIFICTION object:nil];

@@ -39,6 +39,7 @@
 {
     [super viewWillAppear:animated];
     self.sendExplain.text = self.merchant.largessExplain;
+    self.sendExplain.numberOfLines = 0;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointSuccess:) name:kSENDMEMBERPOINTTOUSERSUCCESSNOTIFICTION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointFail:) name:kSENDMEMBERPOINTTOUSERFAILNOTIFICTION object:nil];

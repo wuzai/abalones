@@ -7,6 +7,14 @@
 //
 
 #import "WZMerchantPointToUserViewController.h"
+#import "NSString+Format.h"
+#import "WZMemberPointToUserPointNetWork.h"
+#import "WZmerchant.h"
+#import "WZUser+Me.h"
+#import "WZMember.h"
+#import "WZConfigure.h"
+#import "WZMerchant.h"
+
 
 @interface WZMerchantPointToUserViewController ()
 
@@ -26,96 +34,107 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"平台积分转赠";
+    
+}
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.explain.text =  [WZUser me].config.pointLargessExplain ;
+    self.rate.text = [NSString stringWithFormat:@"%i个会员积分兑换一个平台积分",self.merchant.rate.integerValue];
+    self.explain.numberOfLines = 0;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memberPointToUserSuccess:) name:kMEMBERPOINTTOUSERPOINTSUCCESSNOTIFICTION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memberPointToUserFail:) name:kMEMBERPOINTTOUSERPOINTFAILNOTIFICTION object:nil];
+}
+
+-(void)memberPointToUserSuccess:(NSNotification *)notification
+{
+    [self.lastVC.tableView reloadData];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"积分转换成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)memberPointToUserFail:(NSNotification *)notification
+{
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[notification object]  delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        CGSize size =  [self.merchant.rateExplain sizeWithFont:self.explain.font constrainedToSize:CGSizeMake(self.explain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
+        return size.height +20;
+    }else{
+        return 107;
+    }
+}
+
+
+- (IBAction)memberPointToUser:(id)sender {
+    [self done:nil];
+    NSString *warning = [self warning];
+    if (warning) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:warning message:nil delegate:nil cancelButtonTitle:@"好的" otherButtonTitles: nil];
+        [alert show];
+    }else{
+        NSFetchRequest *request = [WZMember  fetchRequest];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"user.gid = %@ and merchant.gid = %@",[WZUser me].gid,self.merchant.gid];
+        request.predicate = predicate;
+        NSArray *members = [WZMember executeFetchRequest:request];
+        if (members.count) {
+            WZMember *member = [members lastObject];
+             [WZMemberPointToUserPointNetWork member:member.gid setMemberPointToUserPoint:self.pintNum.text.integerValue];
+        }
+       
+        
+    }
     
-    return cell;
+    
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+
+
+- (void)done:(id)sender
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    [self.pintNum resignFirstResponder];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSString *)warning
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    NSString *warning = nil;
+     if (![self.pintNum.text length]) {
+        warning = @"积分不能为空";
+    }
+    return warning;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self done:nil];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-#pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
 
 @end
