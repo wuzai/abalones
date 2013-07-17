@@ -26,6 +26,8 @@
 		42836F331739F9EE00E485D1 /* 修改密码背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F321739F9EE00E485D1 /* 修改密码背景.png */; };
 		42836F3D1739FDA200E485D1 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F371739FDA200E485D1 /* select.png */; };
 		42836F3E1739FDA200E485D1 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F381739FDA200E485D1 /* select@2x.png */; };
+		42952BB717962B05000980AD /* 次.png in Resources */ = {isa = PBXBuildFile; fileRef = 42952BB517962B05000980AD /* 次.png */; };
+		42952BB817962B05000980AD /* 次@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42952BB617962B05000980AD /* 次@2x.png */; };
 		42CE726F178BDFFB007FDCC3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CE726D178BDFFA007FDCC3 /* 1.png */; };
 		42CE7270178BDFFB007FDCC3 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CE726E178BDFFA007FDCC3 /* 1@2x.png */; };
 		42CE7273178BE009007FDCC3 /* 1s.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CE7271178BE009007FDCC3 /* 1s.png */; };
@@ -564,6 +566,8 @@
 		42836F321739F9EE00E485D1 /* 修改密码背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改密码背景.png"; sourceTree = "<group>"; };
 		42836F371739FDA200E485D1 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
 		42836F381739FDA200E485D1 /* select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
+		42952BB517962B05000980AD /* 次.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "次.png"; sourceTree = "<group>"; };
+		42952BB617962B05000980AD /* 次@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "次@2x.png"; sourceTree = "<group>"; };
 		42CE726D178BDFFA007FDCC3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		42CE726E178BDFFA007FDCC3 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		42CE7271178BE009007FDCC3 /* 1s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1s.png; sourceTree = "<group>"; };
@@ -1464,6 +1468,8 @@
 				5F7F2BEE17574B930028B13D /* Menu@2x.png */,
 				5F7F2BEF17574B930028B13D /* MenuSelected.png */,
 				5F7F2BF017574B930028B13D /* MenuSelected@2x.png */,
+				42952BB517962B05000980AD /* 次.png */,
+				42952BB617962B05000980AD /* 次@2x.png */,
 				42CFA2C11744DB930009D767 /* logo.png */,
 				42CFA2C21744DB940009D767 /* logo@2x.png */,
 				5FA171B817439144008C0CD6 /* 电池.png */,
@@ -2744,6 +2750,8 @@
 				5F7555841795195A0059D9BB /* pointChagne@2x.png in Resources */,
 				5F7555851795195A0059D9BB /* 积分转赠.png in Resources */,
 				5F7555861795195A0059D9BB /* 积分转赠@2x.png in Resources */,
+				42952BB717962B05000980AD /* 次.png in Resources */,
+				42952BB817962B05000980AD /* 次@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
