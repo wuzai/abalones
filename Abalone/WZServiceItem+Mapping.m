@@ -24,6 +24,7 @@
     @"toDate",
     @"serviceItemType",
      @"ruleText",
+     @"promptIntro",
      nil];
     
     return serviceItemMapping;

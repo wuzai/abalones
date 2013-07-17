@@ -89,6 +89,7 @@
 		5F27687C1716ABE70032E69F /* WZMerchant+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */; };
 		5F2D05D017963B75001FC538 /* pointChange.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D05CE17963B75001FC538 /* pointChange.png */; };
 		5F2D05D117963B75001FC538 /* pointChange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D05CF17963B75001FC538 /* pointChange@2x.png */; };
+		5F2D05DA179677D7001FC538 /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D05D9179677D7001FC538 /* WZServiceItem.m */; };
 		5F41A174178F9DF1000A3A52 /* 服务规则.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16E178F9DF1000A3A52 /* 服务规则.png */; };
 		5F41A175178F9DF1000A3A52 /* 服务规则@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */; };
 		5F41A176178F9DF1000A3A52 /* 服务详情.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A170178F9DF1000A3A52 /* 服务详情.png */; };
@@ -205,7 +206,6 @@
 		5FA15C391738DB2800C9FE38 /* WZSubmitCancelService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA15C381738DB2800C9FE38 /* WZSubmitCancelService.m */; };
 		5FA15C3D1738F73700C9FE38 /* WZMyMerchantPointRecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA15C3C1738F73700C9FE38 /* WZMyMerchantPointRecordListViewController.m */; };
 		5FA1718B1743730F008C0CD6 /* WZAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1718A1743730F008C0CD6 /* WZAd.m */; };
-		5FA1718E17437310008C0CD6 /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1718D17437310008C0CD6 /* WZServiceItem.m */; };
 		5FA1719417437310008C0CD6 /* WZComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1719317437310008C0CD6 /* WZComment.m */; };
 		5FA1719717437310008C0CD6 /* WZMemberCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1719617437310008C0CD6 /* WZMemberCard.m */; };
 		5FA1719A17437310008C0CD6 /* WZMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1719917437310008C0CD6 /* WZMember.m */; };
@@ -640,6 +640,8 @@
 		5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMerchant+Mapping.m"; sourceTree = "<group>"; };
 		5F2D05CE17963B75001FC538 /* pointChange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointChange.png; sourceTree = "<group>"; };
 		5F2D05CF17963B75001FC538 /* pointChange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointChange@2x.png"; sourceTree = "<group>"; };
+		5F2D05D8179677D7001FC538 /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
+		5F2D05D9179677D7001FC538 /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
 		5F41A16E178F9DF1000A3A52 /* 服务规则.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则.png"; sourceTree = "<group>"; };
 		5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则@2x.png"; sourceTree = "<group>"; };
 		5F41A170178F9DF1000A3A52 /* 服务详情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务详情.png"; sourceTree = "<group>"; };
@@ -796,8 +798,6 @@
 		5FA15C3C1738F73700C9FE38 /* WZMyMerchantPointRecordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMyMerchantPointRecordListViewController.m; sourceTree = "<group>"; };
 		5FA171891743730F008C0CD6 /* WZAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAd.h; sourceTree = "<group>"; };
 		5FA1718A1743730F008C0CD6 /* WZAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAd.m; sourceTree = "<group>"; };
-		5FA1718C17437310008C0CD6 /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
-		5FA1718D17437310008C0CD6 /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
 		5FA1719217437310008C0CD6 /* WZComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZComment.h; sourceTree = "<group>"; };
 		5FA1719317437310008C0CD6 /* WZComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZComment.m; sourceTree = "<group>"; };
 		5FA1719517437310008C0CD6 /* WZMemberCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMemberCard.h; sourceTree = "<group>"; };
@@ -1596,10 +1596,10 @@
 				5FA1719617437310008C0CD6 /* WZMemberCard.m */,
 				5FA1719217437310008C0CD6 /* WZComment.h */,
 				5FA1719317437310008C0CD6 /* WZComment.m */,
-				5FA1718C17437310008C0CD6 /* WZServiceItem.h */,
-				5FA1718D17437310008C0CD6 /* WZServiceItem.m */,
 				5FA1718A1743730F008C0CD6 /* WZAd.m */,
 				5F9F9815171510EA00B9001A /* Abalone.xcdatamodeld */,
+				5F2D05D8179677D7001FC538 /* WZServiceItem.h */,
+				5F2D05D9179677D7001FC538 /* WZServiceItem.m */,
 				5F75558F179523F10059D9BB /* WZConfigure.h */,
 				5F755590179523F10059D9BB /* WZConfigure.m */,
 				5F75558C179523070059D9BB /* WZMerchant.h */,
@@ -2887,7 +2887,6 @@
 				A500D97E173CD08600037AD8 /* WZRecommendUser.m in Sources */,
 				A500D981173CD3C100037AD8 /* WZRecommendUserViewController.m in Sources */,
 				5FA1718B1743730F008C0CD6 /* WZAd.m in Sources */,
-				5FA1718E17437310008C0CD6 /* WZServiceItem.m in Sources */,
 				5FA1719417437310008C0CD6 /* WZComment.m in Sources */,
 				5FA1719717437310008C0CD6 /* WZMemberCard.m in Sources */,
 				5FA1719A17437310008C0CD6 /* WZMember.m in Sources */,
@@ -2932,6 +2931,7 @@
 				5F7555A317952DEA0059D9BB /* WZMerchantPointSendViewController.m in Sources */,
 				5F8DAC3017953D3500149B83 /* WZUserPointSendViewController.m in Sources */,
 				5FA297F817962B850025111C /* WZMerchantPointToUserViewController.m in Sources */,
+				5F2D05DA179677D7001FC538 /* WZServiceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

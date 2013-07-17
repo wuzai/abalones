@@ -71,7 +71,7 @@ static NSString *const cellIdentifier = @"serviceItemCell";
         serviceItemCell.serviceItemTitle.text = serviceItem.serviceItemName;
         serviceItemCell.serviceItemContent.lineBreakMode = NSLineBreakByTruncatingTail;
         serviceItemCell.serviceItemContent.numberOfLines = 0;
-        serviceItemCell.serviceItemContent.text = serviceItem.intro;
+        serviceItemCell.serviceItemContent.text = serviceItem.promptIntro;
     }
    
     

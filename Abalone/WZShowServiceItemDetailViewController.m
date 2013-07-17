@@ -126,7 +126,7 @@
          return  MAX((size.height +25), 90);
 
     }else if(indexPath.row == 3){
-        CGSize size = [self.serviceItem.ruleText sizeWithFont:self.serviceItemRule.font constrainedToSize:CGSizeMake(self.serviceItemRule.frame.size.width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+        CGSize size = [self.serviceItem.ruleText sizeWithFont:self.serviceItemRule.font constrainedToSize:CGSizeMake(self.serviceItemRule.frame.size.width, 999999) lineBreakMode:NSLineBreakByWordWrapping];
         return (size.height + 35) > 90? size.height + 35: 90;
     }
     
