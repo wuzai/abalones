@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="L13-WU-s4h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -2348,7 +2348,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="温馨提示" id="kDK-oC-JXe">
+                            <tableViewSection headerTitle="使用说明" id="kDK-oC-JXe">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sGo-eL-HmW">
                                         <rect key="frame" x="0.0" y="234" width="320" height="46"/>
@@ -2396,30 +2396,6 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="服务规则" id="oNH-sG-DqD">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="C9u-vO-8fe">
-                                        <rect key="frame" x="0.0" y="418" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VEf-e8-1UW">
-                                                    <rect key="frame" x="5" y="5" width="290" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="JYD-RQ-8XX" id="jZU-6y-ttr"/>
@@ -2431,7 +2407,6 @@
                         <outlet property="serviceDescription" destination="h0c-qW-OEo" id="e8K-S1-6um"/>
                         <outlet property="serviceImageView" destination="QKI-v8-c58" id="ufv-UA-Kss"/>
                         <outlet property="servicePromptMessage" destination="77i-qL-a5Q" id="qy8-Sa-wnU"/>
-                        <outlet property="serviceRule" destination="VEf-e8-1UW" id="aID-IS-HPx"/>
                         <outlet property="serviceTitle" destination="7Mg-PE-rtg" id="Eb6-7P-MnV"/>
                     </connections>
                 </tableViewController>
@@ -2779,7 +2754,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   服务介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pfO-LT-ueR">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   服务详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pfO-LT-ueR">
                                                     <rect key="frame" x="-4" y="-2" width="320" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2807,7 +2782,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   服务规则" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pns-gu-1ZO">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  使用说明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pns-gu-1ZO">
                                                     <rect key="frame" x="-4" y="-3" width="320" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -3307,7 +3282,7 @@
                                                     <rect key="frame" x="184" y="49" width="109" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Button" image="pointChange.png">
+                                                    <state key="normal" title="Button" image="积分转赠.png">
                                                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -3350,7 +3325,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pointChange.png" width="110" height="30"/>
         <image name="printer_header@2x.png" width="584" height="46"/>
         <image name="printer_shadow@2x.png" width="558" height="40"/>
         <image name="starbucksdiscount.png" width="184" height="107"/>
@@ -3724,11 +3698,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6xH-gy-31G"/>
         <segue reference="aWS-9h-fYN"/>
-        <segue reference="fQ9-Os-rn4"/>
-        <segue reference="qrf-xs-FfO"/>
-        <segue reference="lDJ-Kv-KiJ"/>
+        <segue reference="6xH-gy-31G"/>
         <segue reference="wjw-Kt-TRa"/>
+        <segue reference="acX-vh-CGC"/>
+        <segue reference="fQ9-Os-rn4"/>
+        <segue reference="lDJ-Kv-KiJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -78,8 +78,10 @@
     }else if([self.service isKindOfClass:[WZMeteringCard class]]){
         WZMeteringCard *meteringCard = (WZMeteringCard *)self.service;
         self.serviceTitle.text = meteringCard.meteringCardName;
-        self.servicePromptMessage.text  = meteringCard.promptIntro;
-        self.serviceDescription.text = meteringCard.intro;
+        //使用说明
+        self.servicePromptMessage.text  = meteringCard.ruleText;
+        //服务描述
+        self.serviceDescription.text = meteringCard.promptIntro;
         self.servicetitle = meteringCard.meteringCardName;
         self.promtMessage = meteringCard.promptIntro;
         self.intro = meteringCard.intro;
@@ -93,17 +95,17 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
-       
+            
         case 0:
             return 180;
             break;
-        case 1:
+        case 2:   //服务详情
             return [self heightForLabel:self.servicePromptMessage withString:self.promtMessage];
             break;
-        case 2:
-            return [self heightForLabel:self.serviceDescription withString:self.intro];
-            break;
-        case 3:
+            //        case 2:
+            //            return [self heightForLabel:self.serviceDescription withString:self.intro];
+            //            break;
+        case 1:   //使用说明
             return [self heightForLabel:self.serviceRule  withString:self.serviceRuleText];
             break;
         default:
@@ -111,6 +113,7 @@
     }
     return 0.0;
 }
+
 
 -(CGFloat)heightForLabel:(UILabel *)label withString:(NSString *)str
 {
@@ -135,13 +138,14 @@
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         return imageView;
         
-    }else if(section == 3){
-        UIImage *image = [UIImage imageNamed:@"温馨提示"];
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        return imageView;
-        
     }
+//    else if(section == 3){
+//        UIImage *image = [UIImage imageNamed:@"温馨提示"];
+//        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+//        imageView.contentMode = UIViewContentModeScaleAspectFit;
+//        return imageView;
+//        
+//    }
     return nil;
 }
 
