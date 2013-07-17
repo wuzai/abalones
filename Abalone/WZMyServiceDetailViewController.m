@@ -81,7 +81,7 @@
         //使用说明
         self.servicePromptMessage.text  = meteringCard.ruleText;
         //服务描述
-        self.serviceDescription.text = meteringCard.promptIntro;
+        self.serviceDescription.text = meteringCard.intro;
         self.servicetitle = meteringCard.meteringCardName;
         self.promtMessage = meteringCard.promptIntro;
         self.intro = meteringCard.intro;
