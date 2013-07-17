@@ -19,11 +19,11 @@
     RKLogConfigureByName("RestKit/CoreData", RKLogLevelTrace);
     //服务器配置
     //内网开发服务器
-    static NSString *const host = @"http://172.168.1.110:3000";
+    //static NSString *const host = @"http://172.168.1.110:3000";
     //内网测试服务器
     //static NSString *const host = @"http://172.168.1.100:3000";
     //外网服务器
-    //static NSString *const host = @"http://www.5zzg.com/sys";
+    static NSString *const host = @"http://www.5zzg.com/sys";
     
     NSURL *baseURL = [NSURL URLWithString:host];
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:baseURL];

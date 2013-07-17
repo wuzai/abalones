@@ -46,6 +46,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 180}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="534977815"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -60,6 +61,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 183}, {25, 26}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1073329175"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -98,6 +100,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{282, 187}, {18, 19}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="154848281"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -120,6 +123,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{12, 208}, {55, 21}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="285510295"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -152,6 +156,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{68, 208}, {102, 21}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="422966260"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -179,6 +184,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{171, 208}, {72, 21}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="411115047"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -199,6 +205,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{242, 208}, {78, 21}}</string>
 								<reference key="NSSuperview" ref="581269083"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -216,6 +223,7 @@
 						</array>
 						<string key="NSFrameSize">{320, 229}</string>
 						<reference key="NSSuperview" ref="738735674"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="129900163"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -231,6 +239,7 @@
 				</array>
 				<string key="NSFrameSize">{320, 230}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="581269083"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -396,7 +405,47 @@
 			<nil key="sourceID"/>
 			<int key="maxID">38</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">WZMerchantCardCell</string>
+					<string key="superclassName">UITableViewCell</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="discountLabel">UILabel</string>
+						<string key="merchantCardImageView">UIImageView</string>
+						<string key="merchantInfoButton">UIButton</string>
+						<string key="pointChangeButton">UIButton</string>
+						<string key="pointLabel">UILabel</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="discountLabel">
+							<string key="name">discountLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="merchantCardImageView">
+							<string key="name">merchantCardImageView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="merchantInfoButton">
+							<string key="name">merchantInfoButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pointChangeButton">
+							<string key="name">pointChangeButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pointLabel">
+							<string key="name">pointLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/WZMerchantCardCell.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
