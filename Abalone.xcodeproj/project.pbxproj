@@ -257,6 +257,7 @@
 		5FA276C8174EFA0B003AA9B7 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA276C7174EFA0B003AA9B7 /* libicucore.dylib */; };
 		5FA276CA174EFA1F003AA9B7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA276C9174EFA1F003AA9B7 /* libz.1.2.5.dylib */; };
 		5FA276CD174EFA6D003AA9B7 /* WZShareSDKConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA276CC174EFA6D003AA9B7 /* WZShareSDKConfigure.m */; };
+		5FA297F817962B850025111C /* WZMerchantPointToUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA297F717962B850025111C /* WZMerchantPointToUserViewController.m */; };
 		5FA2AC6117252AE0001390F4 /* WZLocation+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2AC6017252AE0001390F4 /* WZLocation+Mapping.m */; };
 		5FA2AC6A17255E6F001390F4 /* WZStore+NetWorks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2AC6917255E6F001390F4 /* WZStore+NetWorks.m */; };
 		5FA2B250178CF105009AEC75 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2B24F178CF105009AEC75 /* SwipeView.m */; };
@@ -855,6 +856,8 @@
 		5FA276C9174EFA1F003AA9B7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		5FA276CB174EFA6D003AA9B7 /* WZShareSDKConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZShareSDKConfigure.h; sourceTree = "<group>"; };
 		5FA276CC174EFA6D003AA9B7 /* WZShareSDKConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZShareSDKConfigure.m; sourceTree = "<group>"; };
+		5FA297F617962B850025111C /* WZMerchantPointToUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMerchantPointToUserViewController.h; sourceTree = "<group>"; };
+		5FA297F717962B850025111C /* WZMerchantPointToUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMerchantPointToUserViewController.m; sourceTree = "<group>"; };
 		5FA2AC5F17252ADF001390F4 /* WZLocation+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZLocation+Mapping.h"; sourceTree = "<group>"; };
 		5FA2AC6017252AE0001390F4 /* WZLocation+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZLocation+Mapping.m"; sourceTree = "<group>"; };
 		5FA2AC6817255E6F001390F4 /* WZStore+NetWorks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZStore+NetWorks.h"; sourceTree = "<group>"; };
@@ -1899,6 +1902,8 @@
 				5F7555A117952DEA0059D9BB /* WZMerchantPointSendViewController.m */,
 				5F8DAC2D17953D3400149B83 /* WZUserPointSendViewController.h */,
 				5F8DAC2E17953D3400149B83 /* WZUserPointSendViewController.m */,
+				5FA297F617962B850025111C /* WZMerchantPointToUserViewController.h */,
+				5FA297F717962B850025111C /* WZMerchantPointToUserViewController.m */,
 			);
 			name = MyStoreDetail;
 			sourceTree = "<group>";
@@ -2910,6 +2915,7 @@
 				5F755597179524980059D9BB /* WZConfigure+Mapping.m in Sources */,
 				5F7555A317952DEA0059D9BB /* WZMerchantPointSendViewController.m in Sources */,
 				5F8DAC3017953D3500149B83 /* WZUserPointSendViewController.m in Sources */,
+				5FA297F817962B850025111C /* WZMerchantPointToUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

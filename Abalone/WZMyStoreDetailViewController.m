@@ -156,6 +156,8 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
             
             [pointCell.merchantPointSend addTarget:self action:@selector(merchantPointSend:) forControlEvents:UIControlEventTouchUpInside];
             [pointCell.platformSend addTarget:self action:@selector(userPointSend:) forControlEvents:UIControlEventTouchUpInside];
+            
+            [pointCell.merchantPointChange addTarget:self action:@selector(merchantPointToUserPoint:) forControlEvents:UIControlEventTouchUpInside];
           
         }
     }else{
@@ -254,6 +256,11 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
     
     
     return cell;
+}
+
+- (void) merchantPointToUserPoint:(UIButton *)button
+{
+    
 }
 
 -(void) userPointSend:(UIButton *)button
