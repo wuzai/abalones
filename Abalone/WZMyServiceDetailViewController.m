@@ -99,12 +99,12 @@
         case 0:
             return 180;
             break;
-        case 2:   //服务详情
-            return [self heightForLabel:self.servicePromptMessage withString:self.promtMessage];
-            break;
-            //        case 2:
-            //            return [self heightForLabel:self.serviceDescription withString:self.intro];
+            //        case 2:   //服务详情
+            //            return [self heightForLabel:self withString:self.promtMessage];
             //            break;
+        case 2:
+            return [self heightForLabel:self.serviceDescription withString:self.intro];
+            break;
         case 1:   //使用说明
             return [self heightForLabel:self.serviceRule  withString:self.serviceRuleText];
             break;
