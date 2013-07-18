@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"平台积分转赠";
+    self.navigationItem.title = @"贝客积分转赠";
     
 }
 

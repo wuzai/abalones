@@ -46,6 +46,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{9, 10}, {140, 71}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="734331798"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -56,6 +57,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{157, 13}, {178, 28}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="330160991"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -90,8 +92,9 @@
 							<object class="IBUIButton" id="706083132">
 								<reference key="NSNextResponder" ref="18466726"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{157, 53}, {71, 30}}</string>
+								<string key="NSFrame">{{157, 53}, {70, 30}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="542589006"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -125,8 +128,9 @@
 							<object class="IBUIButton" id="542589006">
 								<reference key="NSNextResponder" ref="18466726"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{234, 53}, {71, 30}}</string>
+								<string key="NSFrame">{{239, 53}, {70, 30}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -151,6 +155,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{275, 5}, {45, 15}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1008882002"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -165,6 +170,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{275, 6}, {30, 13}}</string>
 								<reference key="NSSuperview" ref="18466726"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="706083132"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -195,6 +201,7 @@
 						</array>
 						<string key="NSFrameSize">{320, 89}</string>
 						<reference key="NSSuperview" ref="212544647"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="262735164">
 							<int key="NSColorSpace">3</int>
@@ -209,6 +216,7 @@
 				</array>
 				<string key="NSFrameSize">{320, 90}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="18466726"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<reference key="IBUIBackgroundColor" ref="262735164"/>
@@ -354,15 +362,68 @@
 			<nil key="sourceID"/>
 			<int key="maxID">15</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">EGOImageView</string>
+					<string key="superclassName">UIImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/EGOImageView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">WZMyStoreServiceCell</string>
+					<string key="superclassName">UITableViewCell</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="givingAwayButton">UIButton</string>
+						<string key="meteringCardNum">UILabel</string>
+						<string key="meteringCardNumImage">UIImageView</string>
+						<string key="storeServiceImage">EGOImageView</string>
+						<string key="storeServiceName">UILabel</string>
+						<string key="useButton">UIButton</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="givingAwayButton">
+							<string key="name">givingAwayButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="meteringCardNum">
+							<string key="name">meteringCardNum</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="meteringCardNumImage">
+							<string key="name">meteringCardNumImage</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="storeServiceImage">
+							<string key="name">storeServiceImage</string>
+							<string key="candidateClassName">EGOImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="storeServiceName">
+							<string key="name">storeServiceName</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="useButton">
+							<string key="name">useButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/WZMyStoreServiceCell.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="使用.png">{109, 35}</string>
+			<string key="使用.png">{70, 30}</string>
 			<string key="次.png">{45, 15}</string>
-			<string key="转赠.png">{109, 35}</string>
+			<string key="转赠.png">{70, 30}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
