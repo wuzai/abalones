@@ -83,6 +83,7 @@
 {
     if (indexPath.row == 0) {
         CGSize size =  [self.merchant.rateExplain sizeWithFont:self.explain.font constrainedToSize:CGSizeMake(self.explain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
+       
         return size.height +20;
     }else{
         return 107;

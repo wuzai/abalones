@@ -80,7 +80,11 @@
 {
     if (indexPath.row == 0) {
         CGSize size =  [[WZUser me].config.pointLargessExplain sizeWithFont:self.sendExplain.font constrainedToSize:CGSizeMake(self.sendExplain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
-        return size.height +20;
+        if (size.height < 150)
+        {
+            return  150;
+        }
+        return size.height +90;
     }else{
         return 107;
     }
