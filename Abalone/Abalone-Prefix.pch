@@ -14,3 +14,5 @@
     #import <SystemConfiguration/SystemConfiguration.h>
     #import <MobileCoreServices/MobileCoreServices.h>
 #endif
+
+#define NETWORKERROR @"网络不给力，请您稍后再试！"

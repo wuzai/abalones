@@ -87,7 +87,7 @@ NSString *kWZTimeStampKey = @"timestamp";
     if (error.code == -1001 || error.code ==-1004 ||error.code == 2) {
         NSLog(@"%@",error.userInfo.allKeys.lastObject);
         NSMutableDictionary *details = [NSMutableDictionary dictionary];
-         [details setValue:@"网络不给力，请稍后再试！" forKey:NSLocalizedDescriptionKey];
+         [details setValue:NETWORKERROR forKey:NSLocalizedDescriptionKey];
         error = [NSError errorWithDomain:error.domain code:error.code userInfo:details];
     }
     
