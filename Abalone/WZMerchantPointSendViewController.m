@@ -125,6 +125,8 @@
     }
     else if (![self.pointNum.text length]) {
         warning = @"积分不能为空";
+    }else if((self.pointNum.text.floatValue - self.pointNum.text.intValue) >0){
+        warning = @"积分不能为小数";
     }
     return warning;
 }

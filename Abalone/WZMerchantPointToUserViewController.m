@@ -123,8 +123,11 @@
 - (NSString *)warning
 {
     NSString *warning = nil;
+    
      if (![self.pintNum.text length]) {
         warning = @"积分不能为空";
+    }else if((self.pintNum.text.floatValue - self.pintNum.text.intValue) >0){
+        warning = @"积分不能为小数";
     }
     return warning;
 }

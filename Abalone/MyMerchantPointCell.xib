@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">11G63</string>
+		<string key="IBDocument.SystemVersion">12E55</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1138.51</string>
-		<string key="IBDocument.HIToolboxVersion">569.00</string>
+		<string key="IBDocument.AppKitVersion">1187.39</string>
+		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
@@ -45,7 +45,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{9, 83}, {85, 30}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="560835787"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -79,14 +78,13 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{63, 82}, {108, 31}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1037091574"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<string key="IBUINormalTitle">999999999</string>
+								<string key="IBUINormalTitle">0</string>
 								<reference key="IBUIHighlightedTitleColor" ref="243919167"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -111,7 +109,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{9, 48}, {85, 30}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="11914293"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -135,14 +132,13 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{63, 47}, {108, 31}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="756442031"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<string key="IBUINormalTitle">999999999</string>
+								<string key="IBUINormalTitle">0</string>
 								<reference key="IBUIHighlightedTitleColor" ref="243919167"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -157,7 +153,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{215, 48}, {90, 30}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="722813637"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -183,7 +178,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{215, 83}, {90, 30}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -205,7 +200,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{6, 5}, {310, 40}}</string>
 								<reference key="NSSuperview" ref="792990333"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="780350697"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -229,7 +223,6 @@
 						</array>
 						<string key="NSFrameSize">{320, 119}</string>
 						<reference key="NSSuperview" ref="298197625"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="182433376"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -245,7 +238,6 @@
 				</array>
 				<string key="NSFrameSize">{320, 120}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="792990333"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -389,47 +381,7 @@
 			<nil key="sourceID"/>
 			<int key="maxID">34</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">WZMyMerchantPointCell</string>
-					<string key="superclassName">UITableViewCell</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="merchantPointChange">UIButton</string>
-						<string key="merchantPointSend">UIButton</string>
-						<string key="platformPoint">UIButton</string>
-						<string key="platformSend">UIButton</string>
-						<string key="pointButton">UIButton</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="merchantPointChange">
-							<string key="name">merchantPointChange</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="merchantPointSend">
-							<string key="name">merchantPointSend</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="platformPoint">
-							<string key="name">platformPoint</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="platformSend">
-							<string key="name">platformSend</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="pointButton">
-							<string key="name">pointButton</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/WZMyMerchantPointCell.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>

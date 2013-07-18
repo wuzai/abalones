@@ -143,15 +143,31 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
             pointCell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointCellBg"]];
             WZUser *user = [WZUser me];
             [pointCell.platformPoint setTitle:[NSString stringWithFormat:@"%i",user.point.integerValue] forState:UIControlStateNormal];
+            if (user.point.integerValue == 0) {
+                pointCell.platformPoint.enabled = NO;
+            }else{
+                pointCell.platformPoint.enabled = YES;
+            }
             
             NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"WZMember"];
-            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"merchantID = %@",self.store.merchant.gid];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"merchantID = %@ and user.gid = %@",self.store.merchant.gid,[WZUser me].gid];
             request.predicate = predicate;
             NSArray *members = [WZMember executeFetchRequest:request];
             if (members.count) {
+                WZMember *member = members.lastObject;
+                NSLog(@"%@",member);
                 [pointCell.pointButton setTitle: [NSString stringWithFormat:@"%i",[[members.lastObject point]intValue]] forState:UIControlStateNormal];
                 [pointCell.pointButton addTarget:self action:@selector(showRecords:) forControlEvents:UIControlEventTouchUpInside];
+                pointCell.merchantPointSend.enabled = YES;
             }
+            if ([[members.lastObject point]intValue] == 0) {
+                [pointCell.pointButton setTitle: [NSString stringWithFormat:@"%i",0] forState:UIControlStateNormal];
+                pointCell.merchantPointSend.enabled = NO;
+            }else{
+                pointCell.merchantPointSend.enabled = YES;
+            }
+            
+            
           
             [pointCell.platformPoint addTarget:self action:@selector(platformPointRecord:) forControlEvents:UIControlEventTouchUpInside];
             
