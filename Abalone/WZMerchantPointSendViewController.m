@@ -41,6 +41,9 @@
     self.sendExplain.text = self.merchant.largessExplain;
     self.sendExplain.numberOfLines = 0;
     
+       self.LogoImge.imageURL = [NSURL URLWithString:self.merchant.logo];
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointSuccess:) name:kSENDMEMBERPOINTTOUSERSUCCESSNOTIFICTION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendMemberPointFail:) name:kSENDMEMBERPOINTTOUSERFAILNOTIFICTION object:nil];
 }
@@ -80,7 +83,7 @@
 {
     if (indexPath.row == 0) {
         CGSize size =  [self.merchant.largessExplain sizeWithFont:self.sendExplain.font constrainedToSize:CGSizeMake(self.sendExplain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
-        return size.height +20;
+        return size.height +60;
     }else{
         return 107;
     }

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WZMerchant.h"
+#import "EGOImageView.h"
 
 @interface WZMerchantPointSendViewController : UITableViewController <UIAlertViewDelegate>
 @property (nonatomic,strong) WZMerchant *merchant;
@@ -16,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *pointNum;
 - (IBAction)sendPoint:(id)sender;
-
+@property (weak, nonatomic) IBOutlet EGOImageView *LogoImge;
 - (void)done:(id)sender;
 @end
