@@ -32,6 +32,8 @@
 		424C6F581796906A00D3A298 /* pointChange.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F561796906A00D3A298 /* pointChange.png */; };
 		424C6F591796906A00D3A298 /* pointChange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F571796906A00D3A298 /* pointChange@2x.png */; };
 		424C6F5B1797936600D3A298 /* 贝客.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F5A1797936400D3A298 /* 贝客.png */; };
+		426F0D141797DCF600D7B504 /* 占位图3.png in Resources */ = {isa = PBXBuildFile; fileRef = 426F0D121797DCF600D7B504 /* 占位图3.png */; };
+		426F0D151797DCF600D7B504 /* 占位图3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 426F0D131797DCF600D7B504 /* 占位图3@2x.png */; };
 		42836F241739DE0900E485D1 /* 登录_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F231739DE0900E485D1 /* 登录_content.png */; };
 		42836F2C1739F9C300E485D1 /* 注册_section背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F2B1739F9C300E485D1 /* 注册_section背景.png */; };
 		42836F331739F9EE00E485D1 /* 修改密码背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 42836F321739F9EE00E485D1 /* 修改密码背景.png */; };
@@ -339,8 +341,6 @@
 		5FA999DA17781D4D004A8B48 /* 占位图1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D217781D49004A8B48 /* 占位图1@2x.png */; };
 		5FA999DB17781D4D004A8B48 /* 占位图2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D317781D4A004A8B48 /* 占位图2.png */; };
 		5FA999DC17781D4D004A8B48 /* 占位图2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D417781D4B004A8B48 /* 占位图2@2x.png */; };
-		5FA999DD17781D4D004A8B48 /* 占位图3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D517781D4B004A8B48 /* 占位图3.png */; };
-		5FA999DE17781D4D004A8B48 /* 占位图3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D617781D4B004A8B48 /* 占位图3@2x.png */; };
 		5FA999DF17781D4D004A8B48 /* 占位图4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D717781D4C004A8B48 /* 占位图4.png */; };
 		5FA999E017781D4D004A8B48 /* 占位图4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA999D817781D4D004A8B48 /* 占位图4@2x.png */; };
 		5FB340FA17266265003B58FB /* WZServiceItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB340F917266264003B58FB /* WZServiceItemListViewController.m */; };
@@ -577,6 +577,8 @@
 		424C6F561796906A00D3A298 /* pointChange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointChange.png; sourceTree = "<group>"; };
 		424C6F571796906A00D3A298 /* pointChange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointChange@2x.png"; sourceTree = "<group>"; };
 		424C6F5A1797936400D3A298 /* 贝客.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "贝客.png"; sourceTree = "<group>"; };
+		426F0D121797DCF600D7B504 /* 占位图3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3.png"; sourceTree = "<group>"; };
+		426F0D131797DCF600D7B504 /* 占位图3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3@2x.png"; sourceTree = "<group>"; };
 		42836F231739DE0900E485D1 /* 登录_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录_content.png"; sourceTree = "<group>"; };
 		42836F2B1739F9C300E485D1 /* 注册_section背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注册_section背景.png"; sourceTree = "<group>"; };
 		42836F321739F9EE00E485D1 /* 修改密码背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改密码背景.png"; sourceTree = "<group>"; };
@@ -978,8 +980,6 @@
 		5FA999D217781D49004A8B48 /* 占位图1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图1@2x.png"; sourceTree = "<group>"; };
 		5FA999D317781D4A004A8B48 /* 占位图2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图2.png"; sourceTree = "<group>"; };
 		5FA999D417781D4B004A8B48 /* 占位图2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图2@2x.png"; sourceTree = "<group>"; };
-		5FA999D517781D4B004A8B48 /* 占位图3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3.png"; sourceTree = "<group>"; };
-		5FA999D617781D4B004A8B48 /* 占位图3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图3@2x.png"; sourceTree = "<group>"; };
 		5FA999D717781D4C004A8B48 /* 占位图4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图4.png"; sourceTree = "<group>"; };
 		5FA999D817781D4D004A8B48 /* 占位图4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图4@2x.png"; sourceTree = "<group>"; };
 		5FB340F817266264003B58FB /* WZServiceItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItemListViewController.h; sourceTree = "<group>"; };
@@ -1474,9 +1474,9 @@
 				5FA999D117781D49004A8B48 /* 占位图1.png */,
 				5FA999D217781D49004A8B48 /* 占位图1@2x.png */,
 				5FA999D317781D4A004A8B48 /* 占位图2.png */,
+				426F0D121797DCF600D7B504 /* 占位图3.png */,
+				426F0D131797DCF600D7B504 /* 占位图3@2x.png */,
 				5FA999D417781D4B004A8B48 /* 占位图2@2x.png */,
-				5FA999D517781D4B004A8B48 /* 占位图3.png */,
-				5FA999D617781D4B004A8B48 /* 占位图3@2x.png */,
 				5FA999D717781D4C004A8B48 /* 占位图4.png */,
 				5FA999D817781D4D004A8B48 /* 占位图4@2x.png */,
 				5F7F2BEE17574B930028B13D /* Menu@2x.png */,
@@ -2667,8 +2667,6 @@
 				5FA999DA17781D4D004A8B48 /* 占位图1@2x.png in Resources */,
 				5FA999DB17781D4D004A8B48 /* 占位图2.png in Resources */,
 				5FA999DC17781D4D004A8B48 /* 占位图2@2x.png in Resources */,
-				5FA999DD17781D4D004A8B48 /* 占位图3.png in Resources */,
-				5FA999DE17781D4D004A8B48 /* 占位图3@2x.png in Resources */,
 				5FA999DF17781D4D004A8B48 /* 占位图4.png in Resources */,
 				5FA999E017781D4D004A8B48 /* 占位图4@2x.png in Resources */,
 				5FA434B6177ACFAC001BBCB3 /* selectedbg.png in Resources */,
@@ -2772,6 +2770,8 @@
 				424C6F5B1797936600D3A298 /* 贝客.png in Resources */,
 				5F0E8C541797D39B0018A607 /* jiantou.png in Resources */,
 				5F0E8C551797D39B0018A607 /* jiantou@2x.png in Resources */,
+				426F0D141797DCF600D7B504 /* 占位图3.png in Resources */,
+				426F0D151797DCF600D7B504 /* 占位图3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
