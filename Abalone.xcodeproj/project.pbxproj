@@ -85,6 +85,8 @@
 		5F069835178E4C60006DDFAA /* 商户简介@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069831178E4C60006DDFAA /* 商户简介@2x.png */; };
 		5F069848178ECF4C006DDFAA /* 商户相关.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069846178ECF4C006DDFAA /* 商户相关.png */; };
 		5F069849178ECF4C006DDFAA /* 商户相关@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069847178ECF4C006DDFAA /* 商户相关@2x.png */; };
+		5F0E8C541797D39B0018A607 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0E8C521797D39B0018A607 /* jiantou.png */; };
+		5F0E8C551797D39B0018A607 /* jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0E8C531797D39B0018A607 /* jiantou@2x.png */; };
 		5F1CCCA81755CE3700F9803E /* WZStoreTypeSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */; };
 		5F1CCCDB1755DDFB00F9803E /* WZStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDA1755DDFB00F9803E /* WZStore.m */; };
 		5F1CCCDE1755E59800F9803E /* WZStore+AllTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCDD1755E59800F9803E /* WZStore+AllTypes.m */; };
@@ -630,6 +632,8 @@
 		5F069831178E4C60006DDFAA /* 商户简介@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户简介@2x.png"; sourceTree = "<group>"; };
 		5F069846178ECF4C006DDFAA /* 商户相关.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户相关.png"; sourceTree = "<group>"; };
 		5F069847178ECF4C006DDFAA /* 商户相关@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户相关@2x.png"; sourceTree = "<group>"; };
+		5F0E8C521797D39B0018A607 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
+		5F0E8C531797D39B0018A607 /* jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou@2x.png"; sourceTree = "<group>"; };
 		5F1CCCA61755CE3700F9803E /* WZStoreTypeSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStoreTypeSelectorViewController.h; sourceTree = "<group>"; };
 		5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZStoreTypeSelectorViewController.m; sourceTree = "<group>"; };
 		5F1CCCD91755DDFB00F9803E /* WZStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStore.h; sourceTree = "<group>"; };
@@ -1437,6 +1441,8 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5F0E8C521797D39B0018A607 /* jiantou.png */,
+				5F0E8C531797D39B0018A607 /* jiantou@2x.png */,
 				5F75557B1795195A0059D9BB /* pointCellBg.png */,
 				424C6F561796906A00D3A298 /* pointChange.png */,
 				424C6F571796906A00D3A298 /* pointChange@2x.png */,
@@ -2764,6 +2770,8 @@
 				424C6F581796906A00D3A298 /* pointChange.png in Resources */,
 				424C6F591796906A00D3A298 /* pointChange@2x.png in Resources */,
 				424C6F5B1797936600D3A298 /* 贝客.png in Resources */,
+				5F0E8C541797D39B0018A607 /* jiantou.png in Resources */,
+				5F0E8C551797D39B0018A607 /* jiantou@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
