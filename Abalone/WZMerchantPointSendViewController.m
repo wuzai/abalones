@@ -104,6 +104,8 @@
         if (members.count) {
             WZMember *member = [members lastObject];
              [WZMemberPointNetWork sendMemberPoint:self.pointNum.text.intValue fromMember:member.gid toUserName:self.phoneNum.text inMerchant:self.merchant.gid];
+        }else{
+            NSLog(@"查无数据");
         }
        
     }

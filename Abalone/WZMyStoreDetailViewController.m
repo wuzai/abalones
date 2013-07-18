@@ -308,7 +308,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 -(void)platformPointRecord:(UIButton *)button
 {
     WZMyMerchantPointRecordListViewController *mpl = (WZMyMerchantPointRecordListViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"pointRecordView"];
-    mpl.merchant = self.store.merchant;
+ //   mpl.merchant = self.store.merchant;
     mpl.type  = WZUserType;
     
     [self.navigationController pushViewController:mpl animated:YES];

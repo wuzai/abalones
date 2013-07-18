@@ -45,6 +45,8 @@
     self.rate.text = [NSString stringWithFormat:@"%i个会员积分兑换一个平台积分",self.merchant.rate.integerValue];
     self.explain.numberOfLines = 0;
     
+    self.merchantLogo.imageURL = [NSURL URLWithString:self.merchant.logo];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memberPointToUserSuccess:) name:kMEMBERPOINTTOUSERPOINTSUCCESSNOTIFICTION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memberPointToUserFail:) name:kMEMBERPOINTTOUSERPOINTFAILNOTIFICTION object:nil];
 }
@@ -82,9 +84,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        CGSize size =  [self.merchant.rateExplain sizeWithFont:self.explain.font constrainedToSize:CGSizeMake(self.explain.frame.size.width, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
+        CGSize size =  [[WZUser me].config.pointLargessExplain sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(238, 99999999) lineBreakMode:NSLineBreakByWordWrapping];
        
-        return size.height +20;
+        return size.height + 90;
     }else{
         return 107;
     }
