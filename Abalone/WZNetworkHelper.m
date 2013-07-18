@@ -84,9 +84,17 @@ NSString *kWZTimeStampKey = @"timestamp";
     WZNetworkScheme *scheme = objectLoader.scheme;
     Class<WZNetworkBeggar> beggar = scheme.beggar;
     scheme.busy = NO;
+    if (error.code == -1001 || error.code ==-1004 ||error.code == 2) {
+        NSLog(@"%@",error.userInfo.allKeys.lastObject);
+        NSMutableDictionary *details = [NSMutableDictionary dictionary];
+         [details setValue:@"网络不给力，请稍后再试！" forKey:NSLocalizedDescriptionKey];
+        error = [NSError errorWithDomain:error.domain code:error.code userInfo:details];
+    }
+    
     if ([(id)beggar respondsToSelector:@selector(failedIn:withError:)]) {
         [beggar failedIn:objectLoader withError:error];
     }
+    
     if ([(id)beggar respondsToSelector:@selector(failedNotificationNameForPath:method:)]) {
         NSString *notificationName = [beggar failedNotificationNameForPath:scheme.route method:scheme.method];
         if (notificationName) {
