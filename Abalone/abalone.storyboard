@@ -3298,7 +3298,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="jiantou.png" id="HDZ-4b-8xa">
-                                                    <rect key="frame" x="107" y="5" width="84" height="55"/>
+                                                    <rect key="frame" x="112" y="8" width="71" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
