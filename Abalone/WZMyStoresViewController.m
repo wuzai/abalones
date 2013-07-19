@@ -117,9 +117,9 @@
 {
     [super didReceiveMemoryWarning];
     if (self.view.window == nil) {
-        [self.myStoreListViewController didMoveToParentViewController:nil];
-        [self.myStoreListViewController.tableView removeFromSuperview];
-        [self.myStoreListViewController removeFromParentViewController];
+//        [self.myStoreListViewController didMoveToParentViewController:nil];
+//        [self.myStoreListViewController.tableView removeFromSuperview];
+//        [self.myStoreListViewController removeFromParentViewController];
         
          [[NSNotificationCenter defaultCenter] removeObserver:self name:@"locationSuccess" object:nil];
     }

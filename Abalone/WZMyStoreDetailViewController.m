@@ -120,7 +120,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.store.myServicesInTheStore.count ? self.store.myServicesInTheStore.count+2 : 1;
+    return self.store.myServicesInTheStore.count ? self.store.myServicesInTheStore.count+2 : 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
