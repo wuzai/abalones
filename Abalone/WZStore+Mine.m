@@ -72,7 +72,7 @@
             NSRange range = [usableStores rangeOfString:self.gid];
             if (range.location != NSNotFound) {
                 if ([obj respondsToSelector:@selector(forbidden)] && [obj respondsToSelector:@selector(submitState)]) {
-                    if (![[obj performSelector:@selector(forbidden)] boolValue] | [[obj performSelector:@selector(submitState)] boolValue]) {
+                    if ((![[obj performSelector:@selector(forbidden)] boolValue] && ![[obj performSelector:@selector(submitState)] boolValue])||([[obj performSelector:@selector(forbidden)] boolValue] && [[obj performSelector:@selector(submitState)] boolValue])) {
                         [myServices addObject:obj];
                     }
                 }

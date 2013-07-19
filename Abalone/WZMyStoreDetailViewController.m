@@ -417,16 +417,19 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
 {
     NSArray *results = (NSArray *)notification.object;
     if (results.count) {
-        [self.store deleteEntity];
+       // [self.store deleteEntity];
         if ([results.lastObject respondsToSelector:@selector(deleteEntity)]) {
+            [self.services removeObject:[results lastObject]];
             [results.lastObject deleteEntity];
             [[RKObjectManager sharedManager].objectStore save:nil];
         }
         
+        [self.tableView reloadData];
     }
+    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"拒绝成功！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];
-    [self.tableView reloadData];
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kSubmitCancelServiceSuccessNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kSubmitCancelServiceFailNotificationKey object:nil];
 }
