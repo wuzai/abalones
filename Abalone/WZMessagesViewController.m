@@ -200,17 +200,17 @@
         [_tableView reloadData];
         self.navigationItem.rightBarButtonItem = nil;
     }
-    else if (![_messages count])
+    else 
     {
         
         [_messages addObjectsFromArray:[me.messages allObjects]];
         [_tableView reloadData];
         self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
     }
-   if(![tempmessages count])
-    {
-        [tempmessages addObjectsFromArray:[me.messages allObjects]];
-    }
+//   if(![tempmessages count])
+//    {
+//        [tempmessages addObjectsFromArray:[me.messages allObjects]];
+//    }
     
     
 }
