@@ -127,8 +127,9 @@
 }
 -(void)deleteMes
 {
-    [[_messages objectAtIndex:flag ] deleteEntity];
     [_messages removeObjectAtIndex:flag];
+    [[_messages objectAtIndex:flag ] deleteEntity];
+    
     
     [[RKObjectManager sharedManager].objectStore save:nil];
     [_tableView reloadData];
@@ -191,9 +192,7 @@
     if (!_messages) {
         _messages = [NSMutableArray new];
     }
-    if (!tempmessages) {
-        tempmessages = [NSMutableArray new];
-    }
+    
     WZUser *me = [WZUser me];
     if (!me) {
         [_messages removeAllObjects];
@@ -207,10 +206,7 @@
         [_tableView reloadData];
         self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
     }
-//   if(![tempmessages count])
-//    {
-//        [tempmessages addObjectsFromArray:[me.messages allObjects]];
-//    }
+
     
     
 }
