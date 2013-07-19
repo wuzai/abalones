@@ -93,11 +93,6 @@ static const CGFloat speedPixel = 0.0015;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSuccess:) name:@"locationSuccess" object:nil];
     
     
-    if ([WZUser me]) {
-        [WZDeleteUserMessage deleteMessagesForUser:[WZUser me]];
-        
-    }
-    
 }
 
 

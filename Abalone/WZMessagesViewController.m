@@ -127,12 +127,14 @@
 }
 -(void)deleteMes
 {
+    WZMessage *message = [_messages objectAtIndex:flag];
     [_messages removeObjectAtIndex:flag];
-    [[_messages objectAtIndex:flag ] deleteEntity];
-    
+    [message deleteEntity];
+     
     
     [[RKObjectManager sharedManager].objectStore save:nil];
-    [_tableView reloadData];
+    [self reload];
+ //   [_tableView reloadData];
 //    [_tableView deleteRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>:[NSArray arrayWithObject:] withRowAnimation:UITableViewRowAnimationFade];
     self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
    // [self tableView:commitEditingStyle:forRowAtIndexPath];
