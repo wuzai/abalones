@@ -77,7 +77,7 @@ static WZLocationContrl *sharedInstance;
 {
     [self stop];
     UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"获取用户地址失败，请重试" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 }
 
