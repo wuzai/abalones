@@ -12,6 +12,8 @@
 #import "WZCoupon.h"
 #import "WZUser+Me.h"
 #import "WZUser+Equal.h"
+#import "WZServiceItem.h"
+#import "WZMemberService.h"
 
 @interface WZMyServiceDetailViewController ()
 @property (nonatomic,strong)NSString *servicetitle;
@@ -89,6 +91,19 @@
         self.serviceRule.text = meteringCard.ruleText;
         self.serviceRuleText = meteringCard.ruleText;
     }
+    else if ([self.service isKindOfClass:[WZMemberService class]])//扩展类型
+    {
+        WZMemberService *serviceItem = (WZMemberService *)self.service;
+        self.serviceTitle.text = serviceItem.memberServiceName;
+        //使用说明
+        self.servicePromptMessage.text  = serviceItem.ruleText;
+        //服务描述
+        self.serviceDescription.text = serviceItem.description;
+        self.promtMessage = serviceItem.promptIntro;
+        self.intro = serviceItem.promptIntro;
+        self.serviceImageView.imageURL = [NSURL URLWithString: [NSString stringWithFormat:@"%@",serviceItem.iconImage]];
+        self.serviceRule.text = serviceItem.ruleText;
+    }    
 }
 
 

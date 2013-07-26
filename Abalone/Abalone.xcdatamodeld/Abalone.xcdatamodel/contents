@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="WZAd" representedClassName="WZAd" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fromDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -78,6 +78,25 @@
         <attribute name="submitState" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="usableStores" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZUser" inverseName="memberCards" inverseEntity="WZUser" syncable="YES"/>
+    </entity>
+    <entity name="WZMemberService" representedClassName="WZMemberService" syncable="YES">
+        <attribute name="allowLargess" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="allowShare" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forbidden" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="gid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memberServiceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memberServiceNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="memberServiceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="merchantId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promptIntro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruleText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submitState" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="usableStores" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validToDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="vendingDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZUser" inverseName="memberServices" inverseEntity="WZUser" syncable="YES"/>
     </entity>
     <entity name="WZMerchant" representedClassName="WZMerchant" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -208,6 +227,7 @@
         <relationship name="coupons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZCoupon" inverseName="user" inverseEntity="WZCoupon" syncable="YES"/>
         <relationship name="memberCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMemberCard" inverseName="user" inverseEntity="WZMemberCard" syncable="YES"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMember" inverseName="user" inverseEntity="WZMember" syncable="YES"/>
+        <relationship name="memberServices" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZMemberService" inverseName="user" inverseEntity="WZMemberService" syncable="YES"/>
         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMessage" inverseName="to" inverseEntity="WZMessage" syncable="YES"/>
         <relationship name="meteringCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMeteringCard" inverseName="user" inverseEntity="WZMeteringCard" syncable="YES"/>
         <relationship name="pointRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZPointRecord" inverseName="user" inverseEntity="WZPointRecord" syncable="YES"/>
@@ -220,12 +240,13 @@
         <element name="WZLocation" positionX="160" positionY="192" width="128" height="105"/>
         <element name="WZMember" positionX="61" positionY="-729" width="128" height="165"/>
         <element name="WZMemberCard" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="WZMemberService" positionX="160" positionY="192" width="128" height="300"/>
         <element name="WZMerchant" positionX="-333" positionY="-138" width="128" height="465"/>
         <element name="WZMessage" positionX="547" positionY="-216" width="128" height="210"/>
         <element name="WZMeteringCard" positionX="160" positionY="192" width="128" height="285"/>
         <element name="WZPointRecord" positionX="160" positionY="192" width="128" height="255"/>
         <element name="WZServiceItem" positionX="160" positionY="192" width="128" height="330"/>
         <element name="WZStore" positionX="160" positionY="192" width="128" height="285"/>
-        <element name="WZUser" positionX="-180" positionY="-603" width="128" height="270"/>
+        <element name="WZUser" positionX="-180" positionY="-603" width="128" height="285"/>
     </elements>
 </model>

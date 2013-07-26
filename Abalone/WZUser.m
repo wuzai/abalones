@@ -2,7 +2,7 @@
 //  WZUser.m
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-16.
+//  Created by chen  on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -12,6 +12,7 @@
 #import "WZCoupon.h"
 #import "WZMember.h"
 #import "WZMemberCard.h"
+#import "WZMemberService.h"
 #import "WZMessage.h"
 #import "WZMeteringCard.h"
 #import "WZPointRecord.h"
@@ -27,12 +28,13 @@
 @dynamic point;
 @dynamic username;
 @dynamic commetns;
+@dynamic config;
 @dynamic coupons;
 @dynamic memberCards;
 @dynamic members;
 @dynamic messages;
 @dynamic meteringCards;
 @dynamic pointRecords;
-@dynamic config;
+@dynamic memberServices;
 
 @end

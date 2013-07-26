@@ -12,6 +12,7 @@
 #import "WZMemberCard+Mapping.h"
 #import "WZMeteringCard+Mapping.h"
 #import "WZCoupon+Mapping.h"
+#import "WZMemberService+Mapping.h"
 
 static NSString *type;
  NSString *const kSubmitOkServiceSuccessNotificationKey = @"submitOkServiceSuccess";
@@ -44,6 +45,10 @@ static NSString *type;
         return [WZCoupon couponMapping];
     }else if([type isEqualToString:@"MeteringCard"]){
         return [WZMeteringCard meteringCardMapping];
+    }
+    //扩展类型
+    else {
+        return [WZMemberService memberServiceMapping];
     }
     return nil;
 }

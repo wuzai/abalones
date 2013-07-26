@@ -21,6 +21,8 @@
 		420B3984178E7A04004DB550 /* 修改@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B3982178E7A04004DB550 /* 修改@2x.png */; };
 		42152250178C016800540030 /* 推荐.png in Resources */ = {isa = PBXBuildFile; fileRef = 4215224E178C016800540030 /* 推荐.png */; };
 		42152251178C016800540030 /* 推荐@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4215224F178C016800540030 /* 推荐@2x.png */; };
+		423DE50717A249D300F53D04 /* WZMemberService+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */; };
+		423DE50A17A24BE200F53D04 /* WZMemberService.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DE50917A24BE200F53D04 /* WZMemberService.m */; };
 		424C6F4A17968DFF00D3A298 /* 使用.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4617968DFF00D3A298 /* 使用.png */; };
 		424C6F4B17968DFF00D3A298 /* 使用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4717968DFF00D3A298 /* 使用@2x.png */; };
 		424C6F4C17968DFF00D3A298 /* 转赠.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4817968DFF00D3A298 /* 转赠.png */; };
@@ -73,6 +75,7 @@
 		42D5D4A1178FA655004700FF /* 刷新@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D5D49D178FA655004700FF /* 刷新@2x.png */; };
 		42D5D4AC178FB00D004700FF /* 反转.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D5D4AA178FB00D004700FF /* 反转.png */; };
 		42D5D4AD178FB00D004700FF /* 反转@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D5D4AB178FB00D004700FF /* 反转@2x.png */; };
+		42DEDEBB17A23674001020B7 /* WZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDEBA17A23673001020B7 /* WZUser.m */; };
 		42E26298178C36D700EE9E93 /* 商户边框.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26296178C36D600EE9E93 /* 商户边框.png */; };
 		42E26299178C36D700EE9E93 /* 商户边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26297178C36D700EE9E93 /* 商户边框@2x.png */; };
 		42E262AB178D274500EE9E93 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E262A7178D274500EE9E93 /* 2.png */; };
@@ -141,7 +144,6 @@
 		5F7555821795195A0059D9BB /* pointCellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F75557C1795195A0059D9BB /* pointCellBg@2x.png */; };
 		5F75558E179523070059D9BB /* WZMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F75558D179523070059D9BB /* WZMerchant.m */; };
 		5F755591179523F10059D9BB /* WZConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755590179523F10059D9BB /* WZConfigure.m */; };
-		5F755594179524060059D9BB /* WZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755593179524060059D9BB /* WZUser.m */; };
 		5F755597179524980059D9BB /* WZConfigure+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F755596179524980059D9BB /* WZConfigure+Mapping.m */; };
 		5F7555A317952DEA0059D9BB /* WZMerchantPointSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7555A117952DEA0059D9BB /* WZMerchantPointSendViewController.m */; };
 		5F7F2BF117574B930028B13D /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F2BED17574B930028B13D /* Menu.png */; };
@@ -568,6 +570,10 @@
 		420B3982178E7A04004DB550 /* 修改@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改@2x.png"; sourceTree = "<group>"; };
 		4215224E178C016800540030 /* 推荐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "推荐.png"; sourceTree = "<group>"; };
 		4215224F178C016800540030 /* 推荐@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "推荐@2x.png"; sourceTree = "<group>"; };
+		423DE50517A249D300F53D04 /* WZMemberService+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZMemberService+Mapping.h"; sourceTree = "<group>"; };
+		423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMemberService+Mapping.m"; sourceTree = "<group>"; };
+		423DE50817A24BE200F53D04 /* WZMemberService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMemberService.h; sourceTree = "<group>"; };
+		423DE50917A24BE200F53D04 /* WZMemberService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMemberService.m; sourceTree = "<group>"; };
 		424C6F4617968DFF00D3A298 /* 使用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用.png"; sourceTree = "<group>"; };
 		424C6F4717968DFF00D3A298 /* 使用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用@2x.png"; sourceTree = "<group>"; };
 		424C6F4817968DFF00D3A298 /* 转赠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转赠.png"; sourceTree = "<group>"; };
@@ -622,6 +628,8 @@
 		42D5D49D178FA655004700FF /* 刷新@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新@2x.png"; sourceTree = "<group>"; };
 		42D5D4AA178FB00D004700FF /* 反转.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "反转.png"; sourceTree = "<group>"; };
 		42D5D4AB178FB00D004700FF /* 反转@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "反转@2x.png"; sourceTree = "<group>"; };
+		42DEDEB917A23673001020B7 /* WZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZUser.h; sourceTree = "<group>"; };
+		42DEDEBA17A23673001020B7 /* WZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZUser.m; sourceTree = "<group>"; };
 		42E26296178C36D600EE9E93 /* 商户边框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户边框.png"; sourceTree = "<group>"; };
 		42E26297178C36D700EE9E93 /* 商户边框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户边框@2x.png"; sourceTree = "<group>"; };
 		42E262A7178D274500EE9E93 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -710,8 +718,6 @@
 		5F75558D179523070059D9BB /* WZMerchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMerchant.m; sourceTree = "<group>"; };
 		5F75558F179523F10059D9BB /* WZConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZConfigure.h; sourceTree = "<group>"; };
 		5F755590179523F10059D9BB /* WZConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZConfigure.m; sourceTree = "<group>"; };
-		5F755592179524060059D9BB /* WZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZUser.h; sourceTree = "<group>"; };
-		5F755593179524060059D9BB /* WZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZUser.m; sourceTree = "<group>"; };
 		5F755595179524980059D9BB /* WZConfigure+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZConfigure+Mapping.h"; sourceTree = "<group>"; };
 		5F755596179524980059D9BB /* WZConfigure+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZConfigure+Mapping.m"; sourceTree = "<group>"; };
 		5F7555A017952DE90059D9BB /* WZMerchantPointSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMerchantPointSendViewController.h; sourceTree = "<group>"; };
@@ -1596,8 +1602,6 @@
 			children = (
 				5F2D05E317968478001FC538 /* WZServiceItem.h */,
 				5F2D05E417968478001FC538 /* WZServiceItem.m */,
-				5F755592179524060059D9BB /* WZUser.h */,
-				5F755593179524060059D9BB /* WZUser.m */,
 				5FA171891743730F008C0CD6 /* WZAd.h */,
 				5FA171AA17437311008C0CD6 /* WZMeteringCard.h */,
 				5FA171AB17437311008C0CD6 /* WZMeteringCard.m */,
@@ -1614,6 +1618,10 @@
 				5FA1719217437310008C0CD6 /* WZComment.h */,
 				5FA1719317437310008C0CD6 /* WZComment.m */,
 				5FA1718A1743730F008C0CD6 /* WZAd.m */,
+				42DEDEB917A23673001020B7 /* WZUser.h */,
+				42DEDEBA17A23673001020B7 /* WZUser.m */,
+				423DE50817A24BE200F53D04 /* WZMemberService.h */,
+				423DE50917A24BE200F53D04 /* WZMemberService.m */,
 				5F9F9815171510EA00B9001A /* Abalone.xcdatamodeld */,
 				5F75558F179523F10059D9BB /* WZConfigure.h */,
 				5F755590179523F10059D9BB /* WZConfigure.m */,
@@ -1981,6 +1989,8 @@
 				5FA895C51739F4B8008BB974 /* WZPointRecord+Mapping.m */,
 				5F755595179524980059D9BB /* WZConfigure+Mapping.h */,
 				5F755596179524980059D9BB /* WZConfigure+Mapping.m */,
+				423DE50517A249D300F53D04 /* WZMemberService+Mapping.h */,
+				423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */,
 			);
 			name = Mappings;
 			sourceTree = "<group>";
@@ -2946,12 +2956,14 @@
 				5F9B81201793A8460089E9EC /* WZMemberPointToUserPointNetWork.m in Sources */,
 				5F75558E179523070059D9BB /* WZMerchant.m in Sources */,
 				5F755591179523F10059D9BB /* WZConfigure.m in Sources */,
-				5F755594179524060059D9BB /* WZUser.m in Sources */,
 				5F755597179524980059D9BB /* WZConfigure+Mapping.m in Sources */,
 				5F7555A317952DEA0059D9BB /* WZMerchantPointSendViewController.m in Sources */,
 				5F8DAC3017953D3500149B83 /* WZUserPointSendViewController.m in Sources */,
 				5FA297F817962B850025111C /* WZMerchantPointToUserViewController.m in Sources */,
 				5F2D05E517968478001FC538 /* WZServiceItem.m in Sources */,
+				42DEDEBB17A23674001020B7 /* WZUser.m in Sources */,
+				423DE50717A249D300F53D04 /* WZMemberService+Mapping.m in Sources */,
+				423DE50A17A24BE200F53D04 /* WZMemberService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

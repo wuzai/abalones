@@ -2,14 +2,14 @@
 //  WZUser.h
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-16.
+//  Created by chen  on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class WZComment, WZConfigure, WZCoupon, WZMember, WZMemberCard, WZMessage, WZMeteringCard, WZPointRecord;
+@class WZComment, WZConfigure, WZCoupon, WZMember, WZMemberCard, WZMemberService, WZMessage, WZMeteringCard, WZPointRecord;
 
 @interface WZUser : NSManagedObject
 
@@ -21,13 +21,14 @@
 @property (nonatomic, retain) NSNumber * point;
 @property (nonatomic, retain) NSString * username;
 @property (nonatomic, retain) NSSet *commetns;
+@property (nonatomic, retain) WZConfigure *config;
 @property (nonatomic, retain) NSSet *coupons;
 @property (nonatomic, retain) NSSet *memberCards;
 @property (nonatomic, retain) NSSet *members;
 @property (nonatomic, retain) NSSet *messages;
 @property (nonatomic, retain) NSSet *meteringCards;
 @property (nonatomic, retain) NSSet *pointRecords;
-@property (nonatomic, retain) WZConfigure *config;
+@property (nonatomic, retain) NSSet *memberServices;
 @end
 
 @interface WZUser (CoreDataGeneratedAccessors)
@@ -46,6 +47,11 @@
 - (void)removeMemberCardsObject:(WZMemberCard *)value;
 - (void)addMemberCards:(NSSet *)values;
 - (void)removeMemberCards:(NSSet *)values;
+
+- (void)addMemberServicesObject:(WZMemberService *)value;
+- (void)removeMemberServicesObject:(WZMemberService *)value;
+- (void)addMemberServices:(NSSet *)values;
+- (void)removeMemberServices:(NSSet *)values;
 
 - (void)addMembersObject:(WZMember *)value;
 - (void)removeMembersObject:(WZMember *)value;

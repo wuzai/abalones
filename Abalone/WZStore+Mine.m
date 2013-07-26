@@ -10,6 +10,7 @@
 #import "WZUser+Me.h"
 #import <RestKit/RestKit.h>
 #import "WZMeteringCard.h"
+#import "WZMemberService.h"
 
 @implementation WZStore (Mine)
 + (NSMutableArray *)mine
@@ -22,6 +23,7 @@
     NSMutableArray *services = [NSMutableArray arrayWithArray:[user.memberCards allObjects]];
     [services addObjectsFromArray:user.coupons.allObjects];
     [services addObjectsFromArray:user.meteringCards.allObjects];
+    [services addObjectsFromArray:user.memberServices.allObjects];
     
     NSMutableSet *storeSet = [NSMutableSet set];
     for (id obj in services) {
@@ -55,7 +57,11 @@
     NSMutableArray *myServices = [NSMutableArray array];
     NSMutableArray *services = [NSMutableArray arrayWithArray:[user.memberCards allObjects]];
     [services addObjectsFromArray:user.coupons.allObjects];
+    
     NSMutableArray *meteringCards = [NSMutableArray arrayWithArray: user.meteringCards.allObjects];
+    
+    [services addObjectsFromArray:user.memberServices.allObjects];
+    
     NSMutableArray *deletes = [NSMutableArray array];
     [meteringCards enumerateObjectsUsingBlock:^(id obj,NSUInteger index,BOOL *finish){
         WZMeteringCard *meteringCard = (WZMeteringCard *)obj;

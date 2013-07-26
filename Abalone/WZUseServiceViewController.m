@@ -12,6 +12,9 @@
 #import "WZMemberCard.h"
 #import "WZUseService.h"
 #import "WZUser+Me.h"
+#import "WZServiceItem.h"
+#import "WZMemberService.h"
+
 
 @interface WZUseServiceViewController ()
 
@@ -53,6 +56,14 @@
         self.serviceTitle.text = meteringCard.meteringCardName;
         self.serviceDescription.text = meteringCard.intro;
     }
+    
+    
+    else if ([self.service isKindOfClass:[WZMemberService class]])
+    {
+        WZMemberService *serviceItem = (WZMemberService *)self.service;
+        self.serviceTitle.text = serviceItem.memberServiceName;
+        self.serviceDescription.text = serviceItem.description;
+    }
     self.serviceImage.imageURL = [NSURL URLWithString:[self.service iconImage]];
 }
 
@@ -78,6 +89,7 @@
     
     NSString *serviceType = nil;
     //(MemberCard/Coupon/MeteringCard)
+//    if (self.service isKindOfClass:WZS)
     if ([self.service isKindOfClass:[WZMemberCard class]]) {
         serviceType = @"MemberCard";
     }else if([self.service isKindOfClass:[WZCoupon class]]){
@@ -85,6 +97,12 @@
     }else if([self.service isKindOfClass:[WZMeteringCard class]]){
         serviceType = @"MeteringCard";
     }
+    //扩展类型
+    else if([self.service isKindOfClass:[WZMemberService class]]){
+        WZMemberService *serviceItem = (WZMemberService *)self.service;
+        serviceType = serviceItem.memberServiceType;
+    }
+   
     WZUser *user = [WZUser me];
     if([WZUseService userviceWithType:serviceType forServiceID:[self.service gid] inStoreID:self.sendStoreID byUserID:user.gid]){
         UIButton *button = (UIButton *)sender;

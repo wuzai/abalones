@@ -12,6 +12,7 @@
 #import "WZMeteringCard+Mapping.h"
 #import "WZMember+Mapping.h"
 #import "WZConfigure+Mapping.h"
+#import "WZMemberService+Mapping.h"
 
 @implementation WZUser (Mapping)
 + (RKObjectMapping *)userMapping
@@ -51,6 +52,8 @@
     [userMapping mapRelationship:@"memberCards"  withMapping:[WZMemberCard memberCardMapping]];
     [userMapping mapRelationship:@"coupons" withMapping:[WZCoupon couponMapping]];
     [userMapping mapRelationship:@"meteringCards" withMapping:[WZMeteringCard meteringCardMapping]];
+    //扩展类型
+    [userMapping mapRelationship:@"memberServices" withMapping:[WZMemberService memberServiceMapping]];
     [userMapping mapRelationship:@"members" withMapping:[WZMember memberMapping]];
     
     return userMapping;

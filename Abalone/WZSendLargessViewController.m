@@ -14,6 +14,8 @@
 #import "WZLargess.h"
 #import "WZUser+Me.h"
 #import "WZUser+Equal.h"
+#import "WZServiceItem.h"
+#import "WZMemberService.h"
 
 @interface WZSendLargessViewController ()
 @property (nonatomic,strong) NSString *serviceName;
@@ -123,6 +125,12 @@
             serviceType = @"Coupon";
         }else if([self.service isKindOfClass:[WZMeteringCard class]]){
             serviceType = @"MeteringCard";
+        }
+        //扩展类型
+        else if ([self.service isKindOfClass:[WZMemberService class]])
+        {
+            WZMemberService *serviceItem = (WZMemberService *)self.service;
+            serviceType = serviceItem.memberServiceType;
         }
         if([WZLargess sendLargessTo:self.largessToCellPhone.text withType:serviceType withServiceID:[self.service gid] withStoreID:self.sendStoreID]){
             sender.enabled = NO;

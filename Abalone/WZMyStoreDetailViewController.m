@@ -28,6 +28,8 @@
 #import <ShareSDK/ShareSDK.h>
 #import "WZMerchantPointSendViewController.h"
 #import "WZMerchantPointToUserViewController.h"
+#import "WZServiceItem.h"
+#import "WZMemberService.h"
 
 
 @interface WZMyStoreDetailViewController ()
@@ -345,6 +347,14 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
         }else if([service isKindOfClass:[WZMeteringCard class]]){
             serviceType = @"MeteringCard";
         }
+        //扩展类型
+        
+        else if ([service isKindOfClass:[WZMemberService class]]) 
+            {
+                WZMemberService *serviceItem = (WZMemberService *)service;
+                serviceType = serviceItem.memberServiceType;
+            }
+
         if([WZSubmitOKService submitOkForLargessServiceID:[service gid] withType:serviceType byUserID:[[WZUser me] gid] withStoreID:self.store.gid]){
             cell.okButton.alpha = 0.6;
             cell.cancelButton.alpha = 0.6;
