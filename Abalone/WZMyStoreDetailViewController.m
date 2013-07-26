@@ -205,6 +205,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                         serviceName = [service performSelector:@selector(meteringCardName)];
                     }
                     mystoreAddServiceCell.storeServiceName.text = serviceName;
+                    
                     [mystoreAddServiceCell.okButton addTarget:self action:@selector(okService:) forControlEvents:UIControlEventTouchUpInside];
                     [mystoreAddServiceCell.cancelButton addTarget:self action:@selector(cancelService:) forControlEvents:UIControlEventTouchUpInside];
                     mystoreAddServiceCell.okButton.alpha = 1.0;
@@ -237,14 +238,37 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                         NSLog(@"hello:%@",mystoreServiceCell.storeServiceImage.imageURL);
                     }
                     NSString *serviceName = nil;
+                    NSString *serviceType = nil;
                     if ([service respondsToSelector:@selector(couponName)]) {
                         serviceName = [service performSelector:@selector(couponName)];
+                        mystoreServiceCell.type.text = @"优惠券";
                     }else if ([service respondsToSelector:@selector(memberCardName)]) {
                         serviceName = [service performSelector:@selector(memberCardName)];
+                        mystoreServiceCell.type.text = @"会员卡";
                     }else if ([service respondsToSelector:@selector(meteringCardName)]) {
                         serviceName = [service performSelector:@selector(meteringCardName)];
+                        mystoreServiceCell.type.text  = @"计次卡";
+                    }
+                    //扩展类型
+                    else if ([service respondsToSelector:@selector(memberServiceName)]) {
+                        serviceName = [service performSelector:@selector(memberServiceName)];
+                        serviceType = [service performSelector:@selector(memberServiceType)];
+                        
                     }
                     mystoreServiceCell.storeServiceName.text = serviceName;
+                    
+                    if([serviceType  isEqualToString:@"GroupOn"])
+                    {
+                        mystoreServiceCell.type.text = @"团购券";
+                    }
+                    else if([serviceType isEqualToString:@"StoreCard"])
+                    {
+                        mystoreServiceCell.type.text = @"储值卡";
+                    }
+                    else if([serviceType isEqualToString:@"Voucher"])
+                    {
+                        mystoreServiceCell.type.text = @"代金券";
+                    }                    
                     
                     if ([service respondsToSelector:@selector(allowLargess)]) {
                                        if ([[service performSelector:@selector(allowLargess)] intValue]) {
