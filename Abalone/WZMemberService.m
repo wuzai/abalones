@@ -2,7 +2,7 @@
 //  WZMemberService.m
 //  Abalone
 //
-//  Created by chen  on 13-7-26.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 @dynamic forbidden;
 @dynamic gid;
 @dynamic iconImage;
+@dynamic intro;
 @dynamic memberServiceName;
 @dynamic memberServiceNumber;
 @dynamic memberServiceType;
@@ -27,7 +28,6 @@
 @dynamic usableStores;
 @dynamic validToDate;
 @dynamic vendingDate;
-@dynamic intro;
 @dynamic user;
 
 @end

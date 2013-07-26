@@ -2,7 +2,7 @@
 //  WZUser.h
 //  Abalone
 //
-//  Created by chen  on 13-7-26.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -25,10 +25,10 @@
 @property (nonatomic, retain) NSSet *coupons;
 @property (nonatomic, retain) NSSet *memberCards;
 @property (nonatomic, retain) NSSet *members;
+@property (nonatomic, retain) NSSet *memberServices;
 @property (nonatomic, retain) NSSet *messages;
 @property (nonatomic, retain) NSSet *meteringCards;
 @property (nonatomic, retain) NSSet *pointRecords;
-@property (nonatomic, retain) NSSet *memberServices;
 @end
 
 @interface WZUser (CoreDataGeneratedAccessors)
@@ -48,15 +48,15 @@
 - (void)addMemberCards:(NSSet *)values;
 - (void)removeMemberCards:(NSSet *)values;
 
-- (void)addMemberServicesObject:(WZMemberService *)value;
-- (void)removeMemberServicesObject:(WZMemberService *)value;
-- (void)addMemberServices:(NSSet *)values;
-- (void)removeMemberServices:(NSSet *)values;
-
 - (void)addMembersObject:(WZMember *)value;
 - (void)removeMembersObject:(WZMember *)value;
 - (void)addMembers:(NSSet *)values;
 - (void)removeMembers:(NSSet *)values;
+
+- (void)addMemberServicesObject:(WZMemberService *)value;
+- (void)removeMemberServicesObject:(WZMemberService *)value;
+- (void)addMemberServices:(NSSet *)values;
+- (void)removeMemberServices:(NSSet *)values;
 
 - (void)addMessagesObject:(WZMessage *)value;
 - (void)removeMessagesObject:(WZMessage *)value;

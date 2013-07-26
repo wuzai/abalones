@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="WZAd" representedClassName="WZAd" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fromDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -227,7 +227,7 @@
         <relationship name="coupons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZCoupon" inverseName="user" inverseEntity="WZCoupon" syncable="YES"/>
         <relationship name="memberCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMemberCard" inverseName="user" inverseEntity="WZMemberCard" syncable="YES"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMember" inverseName="user" inverseEntity="WZMember" syncable="YES"/>
-        <relationship name="memberServices" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WZMemberService" inverseName="user" inverseEntity="WZMemberService" syncable="YES"/>
+        <relationship name="memberServices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMemberService" inverseName="user" inverseEntity="WZMemberService" syncable="YES"/>
         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMessage" inverseName="to" inverseEntity="WZMessage" syncable="YES"/>
         <relationship name="meteringCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZMeteringCard" inverseName="user" inverseEntity="WZMeteringCard" syncable="YES"/>
         <relationship name="pointRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WZPointRecord" inverseName="user" inverseEntity="WZPointRecord" syncable="YES"/>

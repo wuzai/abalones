@@ -2,7 +2,7 @@
 //  WZMerchant.m
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-16.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -27,18 +27,18 @@
 @dynamic gid;
 @dynamic image;
 @dynamic intro;
+@dynamic largessExplain;
 @dynamic logo;
 @dynamic memberNumber;
 @dynamic name;
 @dynamic parentID;
+@dynamic rate;
+@dynamic rateExplain;
 @dynamic score;
 @dynamic scorestate;
 @dynamic telphone;
 @dynamic updateTime;
 @dynamic url;
-@dynamic largessExplain;
-@dynamic rateExplain;
-@dynamic rate;
 @dynamic ads;
 @dynamic comments;
 @dynamic members;

@@ -11,13 +11,15 @@
 @implementation WZMemberService (Mapping)
 + (RKManagedObjectMapping *)memberServiceMapping
 {
-    RKManagedObjectMapping *memberMapping = [RKManagedObjectMapping mappingForClass:[WZMemberService class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
-    memberMapping.primaryKeyAttribute = @"gid";
-    [memberMapping mapAttributes:@"memberServiceName",@"memberServiceType"
+    RKManagedObjectMapping *memberServiceMapping = [RKManagedObjectMapping mappingForClass:[WZMemberService class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
+    memberServiceMapping.primaryKeyAttribute = @"gid";
+    [memberServiceMapping mapKeyPathsToAttributes:@"_id",@"gid",@"description",@"intro", nil];
+    [memberServiceMapping mapAttributes:@"memberServiceName",@"memberServiceType"
      ,@"memberServiceNumber",@"promptIntro",@"iconImage",@"vendingDate",@"validToDate",@"merchantId",@"usableStores",@"allowLargess",@"allowShare",@"usableStores",@"forbidden",@"submitState",@"ruleText",  nil];
-    [memberMapping mapKeyPathsToAttributes:@"_id",@"gid",@"description",@"intro", nil];
+        
+    return memberServiceMapping;
     
-    return memberMapping;
+
 }
 
 @end

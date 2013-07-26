@@ -2,7 +2,7 @@
 //  WZServiceItem.m
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-17.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @dynamic address;
 @dynamic allowLargess;
 @dynamic allowShare;
+@dynamic applyExplain;
 @dynamic fromDate;
 @dynamic gid;
 @dynamic intro;
@@ -23,13 +24,12 @@
 @dynamic isRequireApply;
 @dynamic logoImage;
 @dynamic posterImage;
+@dynamic promptIntro;
 @dynamic ruleText;
 @dynamic serviceItemName;
 @dynamic serviceItemType;
 @dynamic toDate;
 @dynamic usableStores;
-@dynamic promptIntro;
-@dynamic applyExplain;
 @dynamic ads;
 @dynamic merchant;
 

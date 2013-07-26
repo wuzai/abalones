@@ -2,8 +2,8 @@
 //  WZMemberCard.h
 //  Abalone
 //
-//  Created by 吾在 on 13-5-15.
-//  Copyright (c) 2013年 吾在. All rights reserved.
+//  Created by 陈 海涛 on 13-7-26.
+//  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,9 +22,9 @@
 @property (nonatomic, retain) NSString * memberCardName;
 @property (nonatomic, retain) NSString * merchantId;
 @property (nonatomic, retain) NSString * promptIntro;
+@property (nonatomic, retain) NSString * ruleText;
 @property (nonatomic, retain) NSNumber * submitState;
 @property (nonatomic, retain) NSString * usableStores;
-@property (nonatomic, retain) NSString * ruleText;
 @property (nonatomic, retain) WZUser *user;
 
 @end

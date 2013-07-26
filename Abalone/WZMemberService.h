@@ -2,7 +2,7 @@
 //  WZMemberService.h
 //  Abalone
 //
-//  Created by chen  on 13-7-26.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -18,6 +18,7 @@
 @property (nonatomic, retain) NSNumber * forbidden;
 @property (nonatomic, retain) NSString * gid;
 @property (nonatomic, retain) NSString * iconImage;
+@property (nonatomic, retain) NSString * intro;
 @property (nonatomic, retain) NSString * memberServiceName;
 @property (nonatomic, retain) NSNumber * memberServiceNumber;
 @property (nonatomic, retain) NSString * memberServiceType;
@@ -28,7 +29,6 @@
 @property (nonatomic, retain) NSString * usableStores;
 @property (nonatomic, retain) NSDate * validToDate;
 @property (nonatomic, retain) NSDate * vendingDate;
-@property (nonatomic, retain) NSString * intro;
 @property (nonatomic, retain) WZUser *user;
 
 @end

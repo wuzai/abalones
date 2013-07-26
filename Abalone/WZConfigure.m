@@ -2,7 +2,7 @@
 //  WZConfigure.m
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-16.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -13,8 +13,8 @@
 @implementation WZConfigure
 
 @dynamic gid;
-@dynamic pointLargessExplain;
 @dynamic lastUpdateTime;
+@dynamic pointLargessExplain;
 @dynamic user;
 
 @end

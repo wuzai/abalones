@@ -2,8 +2,8 @@
 //  WZStore.m
 //  Abalone
 //
-//  Created by 吾在 on 13-5-29.
-//  Copyright (c) 2013年 吾在. All rights reserved.
+//  Created by 陈 海涛 on 13-7-26.
+//  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import "WZStore.h"
@@ -25,8 +25,8 @@
 @dynamic squareImage;
 @dynamic storeImage;
 @dynamic storeName;
-@dynamic vipImage;
 @dynamic type;
+@dynamic vipImage;
 @dynamic location;
 @dynamic merchant;
 @dynamic messages;

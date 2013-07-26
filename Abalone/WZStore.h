@@ -2,8 +2,8 @@
 //  WZStore.h
 //  Abalone
 //
-//  Created by 吾在 on 13-5-29.
-//  Copyright (c) 2013年 吾在. All rights reserved.
+//  Created by 陈 海涛 on 13-7-26.
+//  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,8 +23,8 @@
 @property (nonatomic, retain) NSString * squareImage;
 @property (nonatomic, retain) NSString * storeImage;
 @property (nonatomic, retain) NSString * storeName;
-@property (nonatomic, retain) NSString * vipImage;
 @property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSString * vipImage;
 @property (nonatomic, retain) WZLocation *location;
 @property (nonatomic, retain) WZMerchant *merchant;
 @property (nonatomic, retain) NSSet *messages;

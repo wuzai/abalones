@@ -2,7 +2,7 @@
 //  WZUser.m
 //  Abalone
 //
-//  Created by chen  on 13-7-26.
+//  Created by 陈 海涛 on 13-7-26.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -32,9 +32,9 @@
 @dynamic coupons;
 @dynamic memberCards;
 @dynamic members;
+@dynamic memberServices;
 @dynamic messages;
 @dynamic meteringCards;
 @dynamic pointRecords;
-@dynamic memberServices;
 
 @end
