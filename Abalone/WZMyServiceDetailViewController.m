@@ -96,10 +96,10 @@
         WZMemberService *serviceItem = (WZMemberService *)self.service;
         self.serviceTitle.text = serviceItem.memberServiceName;
         //使用说明
-        self.servicePromptMessage.text  = serviceItem.ruleText;
+        self.serviceRule.text  = serviceItem.ruleText;
         //服务描述
         self.serviceDescription.text = serviceItem.intro;
-        self.promtMessage = serviceItem.promptIntro;
+        
         self.intro = serviceItem.intro;
         self.serviceImageView.imageURL = [NSURL URLWithString: [NSString stringWithFormat:@"%@",serviceItem.iconImage]];
     }    
