@@ -52,7 +52,7 @@
 {
     [super viewDidLoad];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
-    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height -40-49)];
+    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 10, 320, [UIScreen mainScreen].bounds.size.height -40-49-35)];
     self.swipeView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.swipeView];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -253,11 +253,11 @@
 {
     EGOImageView *imageView = (EGOImageView *)view;
     if (imageView == nil) {
-        imageView = [[EGOImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, [UIScreen mainScreen].applicationFrame.size.height)];
+        imageView = [[EGOImageView alloc] initWithFrame:CGRectMake(0.0f, 20.0f, 320.0f, [UIScreen mainScreen].applicationFrame.size.height-40.0f)];
        // imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         imageView.center = self.view.center;
-        imageView.placeholderImage = [UIImage imageNamed:@"占位图2"];
+        imageView.placeholderImage = [UIImage imageNamed:@"AlaloneBackground.png"];
     }
       WZAd *ad = [_advertisements objectAtIndex:index];
     imageView.imageURL =  [NSURL URLWithString: ad.postImage];

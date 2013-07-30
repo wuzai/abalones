@@ -17,5 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *meteringCardNum;
 @property (weak, nonatomic) IBOutlet UIImageView *meteringCardNumImage;
+@property (strong, nonatomic) IBOutlet UILabel *type;
 
 @end

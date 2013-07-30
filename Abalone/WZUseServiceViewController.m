@@ -62,7 +62,7 @@
     {
         WZMemberService *serviceItem = (WZMemberService *)self.service;
         self.serviceTitle.text = serviceItem.memberServiceName;
-        self.serviceDescription.text = serviceItem.description;
+        self.serviceDescription.text = serviceItem.intro;
     }
     self.serviceImage.imageURL = [NSURL URLWithString:[self.service iconImage]];
 }
