@@ -257,8 +257,7 @@
 {
     WZMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     WZMessage *message = [_messages objectAtIndex:indexPath.row];
-   // cell.titleLabel.text = message.title;
-    cell.titleLabel.text = [NSString stringWithFormat:@"%@",message.sentTime ];
+    cell.titleLabel.text = message.title;
     cell.dateLabel.text = [message.sentTime approximationSinceNow];
     cell.contentLabel.text = message.content;
     cell.logoView.imageURL = message.imageURL;
