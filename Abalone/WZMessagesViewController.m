@@ -205,6 +205,12 @@
     {
         
         [_messages addObjectsFromArray:[me.messages allObjects]];
+     
+        [_messages sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+            WZMessage *m1 = (WZMessage *)obj1;
+            WZMessage *m2 = (WZMessage *)obj2;
+            return [m2.sentTime compare: m1.sentTime];
+        }];
         [_tableView reloadData];
         self.navigationItem.rightBarButtonItem = [_messages count]>0?_cleanupItem:nil;
     }
@@ -251,7 +257,8 @@
 {
     WZMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     WZMessage *message = [_messages objectAtIndex:indexPath.row];
-    cell.titleLabel.text = message.title;
+   // cell.titleLabel.text = message.title;
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@",message.sentTime ];
     cell.dateLabel.text = [message.sentTime approximationSinceNow];
     cell.contentLabel.text = message.content;
     cell.logoView.imageURL = message.imageURL;
