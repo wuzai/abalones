@@ -213,14 +213,26 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                     mystoreAddServiceCell.okButton.enabled = YES;
                     mystoreAddServiceCell.cancelButton.enabled = YES;
                     
-                    if ([service respondsToSelector:@selector(remainCount)]) {
+                    if ([service respondsToSelector:@selector(memberServiceNumber)]) {
+                        mystoreAddServiceCell.meteringCardNum.hidden = NO;
+                        mystoreAddServiceCell.meteringCardNumImage.hidden = NO;
+                        int serviceNumber = [[service performSelector:@selector(memberServiceNumber)] intValue];
+                        if (serviceNumber  < 0) {
+                            mystoreAddServiceCell.meteringCardNum.text = @"无限";
+                        }else{
+                            mystoreAddServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"余 %i 元",serviceNumber ];
+                        }
+                    }
+                    
+                    
+                    else if ([service respondsToSelector:@selector(remainCount)]) {
                         mystoreAddServiceCell.meteringCardNum.hidden = NO;
                         mystoreAddServiceCell.meteringCardNumImage.hidden = NO;
                         int count = [[service performSelector:@selector(remainCount)] intValue];
-                        if (count  < 0) {
+                                                if (count  < 0) {
                             mystoreAddServiceCell.meteringCardNum.text = @"无限";
                         }else{
-                            mystoreAddServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"%i",count ];
+                            mystoreAddServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"%i次",count ];
                         }
                     }else{
                         mystoreAddServiceCell.meteringCardNum.hidden = YES;
@@ -282,14 +294,26 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                     [mystoreServiceCell.givingAwayButton addTarget:self action:@selector(givingAwway:) forControlEvents:UIControlEventTouchUpInside];
                     [mystoreServiceCell.useButton addTarget:self action:@selector(useService:) forControlEvents:UIControlEventTouchUpInside];
                     
-                    if ([service respondsToSelector:@selector(remainCount)]) {
+                    if ([service respondsToSelector:@selector(memberServiceNumber)]) {
                         mystoreServiceCell.meteringCardNum.hidden = NO;
                         mystoreServiceCell.meteringCardNumImage.hidden = NO;
-                        int count = [[service performSelector:@selector(remainCount)] intValue];
+                        int serviceNumber = [[service performSelector:@selector(memberServiceNumber)] intValue];
+                        if (serviceNumber  < 0) {
+                            mystoreServiceCell.meteringCardNum.text = @"无限";
+                        }else{
+                            mystoreServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"余 %i 元",serviceNumber ];
+                        }                        
+                    }                    
+                    else if ([service respondsToSelector:@selector(remainCount)]) {
+                        mystoreServiceCell.meteringCardNum.hidden = NO;
+                        mystoreServiceCell.meteringCardNumImage.hidden = NO;
+                        
+                        int count = [[service performSelector:@selector(remainCount)] intValue];                        
+                        
                         if (count  < 0) {
                             mystoreServiceCell.meteringCardNum.text = @"无限";
                         }else{
-                            mystoreServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"%i",count ];
+                            mystoreServiceCell.meteringCardNum.text = [NSString stringWithFormat:@"余 %i 次",count ];
                         }
                     }else{
                         mystoreServiceCell.meteringCardNum.hidden = YES;
@@ -297,6 +321,7 @@ NSString *const myMerchantPointCellIdentifier = @"merchantPointCell";
                     }
                     
                 }
+                
                 
             }
         }
