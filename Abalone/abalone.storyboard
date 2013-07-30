@@ -139,7 +139,7 @@
             <objects>
                 <viewController id="Y1M-Nu-HOI" customClass="WZAddCommentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBi-Ye-4uc">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="您的评价是我们努力的动力！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="45k-g8-HYr">
@@ -1078,11 +1078,11 @@
             <objects>
                 <viewController id="rd3-QB-Cip" customClass="WZCaptchaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dT6-uJ-bq3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IZp-n6-kWr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -1141,7 +1141,7 @@
             <objects>
                 <viewController id="qz0-Z8-Iy7" customClass="WZLoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wIo-OD-IiU">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="登录_content.png" id="Xw0-fl-meh">
@@ -1149,7 +1149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QWq-QE-gWy">
-                                <rect key="frame" x="-8" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="-8" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -1251,11 +1251,11 @@
             <objects>
                 <viewController id="uaD-27-9Nu" customClass="WZResetPasswordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GiW-hI-A4O">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7f6-kZ-mYM">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="373"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -1375,7 +1375,7 @@
             <objects>
                 <viewController id="ndI-eJ-bSr" customClass="WZRegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xLO-i3-9zD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="边框条3.png" id="Mse-1S-UHR">
@@ -1383,7 +1383,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7z8-zQ-a5k">
-                                <rect key="frame" x="0.0" y="-184" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="-184" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -1686,7 +1686,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="pointRecordView" id="bDf-4K-ow3" customClass="WZMyMerchantPointRecordListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XI4-fy-21Z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -1708,7 +1708,7 @@
             <objects>
                 <viewController storyboardIdentifier="" id="XaS-aT-gNe" customClass="WZPointRecordDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bB3-ca-QSM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="printer_header@2x.png" id="TKP-Oy-igL">
@@ -1716,7 +1716,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="bYJ-EB-x9Z">
-                                <rect key="frame" x="8" y="20" width="305" height="386"/>
+                                <rect key="frame" x="8" y="20" width="305" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -2062,7 +2062,7 @@
             <objects>
                 <tableViewController id="RuE-CT-2yF" customClass="WZMyStoreDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qQa-w3-67y">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -2094,7 +2094,7 @@
             <objects>
                 <tableViewController id="6yi-9t-gZu" customClass="WZSendLargessViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Cu5-bM-3Qh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2209,7 +2209,7 @@
             <objects>
                 <tableViewController id="jnD-lR-Eon" customClass="WZUseServiceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zqr-4E-qMZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2332,7 +2332,7 @@
             <objects>
                 <tableViewController id="JYD-RQ-8XX" customClass="WZMyServiceDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="IFv-v4-CvQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2435,7 +2435,7 @@
             <objects>
                 <viewController id="mwF-rd-k7h" customClass="WZMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ztr-dF-o9x">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2526,14 +2526,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9u-eq-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833" y="-1157"/>
+            <point key="canvasLocation" x="1393" y="-1349"/>
         </scene>
         <!--Store Detail View Controller-->
         <scene sceneID="ma3-m1-UFt">
             <objects>
                 <tableViewController storyboardIdentifier="storeDetail" id="7Hk-Dj-e2L" customClass="WZStoreDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" id="yVL-bt-Qi9">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2637,14 +2637,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chD-Km-rXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="-1145"/>
+            <point key="canvasLocation" x="1890" y="-1119"/>
         </scene>
         <!--Other Stores View Controller-->
         <scene sceneID="51M-uS-AEF">
             <objects>
                 <tableViewController id="Oyd-KU-qDb" customClass="WZOtherStoresViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yMR-VM-5QK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -2663,7 +2663,7 @@
             <objects>
                 <tableViewController id="UDd-4y-JxF" customClass="WZShowServiceItemDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vTT-lA-Cyx">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -3400,358 +3400,17 @@
         <image name="边框条2.png" width="295" height="100"/>
         <image name="边框条3.png" width="295" height="147"/>
     </resources>
-    <classes>
-        <class className="EGOImageView" superclassName="UIImageView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EGOImageView.h"/>
-        </class>
-        <class className="SDSegmentedControl" superclassName="UISegmentedControl">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SDSegmentedControl.h"/>
-        </class>
-        <class className="WZAboutUsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAboutUsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="call:"/>
-                <relationship kind="action" name="goWeb:"/>
-                <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="WZActivitiesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZActivitiesViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="header:"/>
-                <relationship kind="outlet" name="_headerView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="_tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="WZAddCommentViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAddCommentViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="sendComment:"/>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="wordNum" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZAdvertisementCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAdvertisementCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="logoView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="merchantLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZAdvertisementViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZAdvertisementViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="WZCaptchaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZCaptchaViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="reset:"/>
-                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZContentViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZContentViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="merchantName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="opAddress" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="opContent" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="opPeople" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="opTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="totalPoint" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZGenderSwitch" superclassName="UISwitch">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZGenderSwitch.h"/>
-        </class>
-        <class className="WZLicenseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZLicenseViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="contenView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZLoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="login:"/>
-                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMapViewController.h"/>
-        </class>
-        <class className="WZMerchantPointSendViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMerchantPointSendViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="sendPoint:"/>
-                <relationship kind="outlet" name="LogoImge" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="phoneNum" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pointNum" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="sendExplain" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZMerchantPointToUserViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMerchantPointToUserViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="memberPointToUser:"/>
-                <relationship kind="outlet" name="explain" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="merchantLogo" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="pintNum" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="rate" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZMessageCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMessageCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="contentLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="logoView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="merchantButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZMessagesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMessagesViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cleanup:"/>
-                <relationship kind="action" name="lookupMerchant:"/>
-                <relationship kind="outlet" name="_tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="WZMoreViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMoreViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="userLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZMultiImageView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMultiImageView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="contentView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-            </relationships>
-        </class>
-        <class className="WZMyMerchantPointRecordListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyMerchantPointRecordListViewController.h"/>
-        </class>
-        <class className="WZMyServiceDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyServiceDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceImageView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="servicePromptMessage" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceRule" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZMyStoreDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyStoreDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="shareMyStore:" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="WZMyStoresViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyStoresViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addStores:"/>
-                <relationship kind="outlet" name="addStores" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="noStoreWarnning" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="segmentControl" candidateClass="SDSegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="WZMyTabBarViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMyTabBarViewController.h"/>
-        </class>
-        <class className="WZOtherStoresViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZOtherStoresViewController.h"/>
-        </class>
-        <class className="WZPasswordViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPasswordViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="reset:"/>
-                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="newPasswordField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="oldPasswordField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZPointRecordDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPointRecordDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="WZPointViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZPointViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="accessoryView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="detailButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="imageView" candidateClass="WZMultiImageView"/>
-                <relationship kind="outlet" name="ruleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZRecommendUserViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRecommendUserViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="recomend:"/>
-                <relationship kind="outlet" name="telphoneField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZRecommendViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRecommendViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="recomend:"/>
-                <relationship kind="outlet" name="merchantNameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="telphoneField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZRegisterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZRegisterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="register_:"/>
-                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="licenseSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZResetPasswordViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZResetPasswordViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="reset:"/>
-                <relationship kind="outlet" name="captchaField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="confirmField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WZSendLargessViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZSendLargessViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="checkCellPhone:"/>
-                <relationship kind="action" name="sendLargess:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="largessToCellPhone" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="senderButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZShowServiceItemDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZShowServiceItemDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="applyServiceItem:"/>
-                <relationship kind="outlet" name="ServiceItemapplyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addressbackImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="contentbackImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="serviceItemAddressLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemContentTextView" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemHeaderCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="serviceItemImageView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="serviceItemNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemRule" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemRulebackImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="serviceItemTypeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceItemconditionsLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZStoreDetailInfoViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoreDetailInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="merchantIntro" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="storeAddressTextView" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="storeCellPhoneLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="webURL" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZStoreDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoreDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeView:"/>
-                <relationship kind="outlet" name="contentView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="segmentedControl" candidateClass="SDSegmentedControl"/>
-                <relationship kind="outlet" name="storeImageView" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="storeNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZStoresViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZStoresViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="advertisements:"/>
-                <relationship kind="action" name="sort:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="_advertisementsBackground" candidateClass="UIView"/>
-                <relationship kind="outlet" name="_advertisementsView" candidateClass="WZMultiImageView"/>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="noStoresWarnning" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="segmentControl" candidateClass="SDSegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="WZUseServiceViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZUseServiceViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="useService:"/>
-                <relationship kind="outlet" name="serviceCode" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="serviceImage" candidateClass="EGOImageView"/>
-                <relationship kind="outlet" name="serviceTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="useButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="WZUserPointSendViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZUserPointSendViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="sendPoint:"/>
-                <relationship kind="outlet" name="phoneNum" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pointNum" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="sendExplain" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WZUserProfileViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZUserProfileViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="birthday:"/>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="closeKeyboard:"/>
-                <relationship kind="action" name="logout:"/>
-                <relationship kind="action" name="update:"/>
-                <relationship kind="outlet" name="birthButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="genderSwitch" candidateClass="WZGenderSwitch"/>
-                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aWS-9h-fYN"/>
+        <segue reference="fQ9-Os-rn4"/>
+        <segue reference="JA8-6Q-pQS"/>
+        <segue reference="sJ9-j8-2f6"/>
         <segue reference="6xH-gy-31G"/>
         <segue reference="wjw-Kt-TRa"/>
-        <segue reference="acX-vh-CGC"/>
-        <segue reference="fQ9-Os-rn4"/>
-        <segue reference="lDJ-Kv-KiJ"/>
+        <segue reference="8lx-Iu-Lhm"/>
     </inferredMetricsTieBreakers>
 </document>
