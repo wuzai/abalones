@@ -59,7 +59,15 @@ static NSString *const cellIdentifier = @"serviceItemCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.serviceItems.count;
+    int itemCount = self.serviceItems.count;
+    for (WZServiceItem *item in self.serviceItems)
+    {
+        if (![item.state isEqualToString:@"0000-0000-0000"])
+        {
+            itemCount = itemCount - 1;
+        }
+    }
+    return itemCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +75,9 @@ static NSString *const cellIdentifier = @"serviceItemCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     if ([cell isKindOfClass:[WZServiceItemCell class]]) {
         //如果不能够实现刷新，显示时先判断服务是否可用。需要提供接口。
-        WZServiceItem *serviceItem = [self.serviceItems objectAtIndex:indexPath.row];
+         WZServiceItem *serviceItem = [self.serviceItems objectAtIndex:indexPath.row];
+        if ([serviceItem.state isEqualToString:@"0000-0000-0000"])
+        {
         WZServiceItemCell *serviceItemCell = (WZServiceItemCell *)cell;
         serviceItemCell.serviceItemImage.imageURL = [NSURL URLWithString:serviceItem.posterImage];
         serviceItemCell.serviceItemTitle.text = serviceItem.serviceItemName;
@@ -75,7 +85,7 @@ static NSString *const cellIdentifier = @"serviceItemCell";
         serviceItemCell.serviceItemContent.numberOfLines = 0;
         serviceItemCell.serviceItemContent.text = serviceItem.promptIntro;
     }
-   
+    }
     
     return cell;
 }

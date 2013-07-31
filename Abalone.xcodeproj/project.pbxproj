@@ -28,6 +28,7 @@
 		42216BEE17A8F001002A12BA /* 商户logo占位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BEA17A8EFFC002A12BA /* 商户logo占位.png */; };
 		42216BEF17A8F001002A12BA /* 商户图标占位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BEB17A8EFFE002A12BA /* 商户图标占位.png */; };
 		423DE50717A249D300F53D04 /* WZMemberService+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */; };
+		42487FDB17A915E5004DF8F3 /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42487FDA17A915E5004DF8F3 /* WZServiceItem.m */; };
 		424C6F4A17968DFF00D3A298 /* 使用.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4617968DFF00D3A298 /* 使用.png */; };
 		424C6F4B17968DFF00D3A298 /* 使用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4717968DFF00D3A298 /* 使用@2x.png */; };
 		424C6F4C17968DFF00D3A298 /* 转赠.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4817968DFF00D3A298 /* 转赠.png */; };
@@ -149,7 +150,6 @@
 		5F61F1F117A255DA001E2ACB /* WZMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1F017A255DA001E2ACB /* WZMerchant.m */; };
 		5F61F1F417A255DA001E2ACB /* WZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1F317A255DA001E2ACB /* WZMessage.m */; };
 		5F61F1F717A255DB001E2ACB /* WZPointRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1F617A255DB001E2ACB /* WZPointRecord.m */; };
-		5F61F1FA17A255DB001E2ACB /* WZServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1F917A255DB001E2ACB /* WZServiceItem.m */; };
 		5F61F1FD17A255DB001E2ACB /* WZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1FC17A255DB001E2ACB /* WZUser.m */; };
 		5F61F20017A255DB001E2ACB /* WZStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F1FF17A255DB001E2ACB /* WZStore.m */; };
 		5F674F3017103BDC00034265 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F674F2F17103BDC00034265 /* CFNetwork.framework */; };
@@ -584,6 +584,8 @@
 		42216BEB17A8EFFE002A12BA /* 商户图标占位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户图标占位.png"; sourceTree = "<group>"; };
 		423DE50517A249D300F53D04 /* WZMemberService+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZMemberService+Mapping.h"; sourceTree = "<group>"; };
 		423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMemberService+Mapping.m"; sourceTree = "<group>"; };
+		42487FD917A915E5004DF8F3 /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
+		42487FDA17A915E5004DF8F3 /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
 		424C6F4617968DFF00D3A298 /* 使用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用.png"; sourceTree = "<group>"; };
 		424C6F4717968DFF00D3A298 /* 使用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用@2x.png"; sourceTree = "<group>"; };
 		424C6F4817968DFF00D3A298 /* 转赠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转赠.png"; sourceTree = "<group>"; };
@@ -734,8 +736,6 @@
 		5F61F1F317A255DA001E2ACB /* WZMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMessage.m; sourceTree = "<group>"; };
 		5F61F1F517A255DB001E2ACB /* WZPointRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZPointRecord.h; sourceTree = "<group>"; };
 		5F61F1F617A255DB001E2ACB /* WZPointRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZPointRecord.m; sourceTree = "<group>"; };
-		5F61F1F817A255DB001E2ACB /* WZServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZServiceItem.h; sourceTree = "<group>"; };
-		5F61F1F917A255DB001E2ACB /* WZServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZServiceItem.m; sourceTree = "<group>"; };
 		5F61F1FB17A255DB001E2ACB /* WZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZUser.h; sourceTree = "<group>"; };
 		5F61F1FC17A255DB001E2ACB /* WZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZUser.m; sourceTree = "<group>"; };
 		5F61F1FE17A255DB001E2ACB /* WZStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStore.h; sourceTree = "<group>"; };
@@ -1619,12 +1619,12 @@
 			isa = PBXGroup;
 			children = (
 				5F9F9815171510EA00B9001A /* Abalone.xcdatamodeld */,
+				42487FD917A915E5004DF8F3 /* WZServiceItem.h */,
+				42487FDA17A915E5004DF8F3 /* WZServiceItem.m */,
 				5F61F1FE17A255DB001E2ACB /* WZStore.h */,
 				5F61F1FF17A255DB001E2ACB /* WZStore.m */,
 				5F61F1FB17A255DB001E2ACB /* WZUser.h */,
 				5F61F1FC17A255DB001E2ACB /* WZUser.m */,
-				5F61F1F817A255DB001E2ACB /* WZServiceItem.h */,
-				5F61F1F917A255DB001E2ACB /* WZServiceItem.m */,
 				5F61F1F517A255DB001E2ACB /* WZPointRecord.h */,
 				5F61F1F617A255DB001E2ACB /* WZPointRecord.m */,
 				5F61F1F217A255DA001E2ACB /* WZMessage.h */,
@@ -2985,9 +2985,9 @@
 				5F61F1F117A255DA001E2ACB /* WZMerchant.m in Sources */,
 				5F61F1F417A255DA001E2ACB /* WZMessage.m in Sources */,
 				5F61F1F717A255DB001E2ACB /* WZPointRecord.m in Sources */,
-				5F61F1FA17A255DB001E2ACB /* WZServiceItem.m in Sources */,
 				5F61F1FD17A255DB001E2ACB /* WZUser.m in Sources */,
 				5F61F20017A255DB001E2ACB /* WZStore.m in Sources */,
+				42487FDB17A915E5004DF8F3 /* WZServiceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

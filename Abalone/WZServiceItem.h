@@ -2,7 +2,7 @@
 //  WZServiceItem.h
 //  Abalone
 //
-//  Created by 陈 海涛 on 13-7-26.
+//  Created by chen  on 13-7-31.
 //  Copyright (c) 2013年 曹昊. All rights reserved.
 //
 
@@ -30,6 +30,7 @@
 @property (nonatomic, retain) NSString * serviceItemType;
 @property (nonatomic, retain) NSDate * toDate;
 @property (nonatomic, retain) NSString * usableStores;
+@property (nonatomic, retain) NSString * state;
 @property (nonatomic, retain) NSSet *ads;
 @property (nonatomic, retain) WZMerchant *merchant;
 @end

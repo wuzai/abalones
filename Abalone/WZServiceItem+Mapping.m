@@ -14,7 +14,7 @@
 {
     RKManagedObjectMapping *serviceItemMapping = [RKManagedObjectMapping mappingForClass:[WZServiceItem class] inManagedObjectStore:[RKObjectManager sharedManager].objectStore];
     serviceItemMapping.primaryKeyAttribute = @"gid";
-   [serviceItemMapping mapKeyPathsToAttributes:@"_id",@"gid",@"description",@"intro",@"serviceItemName",@"serviceItemName",@"address",@"address",@"usableStores",@"usableStores",@"logoImage",@"logoImage",@"posterImage",@"posterImage", nil];
+   [serviceItemMapping mapKeyPathsToAttributes:@"_id",@"gid",@"description",@"intro",@"serviceItemName",@"serviceItemName",@"address",@"address",@"usableStores",@"usableStores",@"logoImage",@"logoImage",@"posterImage",@"posterImage",@"state",@"state", nil];
     [serviceItemMapping mapAttributes: 
     @"isRequireApply",
     @"isApplicable",
@@ -26,6 +26,7 @@
      @"ruleText",
      @"promptIntro",
      @"applyExplain",
+   
      nil];
     
     return serviceItemMapping;
