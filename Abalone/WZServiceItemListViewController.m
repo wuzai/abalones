@@ -38,6 +38,7 @@ static NSString *const cellIdentifier = @"serviceItemCell";
 -(void)updateViews
 {
     self.serviceItems = self.store.serviceItems;
+    
     [self.tableView reloadData];
 }
 
@@ -65,6 +66,7 @@ static NSString *const cellIdentifier = @"serviceItemCell";
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     if ([cell isKindOfClass:[WZServiceItemCell class]]) {
+        //如果不能够实现刷新，显示时先判断服务是否可用。需要提供接口。
         WZServiceItem *serviceItem = [self.serviceItems objectAtIndex:indexPath.row];
         WZServiceItemCell *serviceItemCell = (WZServiceItemCell *)cell;
         serviceItemCell.serviceItemImage.imageURL = [NSURL URLWithString:serviceItem.posterImage];
