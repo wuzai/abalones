@@ -23,6 +23,10 @@
 		42152251178C016800540030 /* 推荐@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4215224F178C016800540030 /* 推荐@2x.png */; };
 		42216BE117A7B6E1002A12BA /* 商户占位符.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BDF17A7B6DF002A12BA /* 商户占位符.png */; };
 		42216BE217A7B6E1002A12BA /* 商户占位符@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BE017A7B6E0002A12BA /* 商户占位符@2x.png */; };
+		42216BEC17A8F000002A12BA /* 商户logo占位@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BE817A8EFF9002A12BA /* 商户logo占位@2x.png */; };
+		42216BED17A8F001002A12BA /* 商户图标占位@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BE917A8EFFB002A12BA /* 商户图标占位@2x.png */; };
+		42216BEE17A8F001002A12BA /* 商户logo占位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BEA17A8EFFC002A12BA /* 商户logo占位.png */; };
+		42216BEF17A8F001002A12BA /* 商户图标占位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42216BEB17A8EFFE002A12BA /* 商户图标占位.png */; };
 		423DE50717A249D300F53D04 /* WZMemberService+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */; };
 		424C6F4A17968DFF00D3A298 /* 使用.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4617968DFF00D3A298 /* 使用.png */; };
 		424C6F4B17968DFF00D3A298 /* 使用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424C6F4717968DFF00D3A298 /* 使用@2x.png */; };
@@ -574,6 +578,10 @@
 		4215224F178C016800540030 /* 推荐@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "推荐@2x.png"; sourceTree = "<group>"; };
 		42216BDF17A7B6DF002A12BA /* 商户占位符.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户占位符.png"; sourceTree = "<group>"; };
 		42216BE017A7B6E0002A12BA /* 商户占位符@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户占位符@2x.png"; sourceTree = "<group>"; };
+		42216BE817A8EFF9002A12BA /* 商户logo占位@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户logo占位@2x.png"; sourceTree = "<group>"; };
+		42216BE917A8EFFB002A12BA /* 商户图标占位@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户图标占位@2x.png"; sourceTree = "<group>"; };
+		42216BEA17A8EFFC002A12BA /* 商户logo占位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户logo占位.png"; sourceTree = "<group>"; };
+		42216BEB17A8EFFE002A12BA /* 商户图标占位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户图标占位.png"; sourceTree = "<group>"; };
 		423DE50517A249D300F53D04 /* WZMemberService+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZMemberService+Mapping.h"; sourceTree = "<group>"; };
 		423DE50617A249D300F53D04 /* WZMemberService+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMemberService+Mapping.m"; sourceTree = "<group>"; };
 		424C6F4617968DFF00D3A298 /* 使用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "使用.png"; sourceTree = "<group>"; };
@@ -1464,6 +1472,10 @@
 				424C6F5217968EAF00D3A298 /* pointChagne.png */,
 				424C6F5317968EAF00D3A298 /* pointChagne@2x.png */,
 				5F41A16E178F9DF1000A3A52 /* 服务规则.png */,
+				42216BE817A8EFF9002A12BA /* 商户logo占位@2x.png */,
+				42216BE917A8EFFB002A12BA /* 商户图标占位@2x.png */,
+				42216BEA17A8EFFC002A12BA /* 商户logo占位.png */,
+				42216BEB17A8EFFE002A12BA /* 商户图标占位.png */,
 				420A2FE81793E1F500CE8BE9 /* 使用说明.png */,
 				420A2FE91793E1F500CE8BE9 /* 使用说明@2x.png */,
 				5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */,
@@ -2798,6 +2810,10 @@
 				426F0D1D17991A4A00D7B504 /* 拒绝@2x.png in Resources */,
 				42216BE117A7B6E1002A12BA /* 商户占位符.png in Resources */,
 				42216BE217A7B6E1002A12BA /* 商户占位符@2x.png in Resources */,
+				42216BEC17A8F000002A12BA /* 商户logo占位@2x.png in Resources */,
+				42216BED17A8F001002A12BA /* 商户图标占位@2x.png in Resources */,
+				42216BEE17A8F001002A12BA /* 商户logo占位.png in Resources */,
+				42216BEF17A8F001002A12BA /* 商户图标占位.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

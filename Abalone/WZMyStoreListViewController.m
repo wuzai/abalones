@@ -139,9 +139,9 @@ NSString *const cellIdenitfier = @"MyStoreListCell";
         if ([cell isKindOfClass:[WZMyStoreListCell class]]) {
             WZMyStoreListCell *myStoreCell = (WZMyStoreListCell *)cell;
             myStoreCell.storeBigImage.imageURL = [NSURL URLWithString:store.vipImage];
-            myStoreCell.storeBigImage.placeholderImage = [UIImage imageNamed:@"占位图4"];
+            myStoreCell.storeBigImage.placeholderImage = [UIImage imageNamed:@"商户图标占位"];
             myStoreCell.LogoImge.imageURL = [NSURL URLWithString:store.merchant.logo];
-            myStoreCell.LogoImge.placeholderImage = [UIImage imageNamed:@"占位图2"];
+            myStoreCell.LogoImge.placeholderImage = [UIImage imageNamed:@"商户logo占位"];
             myStoreCell.storeText.text = store.slogan;
             myStoreCell.storeName.text = store.storeName;
             
