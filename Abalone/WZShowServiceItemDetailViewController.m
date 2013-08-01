@@ -83,32 +83,70 @@
     else if([self.serviceItem.serviceItemType isEqualToString:@"Coupon"])
     {
         self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"优惠券"];
-        self.serviceItemDateLabel.hidden = false;
-        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+                if (fromDate && endDate)
+        {
+            self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+            self.serviceItemDateLabel.hidden = false;
+        }
+        else
+        {
+            self.serviceItemDateLabel.hidden = true;
+        }
     }
     else if([self.serviceItem.serviceItemType isEqualToString:@"MeteringCard"])
     {
         self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"计次卡"];
-        self.serviceItemDateLabel.hidden = false;
-        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+        if (fromDate && endDate)
+        {
+            self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+            self.serviceItemDateLabel.hidden = false;
+        }
+        else
+        {
+            self.serviceItemDateLabel.hidden = true;
+        }
+
     }
     else if([self.serviceItem.serviceItemType isEqualToString:@"GroupOn"])
     {
         self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"团购"];
-        self.serviceItemDateLabel.hidden = false;
-        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+        if (fromDate && endDate)
+        {
+            self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+            self.serviceItemDateLabel.hidden = false;
+        }
+        else
+        {
+            self.serviceItemDateLabel.hidden = true;
+        }
     }
     else if([self.serviceItem.serviceItemType isEqualToString:@"StoreCard"])
     {
         self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"储值卡"];
-        self.serviceItemDateLabel.hidden = false;
-        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+        if (fromDate && endDate)
+        {
+            self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+            self.serviceItemDateLabel.hidden = false;
+        }
+        else
+        {
+            self.serviceItemDateLabel.hidden = true;
+        }
+
     }
     else if([self.serviceItem.serviceItemType isEqualToString:@"Voucher"])
     {
         self.serviceItemTypeLabel.text = [NSString stringWithFormat:@"代金券"];
-        self.serviceItemDateLabel.hidden = false;
-        self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+        if (fromDate && endDate)
+        {
+            self.serviceItemDateLabel.text = [NSString stringWithFormat:@"%@--%@",fromDate,endDate];
+            self.serviceItemDateLabel.hidden = false;
+        }
+        else
+        {
+            self.serviceItemDateLabel.hidden = true;
+        }
+
     }
     
     

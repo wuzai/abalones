@@ -65,7 +65,7 @@ static NSString *const cellIdentifier = @"storeCell";
     WZStore *store = [self.otherStores objectAtIndex:indexPath.row];
     if ([cell isKindOfClass:[WZStoreCell class]]) {
         WZStoreCell *storeCell = (WZStoreCell *)cell;
-        storeCell.merchantLogoImage.imageURL = [NSURL URLWithString:store.merchant.logo];
+        storeCell.storeImage.imageURL = [NSURL URLWithString:store.vipImage];
         storeCell.storeNameLabel.text = store.storeName;
     }
     
