@@ -52,15 +52,18 @@
 {
     [super viewDidLoad];
     _cellBackgroundImage = [[UIImage imageNamed:@"cell.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)];
-    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 10, 320, [UIScreen mainScreen].bounds.size.height -40-49-35)];
+    self.swipeView = [[SwipeView alloc] initWithFrame:CGRectMake(0, 5, 320, [UIScreen mainScreen].bounds.size.height -40-49-60)];
     self.swipeView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.swipeView];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.hidden =YES ;
     
     
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44-49-44, 320, 44)];
+    
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44-49-35, 320, 44)];
     [self.view addSubview:self.pageControl];
-   
+    self.pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+    self.pageControl.pageIndicatorTintColor = [UIColor redColor];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"反转"] style:UIBarButtonItemStyleBordered target:self action:@selector(changePage:)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"刷新"] style:UIBarButtonItemStyleBordered target:self action:@selector(updateAds:)];
@@ -147,8 +150,10 @@
     showFlag = !showFlag;
     if (showFlag) {
         self.pageControl.hidden = YES;
+        _tableView.hidden = NO;
     }else{
         self.pageControl.hidden = NO;
+        _tableView.hidden = YES;
     }
     
     [[HMGLTransitionManager sharedTransitionManager] commitTransition];
