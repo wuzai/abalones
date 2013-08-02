@@ -178,7 +178,8 @@
     [_advertisements removeAllObjects];
     NSMutableSet *roll ;//= [NSMutableSet new];
     for (WZAd *ad in [WZAd allObjects]) {
-        if ([ad.fromDate timeIntervalSinceNow]<0 && [ad.toDate timeIntervalSinceNow]>0) {
+        //去除未开始活动判断
+        if (ad.toDate == nil || [ad.toDate timeIntervalSinceNow]>0 ) {
             [_advertisements addObject:ad];
             if ([ad.showToDate timeIntervalSinceNow]>0&&[ad.showFromDate timeIntervalSinceNow]<0 && ad.postImage) {
                 [roll addObject:ad];
