@@ -172,7 +172,7 @@
 {
     [super viewWillAppear:animated];
     [self reload];
-     _pageControl.numberOfPages = _swipeView.numberOfPages;
+     _pageControl.numberOfPages = 10;
 }
 
 #pragma mark - Reload
