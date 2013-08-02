@@ -17,7 +17,7 @@ NSString *const WZRecommendUserFailedNotification = @"WZRecommendUserFailed";
 #pragma mark -
 + (NSString *)resoucePath
 {
-    return @"recommend";
+    return @"recommendUser";
 }
 
 + (RKObjectManager *)manager
