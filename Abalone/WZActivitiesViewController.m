@@ -77,7 +77,14 @@
     _swipeView.dataSource = self;
     
     //configure page control
-    _pageControl.numberOfPages = _swipeView.numberOfPages;
+    if (_swipeView.numberOfPages > 10)
+    {
+        _pageControl.numberOfPages = 10;
+    }
+    else
+    {
+        _pageControl.numberOfPages = _swipeView.numberOfPages;
+    }
     _pageControl.defersCurrentPageDisplay = YES;
     
     
@@ -172,7 +179,14 @@
 {
     [super viewWillAppear:animated];
     [self reload];
-     _pageControl.numberOfPages = 10;
+    if (_swipeView.numberOfPages > 10)
+    {
+        _pageControl.numberOfPages = 10;
+    }
+    else
+    {
+        _pageControl.numberOfPages = _swipeView.numberOfPages;
+    }
 }
 
 #pragma mark - Reload
