@@ -16,6 +16,8 @@
 #import "WZTheme.h"
 #import "WZShareSDKConfigure.h"
 #import <ShareSDK/ShareSDK.h>
+#import "Reachability.h"
+
 
 
 @implementation WZAppDelegate
@@ -23,7 +25,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [WZNetworkConfigure startup];
-    [[WZDataHub hub] startup];
+    Reachability *reachability = [Reachability reachabilityWithHostname:@"www.5zzg.com"];
+    [reachability setReachableOnWWAN:NO];
+    [reachability setReachableBlock:^(Reachability * reachability){
+        NSLog(@"网络可用");
+        [[WZDataHub hub] startup];
+    }];
+    [reachability setUnreachableBlock:^(Reachability * reachability){
+         NSLog(@"网络不可用");
+    }];
+    [reachability startNotifier];
+    
+    
+   
     [WZTheme customize];
     [WZShareSDKConfigure sharedInit];    
     return YES;
