@@ -92,6 +92,19 @@ static const CGFloat speedPixel = 0.0015;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSuccess:) name:@"locationSuccess" object:nil];
     
+    //地区选择
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"北京" forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 55, 30);
+    button.backgroundColor = [UIColor clearColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    button.showsTouchWhenHighlighted = YES;
+    [button addTarget:self action:@selector(selectArea) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)selectArea
+{
     
 }
 
