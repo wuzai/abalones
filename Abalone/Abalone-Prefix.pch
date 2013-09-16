@@ -16,3 +16,5 @@
 #endif
 
 #define NETWORKERROR @"网络不给力，请您稍后再试！"
+
+#define kCity @"kCity"

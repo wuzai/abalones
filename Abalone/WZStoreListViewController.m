@@ -205,7 +205,22 @@ static NSString *const noCellIdentifier = @"noStoreCell";
     }else{
         [self.storesArray removeAllObjects];
     }
-    NSMutableArray *stores = [NSMutableArray arrayWithArray:[WZStore  allObjects]];
+    NSString *cityName = [[NSUserDefaults standardUserDefaults] stringForKey:kCity];
+    if (cityName == nil) {
+        cityName = @"北京";
+    }
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"address like '*%@*'",cityName];
+    NSFetchRequest *request = [WZStore fetchRequest];
+    request.predicate = predicate;
+    NSArray *theSotres = [WZStore executeFetchRequest:request];
+    NSMutableArray *stores = nil;
+    if (theSotres.count) {
+         stores = [NSMutableArray arrayWithArray:theSotres];
+    }
+    else{
+        return;
+    }
+   
     if ([WZUser me]) {
         WZUser *me = [WZUser me];
         NSMutableArray *deletes = [NSMutableArray array];

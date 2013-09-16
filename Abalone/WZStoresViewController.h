@@ -12,9 +12,12 @@
 #import <CoreLocation/CoreLocation.h>
 #import "SDSegmentedControl.h"
 #import "WZStoreTypeSelectorViewController.h"
-
+#import "JWFolders.h"
+#import "WZCityView.h"
 
 @interface WZStoresViewController : UIViewController <CLLocationManagerDelegate>
+@property (nonatomic,strong) JWFolders *floder;
+@property (nonatomic,strong) WZCityView *cityView;
 @property (weak, nonatomic) IBOutlet SDSegmentedControl *segmentControl;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 

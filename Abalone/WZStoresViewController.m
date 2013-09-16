@@ -17,6 +17,8 @@
 #import "WZStoreTypeSelectorViewController.h"
 #import "QuartzCore/QuartzCore.h"
 #import "WZDeleteUserMessage.h"
+#import "JWFolders.h"
+#import "WZAppDelegate.h"
 
 #pragma mark - 配置参数
 static const CGFloat LeftMenuMaxWidth = 120;
@@ -32,6 +34,8 @@ static const CGFloat speedPixel = 0.0015;
     NSMutableArray *_advertisements;
     UIBarButtonItem *_advertisementsItem;
 }
+
+
 - (void)loadAdvertisements;
 - (void)reloadAdvertisements;
 - (void)advertisementsDownloadSucceed:(NSNotification *)notification;
@@ -93,8 +97,12 @@ static const CGFloat speedPixel = 0.0015;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSuccess:) name:@"locationSuccess" object:nil];
     
     //地区选择
+   NSString *city = [[NSUserDefaults standardUserDefaults] stringForKey:kCity];
+    if (city == nil) {
+        city = @"北京";
+    }
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"北京" forState:UIControlStateNormal];
+    [button setTitle:city forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 55, 30);
     button.backgroundColor = [UIColor clearColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
@@ -105,7 +113,23 @@ static const CGFloat speedPixel = 0.0015;
 
 - (void)selectArea
 {
+    if (self.floder == nil) {
+        self.floder = [JWFolders folder];
+        self.floder.showsNotch = NO;
+        self.floder.shadowsEnabled = YES;
+        self.floder.darkensBackground = YES;
+        
+        self.cityView = [[WZCityView alloc] initWithFrame:CGRectZero];
+        self.cityView.sVC = self;
+    }
     
+    self.floder.containerView = [(WZAppDelegate *)[UIApplication sharedApplication].delegate window];
+    self.floder.contentView =  self.cityView;
+    self.floder.direction = JWFoldersOpenDirectionDown;
+    self.floder.contentBackgroundColor = [UIColor grayColor];
+    self.floder.position = CGPointMake(320/2, self.view.bounds.size.height/2 );
+    
+    [self.floder open];
 }
 
 

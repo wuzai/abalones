@@ -83,7 +83,7 @@ static NSString *CellIdentifier = @"MenuCell";
         WZStoresViewController *storeContrl = (WZStoresViewController *) self.parentViewController;
         storeContrl.title = self.types[indexPath.row];
         self.selectedType = self.types[indexPath.row];
-        [storeContrl.storeListViewController loadData];
+      //  [storeContrl.storeListViewController loadData];
         [tableView reloadData];
     }
    

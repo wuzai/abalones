@@ -98,6 +98,10 @@
 		5F069835178E4C60006DDFAA /* 商户简介@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069831178E4C60006DDFAA /* 商户简介@2x.png */; };
 		5F069848178ECF4C006DDFAA /* 商户相关.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069846178ECF4C006DDFAA /* 商户相关.png */; };
 		5F069849178ECF4C006DDFAA /* 商户相关@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069847178ECF4C006DDFAA /* 商户相关@2x.png */; };
+		5F0CEFCF17E6F7B800B09593 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CEFCC17E6F7B800B09593 /* JWFolders.m */; };
+		5F0CEFD017E6F7B800B09593 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CEFCE17E6F7B800B09593 /* UIView+Screenshot.m */; };
+		5F0CEFD317E6F7DF00B09593 /* WZCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CEFD217E6F7DF00B09593 /* WZCityView.m */; };
+		5F0CEFD517E6F7F400B09593 /* CityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0CEFD417E6F7F400B09593 /* CityView.xib */; };
 		5F0E8C541797D39B0018A607 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0E8C521797D39B0018A607 /* jiantou.png */; };
 		5F0E8C551797D39B0018A607 /* jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0E8C531797D39B0018A607 /* jiantou@2x.png */; };
 		5F1CCCA81755CE3700F9803E /* WZStoreTypeSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */; };
@@ -639,6 +643,13 @@
 		5F069831178E4C60006DDFAA /* 商户简介@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户简介@2x.png"; sourceTree = "<group>"; };
 		5F069846178ECF4C006DDFAA /* 商户相关.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户相关.png"; sourceTree = "<group>"; };
 		5F069847178ECF4C006DDFAA /* 商户相关@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户相关@2x.png"; sourceTree = "<group>"; };
+		5F0CEFCB17E6F7B800B09593 /* JWFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFolders.h; sourceTree = "<group>"; };
+		5F0CEFCC17E6F7B800B09593 /* JWFolders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFolders.m; sourceTree = "<group>"; };
+		5F0CEFCD17E6F7B800B09593 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		5F0CEFCE17E6F7B800B09593 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		5F0CEFD117E6F7DF00B09593 /* WZCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCityView.h; sourceTree = "<group>"; };
+		5F0CEFD217E6F7DF00B09593 /* WZCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCityView.m; sourceTree = "<group>"; };
+		5F0CEFD417E6F7F400B09593 /* CityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityView.xib; sourceTree = "<group>"; };
 		5F0E8C521797D39B0018A607 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
 		5F0E8C531797D39B0018A607 /* jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou@2x.png"; sourceTree = "<group>"; };
 		5F1CCCA61755CE3700F9803E /* WZStoreTypeSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZStoreTypeSelectorViewController.h; sourceTree = "<group>"; };
@@ -1401,6 +1412,9 @@
 				5F1CCCA61755CE3700F9803E /* WZStoreTypeSelectorViewController.h */,
 				5F1CCCA71755CE3700F9803E /* WZStoreTypeSelectorViewController.m */,
 				5F7F2BFD17574BDD0028B13D /* MenuCell.xib */,
+				5F0CEFD117E6F7DF00B09593 /* WZCityView.h */,
+				5F0CEFD217E6F7DF00B09593 /* WZCityView.m */,
+				5F0CEFD417E6F7F400B09593 /* CityView.xib */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -2318,6 +2332,10 @@
 		A5B226861711213400ECB192 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5F0CEFCB17E6F7B800B09593 /* JWFolders.h */,
+				5F0CEFCC17E6F7B800B09593 /* JWFolders.m */,
+				5F0CEFCD17E6F7B800B09593 /* UIView+Screenshot.h */,
+				5F0CEFCE17E6F7B800B09593 /* UIView+Screenshot.m */,
 				42D90B3E17CEDD8900E60AEB /* Reachability.h */,
 				42D90B3F17CEDD8900E60AEB /* Reachability.m */,
 				5F27685617167D500032E69F /* SDSegmentedControl.h */,
@@ -2739,6 +2757,7 @@
 				42C5F1D517AB6AFF002794B2 /* 反转@2x.png in Resources */,
 				42C5F1D617AB6AFF002794B2 /* 刷新.png in Resources */,
 				42C5F1D717AB6AFF002794B2 /* 刷新@2x.png in Resources */,
+				5F0CEFD517E6F7F400B09593 /* CityView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2914,6 +2933,9 @@
 				5F61F20017A255DB001E2ACB /* WZStore.m in Sources */,
 				42487FDB17A915E5004DF8F3 /* WZServiceItem.m in Sources */,
 				42D90B4017CEDD8900E60AEB /* Reachability.m in Sources */,
+				5F0CEFCF17E6F7B800B09593 /* JWFolders.m in Sources */,
+				5F0CEFD017E6F7B800B09593 /* UIView+Screenshot.m in Sources */,
+				5F0CEFD317E6F7DF00B09593 /* WZCityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
