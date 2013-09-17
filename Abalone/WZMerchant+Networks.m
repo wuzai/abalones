@@ -30,8 +30,12 @@ NSString *const FetchMerchantFail = @"fetchMerchantFail";
     {
         timeStamp = [NSDate dateWithTimeIntervalSince1970:0];
     }
+   NSString *city = [[NSUserDefaults standardUserDefaults] stringForKey:kCity];
+    if (city == nil) {
+        city = @"北京";
+    }
    
-     return [[WZNetworkHelper helper] help:[self class] with:nil object:nil by:RKRequestMethodGET];
+    return [[WZNetworkHelper helper] help:[self class] with:@{@"address":city} object:nil by:RKRequestMethodGET];
 }
 
 - (BOOL)fetchMerchant

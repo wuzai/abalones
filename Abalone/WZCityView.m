@@ -53,6 +53,9 @@
 [self.sVC.floder closeCurrentFolder];
     UIButton *rightButton =(UIButton *)self.sVC.navigationItem.rightBarButtonItem.customView;
 [rightButton setTitle:city forState:UIControlStateNormal];
+
+[WZMerchant fetchMerchantList];
+
 }
 
 @end

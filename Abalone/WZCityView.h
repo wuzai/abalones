@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WZMerchant+Networks.h"
 @class  WZStoresViewController;
 
 @interface WZCityView : UIView

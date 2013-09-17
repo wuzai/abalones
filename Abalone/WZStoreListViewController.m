@@ -209,7 +209,8 @@ static NSString *const noCellIdentifier = @"noStoreCell";
     if (cityName == nil) {
         cityName = @"北京";
     }
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"address like '*%@*'",cityName];
+   cityName = [NSString stringWithFormat:@"*%@*",cityName ];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"address like %@",cityName];
     NSFetchRequest *request = [WZStore fetchRequest];
     request.predicate = predicate;
     NSArray *theSotres = [WZStore executeFetchRequest:request];
@@ -217,9 +218,9 @@ static NSString *const noCellIdentifier = @"noStoreCell";
     if (theSotres.count) {
          stores = [NSMutableArray arrayWithArray:theSotres];
     }
-    else{
-        return;
-    }
+//    else{
+//        return;
+//    }
    
     if ([WZUser me]) {
         WZUser *me = [WZUser me];
@@ -234,6 +235,8 @@ static NSString *const noCellIdentifier = @"noStoreCell";
         [self.storesArray addObjectsFromArray:stores];
             [self checkType];
         [self sort];
+    }else{
+        [self.tableView reloadData];
     }
     WZStoresViewController *parent = (WZStoresViewController *)self.parentViewController;
     if (!self.storesArray.count) {
