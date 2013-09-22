@@ -112,6 +112,7 @@
 		5F27685A17167E3A0032E69F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27685917167E3A0032E69F /* QuartzCore.framework */; };
 		5F276861171681320032E69F /* WZStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F276860171681320032E69F /* WZStoreDetailViewController.m */; };
 		5F27687C1716ABE70032E69F /* WZMerchant+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */; };
+		5F408C4917EEC0FE008B1B78 /* WZVersionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F408C4817EEC0FE008B1B78 /* WZVersionAgent.m */; };
 		5F41A174178F9DF1000A3A52 /* 服务规则.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16E178F9DF1000A3A52 /* 服务规则.png */; };
 		5F41A175178F9DF1000A3A52 /* 服务规则@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */; };
 		5F41A176178F9DF1000A3A52 /* 服务详情.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A170178F9DF1000A3A52 /* 服务详情.png */; };
@@ -666,6 +667,8 @@
 		5F27686217168EF70032E69F /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		5F27687A1716ABE60032E69F /* WZMerchant+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WZMerchant+Mapping.h"; sourceTree = "<group>"; };
 		5F27687B1716ABE60032E69F /* WZMerchant+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WZMerchant+Mapping.m"; sourceTree = "<group>"; };
+		5F408C4717EEC0FE008B1B78 /* WZVersionAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZVersionAgent.h; sourceTree = "<group>"; };
+		5F408C4817EEC0FE008B1B78 /* WZVersionAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZVersionAgent.m; sourceTree = "<group>"; };
 		5F41A16E178F9DF1000A3A52 /* 服务规则.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则.png"; sourceTree = "<group>"; };
 		5F41A16F178F9DF1000A3A52 /* 服务规则@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务规则@2x.png"; sourceTree = "<group>"; };
 		5F41A170178F9DF1000A3A52 /* 服务详情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务详情.png"; sourceTree = "<group>"; };
@@ -1370,6 +1373,15 @@
 			name = Networks;
 			sourceTree = "<group>";
 		};
+		5F408C4617EEC0C5008B1B78 /* UpdateVersion */ = {
+			isa = PBXGroup;
+			children = (
+				5F408C4717EEC0FE008B1B78 /* WZVersionAgent.h */,
+				5F408C4817EEC0FE008B1B78 /* WZVersionAgent.m */,
+			);
+			name = UpdateVersion;
+			sourceTree = "<group>";
+		};
 		5F43B6D9173B6F7A001F1443 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -2030,6 +2042,7 @@
 		A551AA63170A76680013C5B8 /* Abalone */ = {
 			isa = PBXGroup;
 			children = (
+				5F408C4617EEC0C5008B1B78 /* UpdateVersion */,
 				A551AA6C170A76680013C5B8 /* WZAppDelegate.h */,
 				A551AA6D170A76680013C5B8 /* WZAppDelegate.m */,
 				A5AEFF871712A046004354B4 /* Activities */,
@@ -2936,6 +2949,7 @@
 				5F0CEFCF17E6F7B800B09593 /* JWFolders.m in Sources */,
 				5F0CEFD017E6F7B800B09593 /* UIView+Screenshot.m in Sources */,
 				5F0CEFD317E6F7DF00B09593 /* WZCityView.m in Sources */,
+				5F408C4917EEC0FE008B1B78 /* WZVersionAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
 #import "WZShareSDKConfigure.h"
 #import <ShareSDK/ShareSDK.h>
 #import "Reachability.h"
+#import "WZVersionAgent.h"
 
 
 
@@ -39,7 +40,10 @@
     
    
     [WZTheme customize];
-    [WZShareSDKConfigure sharedInit];    
+    [WZShareSDKConfigure sharedInit];
+    
+     [[WZVersionAgent shareInstance] checkVersionForUpdate];
+    
     return YES;
 }
 
@@ -62,13 +66,25 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    if ([[WZVersionAgent shareInstance] isUpdate]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+            localNotification.fireDate = [[NSDate date] dateByAddingTimeInterval:3];
+            localNotification.timeZone = [NSTimeZone defaultTimeZone];
+            localNotification.alertBody = @"贝客汇有新版本更新哦！点击到App Store升级。";
+            localNotification.alertAction = @"更新";
+            localNotification.soundName = nil;
+            [application scheduleLocalNotification:localNotification];
+        });
+       
+    }
+    
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+   
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
