@@ -87,6 +87,12 @@
    
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    // open app store link
+    NSString * url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@", @"649743732"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
