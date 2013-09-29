@@ -772,6 +772,8 @@
 		5F9D4EB7170BD5BF009855CC /* WZStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZStoreCell.m; sourceTree = "<group>"; };
 		5F9D4EBC170BFFD5009855CC /* 辛巴克.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "辛巴克.png"; sourceTree = "<group>"; };
 		5F9D4EC2170C002E009855CC /* starbucksdiscount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucksdiscount.png; sourceTree = "<group>"; };
+		5F9F36A617F7DF96004D0FE7 /* 导航栏7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航栏7.png"; sourceTree = "<group>"; };
+		5F9F36A717F7DF96004D0FE7 /* 导航栏7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航栏7@2x.png"; sourceTree = "<group>"; };
 		5F9F97FC1715023700B9001A /* WZNetworkConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZNetworkConfigure.h; sourceTree = "<group>"; };
 		5F9F97FD1715023700B9001A /* WZNetworkConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZNetworkConfigure.m; sourceTree = "<group>"; };
 		5F9F9816171510EA00B9001A /* Abalone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Abalone.xcdatamodel; sourceTree = "<group>"; };
@@ -1452,6 +1454,8 @@
 		5F9D4EAF170BD364009855CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5F9F36A617F7DF96004D0FE7 /* 导航栏7.png */,
+				5F9F36A717F7DF96004D0FE7 /* 导航栏7@2x.png */,
 				5F0E8C521797D39B0018A607 /* jiantou.png */,
 				5F0E8C531797D39B0018A607 /* jiantou@2x.png */,
 				5F75557B1795195A0059D9BB /* pointCellBg.png */,

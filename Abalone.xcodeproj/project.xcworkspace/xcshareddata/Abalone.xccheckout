@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>455B3DC4-20F9-4246-8190-0CB0D490A19D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Abalone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>65C5100B-5ABF-4A77-93CF-B7D6B9B138F0</key>
+		<string>https://github.com/RestKit/RestKit.git</string>
+		<key>B27D9550-0403-4436-9C92-E128F6D05107</key>
+		<string>https://github.com/wuzai/abalones.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Abalone.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>65C5100B-5ABF-4A77-93CF-B7D6B9B138F0</key>
+		<string>../../RestKit</string>
+		<key>B27D9550-0403-4436-9C92-E128F6D05107</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wuzai/abalones.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B27D9550-0403-4436-9C92-E128F6D05107</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B27D9550-0403-4436-9C92-E128F6D05107</string>
+			<key>IDESourceControlWCCName</key>
+			<string>abalones</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65C5100B-5ABF-4A77-93CF-B7D6B9B138F0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RestKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

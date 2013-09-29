@@ -273,7 +273,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
 {
     if (_selectedSegmentIndex != selectedSegmentIndex)
     {
-        NSParameterAssert(selectedSegmentIndex < (NSInteger)self._items.count);
+       // NSParameterAssert(selectedSegmentIndex < (NSInteger)self._items.count);
         _lastSelectedSegmentIndex = _selectedSegmentIndex;
         _selectedSegmentIndex = selectedSegmentIndex;
         [self setNeedsLayout];

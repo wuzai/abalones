@@ -46,7 +46,13 @@
 //        [item setFinishedSelectedImage:selected withFinishedUnselectedImage:unselected];
 //    }
     [[UINavigationBar appearance] setTintColor:[[self class] themeColor]];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"导航栏.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    UIImage *image = [UIImage imageNamed:@"导航栏.png"];
+    if ([UIDevice currentDevice].systemVersion.intValue > 6) {
+        image = [UIImage imageNamed:@"导航栏7.png"];
+    }
+    
+    [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 //    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"TabBar.png"]];
 //    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"TabBarIndicator.png"]];
     [[UITableView appearance] setBackgroundColor:[[self class] backColor]];
