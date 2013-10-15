@@ -92,6 +92,10 @@
 		42E262B4178D276000EE9E93 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E262B0178D276000EE9E93 /* 3@2x.png */; };
 		42E262B5178D276000EE9E93 /* 3s.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E262B1178D276000EE9E93 /* 3s.png */; };
 		42E262B6178D276000EE9E93 /* 3s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E262B2178D276000EE9E93 /* 3s@2x.png */; };
+		42E75462180CEA5600D47218 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E7545F180CEA5500D47218 /* 29.png */; };
+		42E75463180CEA5600D47218 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E75460180CEA5500D47218 /* 58.png */; };
+		42E75464180CEA5600D47218 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E75461180CEA5500D47218 /* 80.png */; };
+		42E7546B180CEA9D00D47218 /* retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E7546A180CEA9D00D47218 /* retina.png */; };
 		5F069832178E4C60006DDFAA /* 联系信息.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F06982E178E4C60006DDFAA /* 联系信息.png */; };
 		5F069833178E4C60006DDFAA /* 联系信息@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F06982F178E4C60006DDFAA /* 联系信息@2x.png */; };
 		5F069834178E4C60006DDFAA /* 商户简介.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F069830178E4C60006DDFAA /* 商户简介.png */; };
@@ -638,6 +642,10 @@
 		42E262B0178D276000EE9E93 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 		42E262B1178D276000EE9E93 /* 3s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3s.png; sourceTree = "<group>"; };
 		42E262B2178D276000EE9E93 /* 3s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3s@2x.png"; sourceTree = "<group>"; };
+		42E7545F180CEA5500D47218 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		42E75460180CEA5500D47218 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		42E75461180CEA5500D47218 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		42E7546A180CEA9D00D47218 /* retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina.png; sourceTree = "<group>"; };
 		5F06982E178E4C60006DDFAA /* 联系信息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系信息.png"; sourceTree = "<group>"; };
 		5F06982F178E4C60006DDFAA /* 联系信息@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系信息@2x.png"; sourceTree = "<group>"; };
 		5F069830178E4C60006DDFAA /* 商户简介.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户简介.png"; sourceTree = "<group>"; };
@@ -2005,6 +2013,10 @@
 				5FA4B0CC1772BEF9008B58E3 /* Default.png */,
 				5FA27671174EF9C1003AA9B7 /* ShareSDK_v2.1.1 */,
 				42CFA2C71744DBB80009D767 /* logo@2x.png */,
+				42E7545F180CEA5500D47218 /* 29.png */,
+				42E7546A180CEA9D00D47218 /* retina.png */,
+				42E75460180CEA5500D47218 /* 58.png */,
+				42E75461180CEA5500D47218 /* 80.png */,
 				42CFA2C51744DBB40009D767 /* logo.png */,
 				A551AA63170A76680013C5B8 /* Abalone */,
 				A551AA5C170A76680013C5B8 /* Frameworks */,
@@ -2533,6 +2545,7 @@
 				5FA0F4341727CEBB00AC67DC /* 商家302.png in Resources */,
 				5FA0F4351727CEBB00AC67DC /* 商家302@2x.png in Resources */,
 				5FA0F4361727CEBB00AC67DC /* 我的301.png in Resources */,
+				42E75463180CEA5600D47218 /* 58.png in Resources */,
 				5FA0F4371727CEBB00AC67DC /* 我的301@2x.png in Resources */,
 				5FA0F4381727CEBB00AC67DC /* 我的302.png in Resources */,
 				5FA0F4391727CEBB00AC67DC /* 我的302@2x.png in Resources */,
@@ -2564,6 +2577,7 @@
 				5FA3FBBD172A74CC00D5869B /* box.png in Resources */,
 				5FA3FBBE172A74CC00D5869B /* box@2x.png in Resources */,
 				5FA3FBBF172A74CC00D5869B /* top.png in Resources */,
+				42E75464180CEA5600D47218 /* 80.png in Resources */,
 				5FA3FBC0172A74CC00D5869B /* top@2x.png in Resources */,
 				A5A19AF1172CBBD000A2124E /* 导航栏.png in Resources */,
 				A5A19AF2172CBBD000A2124E /* 导航栏@2x.png in Resources */,
@@ -2719,7 +2733,9 @@
 				42E262B6178D276000EE9E93 /* 3s@2x.png in Resources */,
 				5F069832178E4C60006DDFAA /* 联系信息.png in Resources */,
 				5F069833178E4C60006DDFAA /* 联系信息@2x.png in Resources */,
+				42E75462180CEA5600D47218 /* 29.png in Resources */,
 				5F069834178E4C60006DDFAA /* 商户简介.png in Resources */,
+				42E7546B180CEA9D00D47218 /* retina.png in Resources */,
 				5F069835178E4C60006DDFAA /* 商户简介@2x.png in Resources */,
 				420B3971178E61DA004DB550 /* 边框条1.png in Resources */,
 				420B3972178E61DA004DB550 /* 边框条1@2x.png in Resources */,
