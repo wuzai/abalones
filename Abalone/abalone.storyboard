@@ -1477,10 +1477,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="twh-v2-rpH">
-                                <rect key="frame" x="128" y="192" width="170" height="44"/>
+                                <rect key="frame" x="99" y="187" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="我已阅读服务条款">
+                                <state key="normal" title="&quot;贝客汇&quot;协议条款">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1491,10 +1491,6 @@
                                     <segue destination="dgE-Jg-9vN" kind="push" id="cWP-ka-XaA"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NVF-bn-sky">
-                                <rect key="frame" x="20" y="198" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1502,7 +1498,6 @@
                     <navigationItem key="navigationItem" title="注册" id="pnk-MI-Tsx"/>
                     <connections>
                         <outlet property="confirmField" destination="e39-ZR-yqT" id="tAK-w7-goC"/>
-                        <outlet property="licenseSwitch" destination="NVF-bn-sky" id="Rs8-6u-Exl"/>
                         <outlet property="passwordField" destination="UzF-Ta-PLr" id="7kN-2r-BJk"/>
                         <outlet property="usernameField" destination="wgb-vO-J7X" id="G45-K8-Gyx"/>
                     </connections>
@@ -3352,16 +3347,10 @@
         <image name="printer_shadow.png" width="279" height="20"/>
         <image name="starbucksdiscount.png" width="184" height="107"/>
         <image name="修改.png" width="109" height="35"/>
-        <image name="修改.png" width="109" height="35"/>
         <image name="修改密码.png" width="109" height="34"/>
-        <image name="取消.png" width="109" height="34"/>
-        <image name="取消.png" width="109" height="34"/>
-        <image name="取消.png" width="109" height="34"/>
-        <image name="取消.png" width="109" height="34"/>
         <image name="取消.png" width="109" height="34"/>
         <image name="我的301.png" width="30" height="30"/>
         <image name="找回密码.png" width="109" height="35"/>
-        <image name="推荐.png" width="109" height="35"/>
         <image name="推荐.png" width="109" height="35"/>
         <image name="提交.png" width="109" height="35"/>
         <image name="无服务警告.png" width="302" height="191"/>
@@ -3376,17 +3365,11 @@
         <image name="登录.png" width="109" height="35"/>
         <image name="登录_content.png" width="260" height="67"/>
         <image name="积分转赠.png" width="90" height="30"/>
-        <image name="积分转赠.png" width="90" height="30"/>
         <image name="设置301.png" width="30" height="30"/>
         <image name="贝客.png" width="90" height="55"/>
-        <image name="贝客.png" width="90" height="55"/>
         <image name="边框.png" width="96" height="68"/>
-        <image name="边框.png" width="96" height="68"/>
-        <image name="边框条1.png" width="295" height="55"/>
         <image name="边框条1.png" width="295" height="55"/>
         <image name="边框条2.png" width="295" height="100"/>
-        <image name="边框条3.png" width="295" height="147"/>
-        <image name="边框条3.png" width="295" height="147"/>
         <image name="边框条3.png" width="295" height="147"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

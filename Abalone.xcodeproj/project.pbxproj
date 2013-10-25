@@ -81,6 +81,9 @@
 		42CFA2B91744D67B0009D767 /* 边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2B71744D67A0009D767 /* 边框@2x.png */; };
 		42CFA2C31744DB940009D767 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C11744DB930009D767 /* logo.png */; };
 		42CFA2C41744DB940009D767 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CFA2C21744DB940009D767 /* logo@2x.png */; };
+		42D5BCD1181A42D6000B0349 /* WZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D5BCD0181A42D6000B0349 /* WZButton.m */; };
+		42D5BCD9181A435F000B0349 /* check_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D5BCD7181A435F000B0349 /* check_icon@2x.png */; };
+		42D5BCDA181A435F000B0349 /* uncheck_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D5BCD8181A435F000B0349 /* uncheck_icon@2x.png */; };
 		42D90B4017CEDD8900E60AEB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D90B3F17CEDD8900E60AEB /* Reachability.m */; };
 		42E26298178C36D700EE9E93 /* 商户边框.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26296178C36D600EE9E93 /* 商户边框.png */; };
 		42E26299178C36D700EE9E93 /* 商户边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E26297178C36D700EE9E93 /* 商户边框@2x.png */; };
@@ -630,6 +633,10 @@
 		42CFA2C21744DB940009D767 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		42CFA2C51744DBB40009D767 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		42CFA2C71744DBB80009D767 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		42D5BCCF181A42D6000B0349 /* WZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZButton.h; sourceTree = "<group>"; };
+		42D5BCD0181A42D6000B0349 /* WZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZButton.m; sourceTree = "<group>"; };
+		42D5BCD7181A435F000B0349 /* check_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_icon@2x.png"; sourceTree = "<group>"; };
+		42D5BCD8181A435F000B0349 /* uncheck_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uncheck_icon@2x.png"; sourceTree = "<group>"; };
 		42D90B3E17CEDD8900E60AEB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		42D90B3F17CEDD8900E60AEB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		42E26296178C36D600EE9E93 /* 商户边框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户边框.png"; sourceTree = "<group>"; };
@@ -1464,6 +1471,8 @@
 			children = (
 				5F9F36A617F7DF96004D0FE7 /* 导航栏7.png */,
 				5F9F36A717F7DF96004D0FE7 /* 导航栏7@2x.png */,
+				42D5BCD7181A435F000B0349 /* check_icon@2x.png */,
+				42D5BCD8181A435F000B0349 /* uncheck_icon@2x.png */,
 				5F0E8C521797D39B0018A607 /* jiantou.png */,
 				5F0E8C531797D39B0018A607 /* jiantou@2x.png */,
 				5F75557B1795195A0059D9BB /* pointCellBg.png */,
@@ -2249,6 +2258,8 @@
 				A58DE687173B8D210017E107 /* WZResetPasswordViewController.m */,
 				A500D96D173C9D1800037AD8 /* WZCaptchaViewController.h */,
 				A500D96E173C9D1800037AD8 /* WZCaptchaViewController.m */,
+				42D5BCCF181A42D6000B0349 /* WZButton.h */,
+				42D5BCD0181A42D6000B0349 /* WZButton.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -2540,6 +2551,7 @@
 				5FD4F1B3171CE5BE0053A384 /* merchantCardCell.xib in Resources */,
 				5FD4F1B5171CE5E60053A384 /* servicesCell.xib in Resources */,
 				5FB3414C172672F2003B58FB /* serviceItemCell.xib in Resources */,
+				42D5BCD9181A435F000B0349 /* check_icon@2x.png in Resources */,
 				5FA0F4321727CEBB00AC67DC /* 商家301.png in Resources */,
 				5FA0F4331727CEBB00AC67DC /* 商家301@2x.png in Resources */,
 				5FA0F4341727CEBB00AC67DC /* 商家302.png in Resources */,
@@ -2692,6 +2704,7 @@
 				8A0ED2AC1782AA25009DE3E2 /* si.png in Resources */,
 				8A0ED2AD1782AA25009DE3E2 /* si@2x.png in Resources */,
 				8A0ED2B51782B0E0009DE3E2 /* mystorecellbackground2.png in Resources */,
+				42D5BCDA181A435F000B0349 /* uncheck_icon@2x.png in Resources */,
 				8A0ED2B61782B0E0009DE3E2 /* mystorecellbackground2@2x.png in Resources */,
 				5F4B1BD117827ED300ADB09A /* customTabbar.png in Resources */,
 				5F4B1BD217827ED300ADB09A /* customTabbar@2x.png in Resources */,
@@ -2865,6 +2878,7 @@
 				A5AE09161727875700CE9026 /* UIWindow+Lock.m in Sources */,
 				5FA0F4061727985500AC67DC /* WZApplyForServiceItem.m in Sources */,
 				5FA0F40E17279B1C00AC67DC /* WZMember+Mapping.m in Sources */,
+				42D5BCD1181A42D6000B0349 /* WZButton.m in Sources */,
 				5FA0F48B1727D96800AC67DC /* WZComment+Mapping.m in Sources */,
 				5FA0F4951727DEA200AC67DC /* WZCommentNetWorker.m in Sources */,
 				5FA0F49F1727F91000AC67DC /* WZCommentListViewController.m in Sources */,

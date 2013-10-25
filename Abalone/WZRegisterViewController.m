@@ -22,7 +22,6 @@
 @implementation WZRegisterViewController
 @synthesize usernameField = _usernameField;
 @synthesize passwordField = _passwordField;
-
 @synthesize confirmField = _confirmField;
 @synthesize licenseSwitch = _licenseSwitch;
 
@@ -38,6 +37,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //checkbox值
+    isChecked = NO;//单选按钮
+    isCheckCode = NO;//验证码
+     WZButton *_checkButton = [[WZButton alloc] initWithDelegate:self];
+    _checkButton.frame = CGRectMake(10, 200, 150, 20);
+    [_checkButton setTitle:@"已阅读并同意" forState:UIControlStateNormal];
+    [_checkButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [_checkButton.titleLabel setFont:[UIFont boldSystemFontOfSize:14.0f]];
+    [_checkButton setImage:[UIImage imageNamed:@"uncheck_icon.png"] forState:UIControlStateNormal];
+    [_checkButton setImage:[UIImage imageNamed:@"check_icon.png"] forState:UIControlStateSelected];
+    [self.view addSubview:_checkButton];
+    [_checkButton setChecked:NO];
+
+
 	// Do any additional setup after loading the view.
 }
 
@@ -54,6 +67,8 @@
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
+
+
 
 #pragma mark - Register
 - (NSString *)warning
@@ -77,7 +92,7 @@
 //    else if (![_captchaField.text isValidPassword]) {
 //        warning = @"验证码不正确";
 //    }
-    else if ([_licenseSwitch isOn]==NO) {
+    else if (!isChecked) {
         warning = @"请先阅读服务条款";
     }
     
@@ -114,6 +129,13 @@
     [_confirmField resignFirstResponder];
 //    [_captchaField resignFirstResponder];
 }
+
+#pragma mark - QCheckBoxDelegate
+- (void)didSelectedCheckBox:(UIButton *)checkbox checked:(BOOL)checked {
+    NSLog(@"did tap on CheckBox:%@ checked:%d", checkbox.titleLabel.text, checked);
+    isChecked = checked;
+}
+
 
 #pragma mark - Callbacks
 - (void)registerSucceed:(NSNotification *)notification

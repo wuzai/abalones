@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WZButton.h"
 
-@interface WZRegisterViewController : UIViewController
+@interface WZRegisterViewController : UIViewController<QCheckBoxDelegate>
+{
+    //checkbox值
+    BOOL isChecked;
+    
+    BOOL isCheckCode;//验证码文本框是否被点击
+
+}
+
 @property (nonatomic,weak) IBOutlet UITextField *usernameField;
 @property (nonatomic,weak) IBOutlet UITextField *passwordField;
 @property (nonatomic,weak) IBOutlet UITextField *confirmField;
